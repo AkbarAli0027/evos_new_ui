@@ -1,0 +1,297 @@
+.root {
+  margin: 108px auto;
+}
+.root .banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 53px;
+}
+.root .banner .title {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.root .banner .title h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #000;
+  letter-spacing: 0%;
+  line-height: 100%;
+  margin-bottom: 16px;
+}
+.root .banner .title .title__content {
+  background: #fff;
+  border-radius: 40px;
+  padding: 38px 48px;
+  margin-top: 40px;
+}
+.root .banner .title p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 0%;
+  line-height: 115%;
+}
+.root .banner__image {
+  position: relative;
+  width: 80%;
+  height: 435px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.root .paints {
+  border-radius: 20px;
+  background: #fff;
+  padding: 38px 48px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.root .paints__greenTitle {
+  border-radius: 15px;
+  background: #00b987;
+  padding: 10px 20px;
+  width: fit-content;
+}
+.root .paints__greenTitle p {
+  color: #ffeb32;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 20px;
+  letter-spacing: 0%;
+  line-height: 100%;
+}
+.root .paints__images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 20px 0 48px;
+}
+.root .paints__img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+.root .paints h3 {
+  color: #000;
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: 500;
+}
+.root .gallery {
+  display: flex;
+  gap: 16px;
+}
+.root .gallery__left {
+  width: 50%;
+}
+.root .gallery__right {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.root .gallery__image {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.root .gallery__imageRight {
+  position: relative;
+  width: 50%;
+  height: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.root .greenBox {
+  background: #00b987;
+  border-radius: 40px;
+  padding: 40px;
+  margin: 30px 0;
+}
+.root .greenBox p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.root .mobileBanner {
+  display: none;
+}
+.root .imageCard {
+  background: #fff;
+  border-radius: 40px;
+}
+.root .imageCard__wrapper {
+  overflow: hidden;
+  position: relative;
+  border-radius: 40px;
+  width: 100%;
+  height: 600px;
+}
+.root .imageCard__content {
+  padding: 32px 50px;
+}
+.root .imageCard__content p {
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: 500;
+  color: #000;
+  width: 91.96666%;
+}
+.root .blueCard {
+  background-color: #ffeb32;
+  border-radius: 20px;
+  padding: 25px 38px;
+  margin: 32px 0 40px;
+}
+.root .blueCard p {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 100%;
+  color: #000;
+}
+.root .blueCard p:first-child {
+  color: #000;
+}
+.root .blueCard p:last-child {
+  color: #fa6464;
+}
+
+@media (max-width: 870px) {
+  .root {
+    margin: 20px auto;
+  }
+  .root .banner {
+    display: none;
+  }
+  .root .paints {
+    background: #fff;
+    padding: 20px 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .root .paints__greenTitle {
+    border-radius: 8px;
+    background: #00b987;
+    padding: 10px 20px;
+    width: fit-content;
+  }
+  .root .paints__greenTitle p {
+    color: #ffeb32;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 11px;
+    letter-spacing: 0%;
+    line-height: 100%;
+  }
+  .root .paints__images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px 0 48px;
+  }
+  .root .paints__img {
+    position: relative;
+    width: 200px;
+    height: 80px;
+  }
+  .root .paints h3 {
+    color: #000;
+    font-size: 12px;
+    line-height: normal;
+    font-weight: 500;
+  }
+  .root .gallery {
+    flex-direction: column;
+    gap: 9px;
+  }
+  .root .gallery__left {
+    width: 100%;
+  }
+  .root .gallery__right {
+    width: 100%;
+    gap: 9px;
+  }
+  .root .gallery__image {
+    height: 115px;
+  }
+  .root .greenBox {
+    background: #00b987;
+    border-radius: 20px;
+    padding: 20px 15px;
+    margin: 10px 0;
+  }
+  .root .greenBox p {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .root .imageCard {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .root .imageCard__wrapper {
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+  }
+  .root .imageCard__content {
+    padding: 0;
+    padding-top: 10px;
+  }
+  .root .imageCard__content p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    width: 96%;
+  }
+  .root .mobileBanner {
+    display: block;
+  }
+  .root .mobileBanner h1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    letter-spacing: 0%;
+    line-height: normal;
+    margin-bottom: 10px;
+  }
+  .root .mobileBanner .bannerCard {
+    background: #fff;
+    border-radius: 20px;
+    padding: 15px;
+  }
+  .root .mobileBanner .bannerCard__wrapper {
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    width: 100%;
+    height: 200px;
+  }
+  .root .mobileBanner .bannerCard__content {
+    padding: 0;
+    padding-top: 10px;
+  }
+  .root .mobileBanner .bannerCard__content p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    width: 96%;
+  }
+  .root .blueCard {
+    padding: 20px 30px;
+    margin: 10px 0 40px;
+  }
+  .root .blueCard p {
+    font-size: 20px;
+    line-height: normal;
+  }
+}
+
+/*# sourceMappingURL=Styles.module.scss.css.map */

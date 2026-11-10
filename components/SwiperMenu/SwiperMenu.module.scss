@@ -1,0 +1,175 @@
+
+
+
+.swiperMenuContainer {
+  overflow: hidden !important;
+  max-width: 100% !important;
+  padding: 40px 0;
+  background-color: #fff;
+  position: relative;
+
+  :global {
+    .swiper {
+      overflow: visible !important; 
+      padding: 50px 0;
+    }
+
+    .swiper-slide {
+      height: auto !important;
+      display: flex;
+      justify-content: center; 
+      align-items: center;
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      transform: scale(0.8); 
+      opacity: 0.4;
+      padding: 0 15px;
+      box-sizing: border-box;
+    }
+
+    .swiper-slide-active {
+      transform: scale(1.1) !important; 
+      opacity: 1 !important;
+      z-index: 99;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      top: 50% !important; 
+      transform: translateY(-50%);
+      width: 44px !important;
+      height: 44px !important;
+      background-color: #fff !important;
+      border-radius: 50% !important;
+      color: #007855 !important;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+      z-index: 100;
+      &::after { font-size: 18px !important; font-weight: bold; }
+      &:hover { background-color: #007855 !important; color: #fff !important; }
+    }
+  }
+}
+
+.productPrice {
+  padding: 0 16px;
+  margin-bottom: 23px;
+  
+  // RANGNI SHU YERDA O'ZGARTIRING
+  color: #007855 !important; // O'zingiz xohlagan rang (masalan EVOS yashili)
+  
+  font-size: 20px;
+  font-weight: 800 !important;
+  font-family: "Open Sans", sans-serif;
+
+  @media (max-width: 992px) {
+    margin-bottom: 12px;
+    font-size: 16px;
+    padding: 0 5px;
+  }
+}
+
+.productTitle {
+  padding-top: 48px;
+  margin-bottom: 60px !important;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  text-align: center;
+  @media (max-width: 576px) {
+    padding-top: 0;
+    font-size: 20px !important;
+    margin-bottom: 30px !important;
+  }
+}
+
+.productCard {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  border: 1px solid #f2f2f2;
+  transition: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  &:hover { box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); }
+
+  .productImage {
+    width: 100%;
+    height: auto;
+    max-height: 280px;
+    object-fit: contain;
+    padding: 16px !important;
+  }
+}
+
+// SAVATGA QO'SHISH TUGMASI (YANGILANGAN)
+.productButton {
+  background-color: #fff;
+  border: 1.5px solid #007855;
+  color: #007855;
+  padding: 10px 0;
+  width: 130px; // Tugmani biroz cho'zish uchun (kerak bo'lsa 140px qiling)
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.3s ease-in-out; // Silliq o'tish
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; // Markazda turishi uchun
+
+  // Matn rangi hoverda oq bo'lishi uchun
+  span, p, h4 {
+    color: inherit; // Tugmaning rangidan meros oladi
+    transition: color 0.3s;
+  }
+
+  &:hover {
+    background-color: #007855;
+    color: #fff !important; // Tugma matni oq bo'ladi
+
+    // Ichidagi Typography yoki span elementlari bo'lsa ularni ham oq qiladi
+    * {
+      color: #fff !important;
+    }
+  }
+}
+
+.productCounter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 135px; // Counter ham tugma bilan bir xil kenglikda bo'ladi
+  margin: 0 auto;
+  border: 1.5px solid #007855;
+  border-radius: 20px;
+  // padding-right: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.counterBtn {
+  padding: 0;
+  height: 100%;
+  width: 40px;
+  color: #007855;
+  border-radius: 0 !important;
+  &:hover { background-color: #f6f8f9; }
+}
+
+.animationBox {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  visibility: hidden;
+  background-color: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.8s ease;
+}

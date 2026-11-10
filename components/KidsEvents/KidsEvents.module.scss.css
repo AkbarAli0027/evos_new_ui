@@ -1,0 +1,404 @@
+.root {
+  margin: 108px auto;
+}
+.root__title {
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 100%;
+  color: #000;
+}
+.root__mb {
+  margin-bottom: 36px;
+}
+.root__mt {
+  margin-top: 58px;
+}
+.root__wrapper {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 40px;
+}
+.root__wrapper__box {
+  display: flex;
+  gap: 20px;
+}
+.root__wrapper__leftBox {
+  width: 76%;
+}
+.root__wrapper__imageBlue {
+  position: relative;
+  width: 30%;
+  height: 550px;
+  display: block;
+}
+.root__wrapper__imageYellow {
+  position: relative;
+  width: 24%;
+  height: 550px;
+  display: block;
+}
+.root__wrapper__imageRed {
+  position: relative;
+  width: 60%;
+  height: 500px;
+  display: block;
+}
+.root__wrapper__title {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 100%;
+  margin-bottom: 22px;
+}
+.root__wrapper__title__blue {
+  color: #0a8cdc;
+}
+.root__wrapper__title__red {
+  color: #fa6464;
+}
+.root__wrapper__title__green {
+  color: #00b987;
+}
+.root__wrapper__card {
+  margin-top: 20px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: stretch;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #f6f8f9;
+}
+.root__wrapper__card__left {
+  color: #ffeb32;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 100%;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.root__wrapper__card__left__blue {
+  background-color: #0a8cdc;
+}
+.root__wrapper__card__left__red {
+  background-color: #fa6464;
+}
+.root__wrapper__card__left__green {
+  background-color: #00b987;
+}
+.root__wrapper__card__right {
+  padding: 21px 33px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+.root__wrapper__card__right__title {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 100%;
+  color: #000;
+}
+.root__wrapper__card__right__description {
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+  font-size: 20px;
+}
+.root .banner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.root .banner .title {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+.root .banner .title h1 {
+  font-size: 40px;
+  font-weight: 900;
+  color: #000;
+  letter-spacing: 0%;
+  line-height: 100%;
+}
+.root .banner .title p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  letter-spacing: 0%;
+  line-height: 100%;
+}
+.root .banner .logo {
+  position: relative;
+}
+.root .banner .logo .evosLogo {
+  background-color: #00b987;
+  border-radius: 16px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 40px;
+}
+.root .banner .logo .evosLogo p {
+  font-size: 122px;
+  line-height: 100%;
+  color: #fff;
+  font-weight: 900;
+  display: inline-block;
+}
+.root .banner .logo .evosLogo span {
+  color: #fff;
+  vertical-align: text-top;
+}
+.root .banner .logo .eventsLogo {
+  position: absolute;
+  top: 117%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 105px;
+  padding: 0 42px;
+}
+.root .banner .mobileBannerContent {
+  display: none;
+}
+.root .blueCard {
+  background-color: #0a8cdc;
+  border-radius: 20px;
+  padding: 25px 38px;
+  margin: 55px 0 40px;
+}
+.root .blueCard p {
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 100%;
+  color: #fff;
+}
+.root .blueCard p:first-child {
+  color: #fff;
+}
+.root .blueCard p:last-child {
+  color: #ffeb32;
+}
+.root__events {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-self: stretch;
+  height: fit-content;
+  margin: 24px 0;
+}
+.root__events__card {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 28px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+  width: 33.3333%;
+}
+.root__events__card__yellow {
+  background-color: #ffeb32;
+}
+.root__events__card__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: #808080;
+}
+.root__events__card__description {
+  font-weight: 700;
+  color: #000;
+  font-size: 25px;
+  line-height: 100%;
+}
+.root__events__card__description__yellow {
+  color: #0a8cdc;
+}
+.root__events__card__description__yellowRed {
+  color: #fa6464;
+}
+.root__events__card__description__yellowGreen {
+  color: #00b987;
+}
+
+@media (max-width: 870px) {
+  .root {
+    margin: 20px auto;
+  }
+  .root .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .root .banner .title {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .root .banner .title h1 {
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    letter-spacing: 0%;
+    line-height: normal;
+  }
+  .root .banner .title p {
+    display: none;
+  }
+  .root .banner .mobileBannerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .root .banner .mobileBannerContent p {
+    font-size: 12px;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: 0%;
+    line-height: normal;
+  }
+  .root .banner .mobileBannerContent p:nth-of-type(2) {
+    font-style: italic;
+  }
+  .root .banner .logoWrapper {
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    height: 243px;
+    border-radius: 4px;
+  }
+  .root .banner .logoWrapper .logo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .root .banner .logoWrapper .logo .evosLogo {
+    background-color: #00b987;
+    border-radius: 16px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    width: 70%;
+    margin-top: -30px;
+  }
+  .root .banner .logoWrapper .logo .evosLogo p {
+    font-size: 70px;
+    line-height: normal;
+    color: #fff;
+    font-weight: 900;
+    display: inline-block;
+  }
+  .root .banner .logoWrapper .logo .evosLogo span {
+    color: #fff;
+    vertical-align: text-top;
+  }
+  .root .banner .logoWrapper .logo .eventsLogo {
+    position: absolute;
+    top: 117%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 50px;
+  }
+  .root .banner .logoWrapper .logo .eventsLogo img {
+    width: 260px;
+  }
+  .root .blueCard {
+    background-color: #0a8cdc;
+    border-radius: 20px;
+    padding: 20px 15px;
+    margin: 10px 0 20px;
+  }
+  .root .blueCard p {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .root__title {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .root__mb {
+    margin-bottom: 10px;
+  }
+  .root__mt {
+    margin-top: 12px;
+  }
+  .root__wrapper {
+    padding: 20px 15px;
+  }
+  .root__wrapper__leftBox {
+    width: 100%;
+  }
+  .root__wrapper__imageBlue {
+    display: none;
+  }
+  .root__wrapper__imageYellow {
+    display: none;
+  }
+  .root__wrapper__imageRed {
+    display: none;
+  }
+  .root__wrapper__title {
+    font-weight: 900;
+    font-size: 20px;
+    line-height: normal;
+  }
+  .root__wrapper__card {
+    margin-top: 5px;
+    border-radius: 8px;
+  }
+  .root__wrapper__card__left {
+    font-size: 25px;
+    line-height: normal;
+    width: 40px;
+  }
+  .root__wrapper__card__right {
+    padding: 10px 7px;
+    gap: 5px;
+  }
+  .root__wrapper__card__right__title {
+    font-size: 12px;
+    line-height: normal;
+  }
+  .root__wrapper__card__right__description {
+    line-height: normal;
+    font-size: 12px;
+  }
+  .root__events {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  .root__events__card {
+    width: 100%;
+    border-radius: 15px;
+    padding: 20px 15px;
+    gap: 10px;
+  }
+  .root__events__card__title {
+    font-size: 12px;
+  }
+  .root__events__card__description {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=KidsEvents.module.scss.css.map */

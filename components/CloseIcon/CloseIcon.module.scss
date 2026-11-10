@@ -1,0 +1,13 @@
+.icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  svg {
+    transition: transform 0.25s ease-in;
+    vertical-align: middle;
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+}

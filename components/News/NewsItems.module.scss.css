@@ -1,0 +1,39 @@
+.btn {
+  width: 50%;
+  cursor: pointer;
+  margin-top: 24px;
+  background-color: #f6f8f9;
+  color: #25282a;
+  font-size: 17px;
+  line-height: 22px;
+  padding: 17px 34px;
+  letter-spacing: 0.41px;
+  font-weight: 700;
+  border: 0;
+  outline: none;
+}
+.btn:hover {
+  background: rgba(37, 40, 42, 0.1);
+}
+
+.title {
+  display: block;
+}
+
+.boxPadding {
+  padding: 36px;
+}
+
+@media (max-width: 720px) {
+  .btn {
+    width: 100%;
+  }
+  .title {
+    display: none;
+  }
+  .boxPadding {
+    padding: 16px;
+  }
+}
+
+/*# sourceMappingURL=NewsItems.module.scss.css.map */

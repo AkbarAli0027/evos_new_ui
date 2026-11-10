@@ -1,0 +1,358 @@
+.kidsWrapper {
+  border-radius: 16px;
+  background-color: #0a8cdc;
+  transform: rotate(-6deg);
+  width: 80px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
+  z-index: 999999;
+  margin-left: 25px;
+}
+.kidsWrapper .kids {
+  color: #ffeb32;
+  font-family: "Nunito", sans-serif !important;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.content {
+  margin-left: 30px;
+  width: fit-content;
+  background: #f6f8f9;
+  border-radius: 20px;
+  color: #0a8cdc;
+  padding: 6px 12px !important;
+  font-weight: 700;
+  font-size: 13px;
+}
+.content__green {
+  color: #ffeb32;
+  background: #00b987;
+}
+.content__red {
+  color: #ffeb32;
+  background-color: #fa6464;
+}
+.content__yellow {
+  color: #fa6464;
+  background: #ffeb32;
+}
+
+.root {
+  margin-top: 20px;
+  position: relative;
+  z-index: 23345;
+}
+@media (max-width: 576px) {
+  .root {
+    display: none;
+  }
+}
+.root .items {
+  overflow: auto;
+  padding: 0 40px 0 40px;
+  margin-top: 0;
+}
+@media (max-width: 575px) {
+  .root .items {
+    padding: 0;
+  }
+}
+.root .items::-webkit-scrollbar {
+  width: 0;
+}
+.root .items .nextButton {
+  right: 5px;
+}
+.root .items .nextButton::before {
+  display: none;
+}
+.root .items .prevButton {
+  left: 0;
+}
+.root .items .prevButton::before {
+  display: none;
+}
+.root .animation {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  transition: all 0.2s;
+  top: 0;
+  background-color: #fff;
+  box-shadow: inset 0px -1px 0px #e5e5e5;
+  z-index: 99;
+}
+@media (max-width: 576px) {
+  .root .animation {
+    display: none;
+  }
+}
+.root .animation ul {
+  margin-top: 0 !important;
+}
+.root .animation .active {
+  background: #309b42 !important;
+  color: #fff;
+}
+.root .menuListTop {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 8px;
+  margin-right: 0;
+  overflow-y: auto;
+}
+.root .menuListTop::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 576px) {
+  .root .menuListTop {
+    margin-right: 0;
+    border-radius: 0 !important;
+    box-shadow: inset 0px -1px 0px #e5e5e5;
+  }
+}
+.root .menuList {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 8px;
+}
+.root .list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+.root .listItem {
+  color: #000;
+  font-weight: 500;
+  font-size: 17px;
+  font-weight: 22px;
+  margin-right: 24px;
+  border-radius: 30px;
+  white-space: nowrap;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.root .listItem a {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.root .listItem a:hover {
+  background-color: #f6f8f9;
+}
+@media (max-width: 576px) {
+  .root .listItem a:hover {
+    background-color: transparent;
+  }
+  .root .listItem a.active {
+    background: #309b42 !important;
+    color: #fff;
+  }
+}
+.root .productButton {
+  width: 100%;
+  padding: 13px 94px;
+  color: #000;
+}
+.root .nextButton,
+.root .prevButton {
+  z-index: 99;
+}
+.root .nextButton svg,
+.root .prevButton svg {
+  fill: #000;
+  font-size: 24px;
+}
+@media (max-width: 575px) {
+  .root .nextButton,
+  .root .prevButton {
+    display: none;
+  }
+}
+.root .nextButton::before {
+  display: none;
+}
+.root .prevButton::before {
+  display: none;
+}
+.root .shopIconWrapper {
+  display: block;
+}
+.root .shopBagWrapper {
+  display: none;
+}
+.root .shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #f6f8f9;
+  padding: 11px 12px;
+  margin-left: 32px;
+  cursor: pointer;
+  color: #000;
+  outline: none;
+  border: none;
+}
+.root .shop.total {
+  background-color: #309b42;
+  color: #fff;
+}
+.root .shop.total .shopIcon svg {
+  fill: #fff;
+}
+.root .shop .shopIcon svg {
+  fill: #323232;
+}
+.root .shop .shopText {
+  font-weight: 500;
+  color: inherit;
+  font-size: 17px;
+  line-height: 22px;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+.root .shopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.root .shopIcon {
+  vertical-align: middle;
+}
+
+@media screen and (max-width: 1200px) {
+  .root {
+    margin-top: 24px;
+  }
+  .root .shopBagWrapper {
+    display: block;
+  }
+  .root .shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: #f6f8f9;
+    padding: 11px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+    border: none;
+  }
+  .root .shop.total {
+    background-color: #309b42;
+    color: #fff;
+  }
+  .root .shop.total .shopIcon svg {
+    fill: #fff;
+  }
+  .root .shop .shopIcon svg {
+    fill: #323232;
+  }
+  .root .shop .shopText {
+    font-weight: 500;
+    color: inherit;
+    font-size: 17px;
+    line-height: 22px;
+    margin-left: 12px;
+    white-space: nowrap;
+  }
+  .root .menuList {
+    padding: 4px;
+    overflow-x: scroll;
+  }
+  .root .menuList::-webkit-scrollbar {
+    display: none;
+  }
+  .root .menuListTop {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 8px;
+    overflow-y: auto;
+  }
+  .root .menuListTop::-webkit-scrollbar {
+    display: none;
+  }
+  .root .listItem {
+    margin-right: 7px;
+  }
+  .root .listItem:last-child {
+    padding-right: 16px;
+  }
+  .root .listItem a {
+    padding: 14px 14px;
+    white-space: nowrap;
+  }
+}
+.listItemDropdownLink .listItem {
+  position: relative;
+}
+.listItemDropdownLink a {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px;
+}
+.listItemDropdownLink:hover .listItemDropdown {
+  display: block;
+}
+.listItemDropdownLink svg {
+  transform: rotate(180deg);
+}
+.listItemDropdownLink:hover svg {
+  transform: rotate(0deg);
+  transition: 0.2s;
+}
+
+.listItemDropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+  z-index: 2;
+}
+.listItemDropdown ul {
+  list-style-type: none;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+.listItemDropdown ul li a:hover {
+  border-radius: 0px !important;
+}
+
+@media (max-width: 1366px) {
+  .menuListTop {
+    overflow-y: unset !important;
+  }
+}
+@media (max-width: 1280px) {
+  .listItem {
+    margin-right: 20px !important;
+  }
+}
+@media (max-width: 1060px) {
+  .listItem {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 960px) {
+  .menuListTop {
+    overflow-y: auto !important;
+  }
+  .listItem {
+    margin-right: 14px !important;
+  }
+}
+
+/*# sourceMappingURL=RightMenu.module.scss.css.map */

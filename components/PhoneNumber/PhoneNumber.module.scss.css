@@ -1,0 +1,159 @@
+.wrapper {
+  margin-top: 105px;
+}
+@media (max-width: 992px) {
+  .wrapper {
+    margin-top: 25px;
+  }
+}
+
+.review {
+  background: #32724e;
+  position: relative;
+  border-radius: 8px;
+  padding: 77px 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.review::before {
+  content: url("../../public/images/svg/phone.svg");
+  position: absolute;
+  top: -180px;
+  right: -60px;
+}
+@media (max-width: 992px) {
+  .review {
+    padding: 59px 12px 66px;
+  }
+}
+@media (max-width: 576px) {
+  .review {
+    padding: 21px 12px 29px;
+  }
+}
+.review .box {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.review .box p {
+  color: #fff;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 800;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .content {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+  }
+}
+.content .img {
+  margin-right: 34px;
+}
+@media (max-width: 992px) {
+  .content .img {
+    margin-bottom: 19px;
+    margin-right: 0;
+  }
+}
+.content .rewiev__text {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+  margin-right: 15px;
+}
+@media (max-width: 992px) {
+  .content .rewiev__text {
+    margin-bottom: 40px;
+    text-align: center;
+    margin-right: 0;
+    line-height: 20px;
+  }
+  .content .rewiev__text span {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .content .rewiev__text {
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+}
+
+.inputGroup {
+  display: grid;
+  grid-template-columns: minmax(auto, 156px) minmax(auto, 171px) minmax(auto, 149px);
+  width: 100%;
+  row-gap: 14px;
+}
+@media (max-width: 576px) {
+  .inputGroup {
+    grid-template-columns: minmax(auto, 456px);
+  }
+}
+.inputGroup .input {
+  background: url("../../public/images/svg/phone.svg") no-repeat left;
+  background-size: 20px;
+  background-position: 16px;
+  padding-left: 44px;
+  min-height: 52px;
+  border: 1px solid #d4d7e5;
+  box-sizing: border-box;
+  border-radius: 8px 0 0 8px;
+  background-color: #fff;
+  outline: none;
+}
+@media (max-width: 576px) {
+  .inputGroup .input {
+    border-radius: 8px;
+  }
+}
+.inputGroup .inputName {
+  background: url("../../public/images/svg/user.svg") no-repeat left;
+  background-size: 20px;
+  background-position: 16px;
+  padding-left: 44px;
+  min-height: 52px;
+  border: 1px solid #d4d7e5;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #fff;
+  outline: none;
+  margin-right: 5px;
+}
+@media (max-width: 576px) {
+  .inputGroup .inputName {
+    margin: 0;
+  }
+}
+.inputGroup .button {
+  cursor: pointer;
+  padding: 0 14px;
+  min-height: 52px;
+  background: #309b42;
+  outline: none;
+  border: 0;
+  color: #fff;
+  border-radius: 0px 8px 8px 0px;
+}
+@media (max-width: 576px) {
+  .inputGroup .button {
+    border-radius: 8px;
+    max-width: 207px;
+    margin: 0 auto;
+    width: inherit;
+  }
+}
+
+/*# sourceMappingURL=PhoneNumber.module.scss.css.map */

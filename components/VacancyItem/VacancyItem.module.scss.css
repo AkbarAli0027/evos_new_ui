@@ -1,0 +1,167 @@
+@media (max-width: 576px) {
+  .lable {
+    font-size: 18px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .listStyle {
+    font-size: 16px;
+  }
+}
+.listStyle::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #309b42;
+  margin-right: 8px;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+.textItem {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .textItem {
+    flex-direction: column;
+    row-gap: 22px;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  width: 50%;
+  background-color: #f6f8f9;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  color: #25282a;
+  padding: 17px 23px;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 24px;
+}
+.btn:hover {
+  background: rgba(37, 40, 42, 0.1);
+}
+
+.btnPrimary {
+  width: 50%;
+  background-color: var(--primary-green);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  padding: 17px 20px;
+  border: 0;
+  outline: none;
+}
+.btnPrimary:hover {
+  background: rgba(7, 120, 85, 0.9);
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .desc {
+    font-size: 16px !important;
+  }
+}
+
+.vacansyCards {
+  display: -webkit-box;
+  align-items: center;
+  column-gap: 16px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.vacansyCards .cardWrapper {
+  max-width: 405px;
+  width: 100%;
+  padding: 32px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.arrowBtns {
+  z-index: 99;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 36px;
+  column-gap: 16px;
+}
+.arrowBtns .prevBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 40px;
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  background: #fff;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.arrowBtns .prevBtn svg {
+  width: 11px;
+  color: #3e4265;
+}
+.arrowBtns .nextBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 40px;
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  background: #fff;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.arrowBtns .nextBtn svg {
+  width: 11px;
+  color: #3e4265;
+}
+
+.wrapper {
+  margin: 116px 0;
+}
+.wrapper ::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 71px;
+  }
+  .wrapper {
+    justify-content: center;
+  }
+}
+.requirements ul > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+.requirements ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-green);
+  margin-right: 8px;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=VacancyItem.module.scss.css.map */

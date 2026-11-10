@@ -1,0 +1,42 @@
+.root {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 40px;
+  margin-top: 20px;
+  &__title {
+    width: 80%;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    color: #000;
+    margin-bottom: 40px;
+  }
+  &__description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+    width: 60%;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  &__accordion {
+    background: red;
+  }
+}
+
+@media (max-width: 1200px) {
+  .root {
+    padding: 20px;
+    &__title {
+      width: 100%;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    &__description {
+      width: 100%;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+  }
+}

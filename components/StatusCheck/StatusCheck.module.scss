@@ -1,0 +1,149 @@
+.root {
+    .bodyText {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.38px;
+        color: #5B6871;
+        font-weight: 550;
+        text-align: left;
+    
+    }
+    
+    .textWidth {
+        width: 300px;
+    }
+    .bodyDescription {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.38px;
+        color: #000;
+        font-weight: 700;
+        text-align: right;
+    
+    }
+
+.title {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 0.41px;
+    margin-bottom: 32px;
+}
+.btn {
+    cursor: pointer;
+    margin-bottom: 0;
+    width: 50%;
+    background-color: #F6F8F9;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    color: #25282A;
+    padding: 17px 23px;
+    border: 0;
+    outline: none;
+    margin-right: 24px;
+    &:hover {
+        background: rgba($color: #25282A, $alpha: 0.1);
+    }
+}
+
+.btnPrimary {
+    background-color: #309B42;
+    width: 50%;
+    color: white;
+    cursor: pointer;
+    // background-color: #F6F8F9;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    // color: #25282A;
+    padding: 17px 23px;
+    border: 0;
+    outline: none;
+    &:hover {
+        background: rgba($color: #309B42, $alpha: 0.9);
+    }
+}
+}
+.btnWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.verticalMargin {
+   margin: 32px 0;
+}
+
+.maxWidthBox {
+   width: 60%;
+   margin-right: 16px;
+}
+.maxWidthBoxSml {
+    width: 40%;
+}
+.boxWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
+@media (max-width: 800px) {
+    .root {
+        .textWidth {
+            width: 100%;
+        }
+        .title {
+            font-size: 22px;
+            line-height: 28px;
+    }
+    .btnWrapper {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+    .btnPrimary {
+        width: 100%;
+    }
+    .bodyText {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.24px;
+        color: #5B6871;
+        font-weight: 550;
+    }
+    
+    .bodyDescription {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.24px;
+        color: #000;
+        font-weight: 550 !important;
+    
+    }
+}
+
+  
+   .verticalMargin {
+       margin: 16px 0;
+   }
+   .maxWidthBox {
+       width: 100%;
+       margin: 0;
+   }
+   .maxWidthBoxSml {
+       width: 100%;
+   }
+   .boxWrapper {
+    display: flex;
+    flex-direction: column;
+}
+}

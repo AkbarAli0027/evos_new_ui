@@ -1,0 +1,4942 @@
+// // // Open Sans shriftini qo'llash
+// // $font-family: "Open Sans", sans-serif;
+// // $primary-green: #007855;
+
+// // .root {
+// //   font-family: $font-family;
+
+// //   .product {
+// //     border-radius: 20px;
+// //     padding-top: 48px;
+// //     background-color: #fff;
+// //   }
+
+// //   .productSection {
+// //     background-color: #fff;
+
+// //     @media (min-width: 1295px) {
+// //       column-gap: 16px;
+// //       row-gap: 16px;
+// //     }
+// //   }
+
+// //   .productItem {
+// //     background-color: #fff !important;
+
+// //     @media (min-width: 1295px) {
+// //       max-width: 300px;
+// //     }
+// //   }
+
+// //   .productButton {
+// //     background: none;
+// //     border: 2px solid $primary-green;
+// //     outline: none;
+// //     height: 48px;
+// //     width: 120px !important;
+// //     border-radius: 10px;
+// //     cursor: pointer;
+// //     transition: all 0.2s;
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// //     color: $primary-green;
+// //     font-weight: 700;
+// //     font-family: $font-family;
+
+// //     &:hover {
+// //       background-color: $primary-green !important;
+// //       color: #fff !important;
+// //     }
+
+// //     &:active {
+// //       transform: scale(0.96);
+// //     }
+// //   }
+
+// //   .productCounter {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     height: 48px;
+// //     border-radius: 25px;
+// //     background-color: transparent;
+// //     border: 1px solid $primary-green;
+// //     width: 120px;
+
+// //     button {
+// //       color: $primary-green !important;
+// //     }
+
+// //     span {
+// //       font-family: $font-family;
+// //       font-weight: 700;
+// //     }
+// //   }
+
+// //   .productCard {
+// //     position: relative;
+// //     background-color: #fff !important;
+// //     display: flex;
+// //     flex-direction: column;
+// //     justify-content: center;
+// //     border-radius: 16px;
+// //     transition: 0.3s;
+// //     overflow: hidden;
+// //     border: none !important;
+// //     box-shadow: none !important;
+
+// //     .productImage {
+// //       object-fit: contain;
+// //       width: 100%;
+// //       height: auto;
+// //       background-color: #fff !important;
+
+// //       img {
+// //         background-color: #fff !important;
+// //       }
+// //     }
+
+// //     &:hover {
+// //       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05) !important;
+// //       transform: translateY(-4px);
+// //     }
+
+// //     .productBody {
+// //       padding: 0 16px 16px;
+// //       background-color: #fff !important;
+
+// //       .productTexts {
+// //         margin-bottom: 20px;
+
+// //         &>*:not(:last-child) {
+// //           margin-bottom: 8px;
+// //         }
+
+// //         h3 {
+// //           font-family: $font-family !important;
+// //           font-weight: 800 !important;
+// //           font-size: 20px !important;
+// //           color: #000 !important;
+// //           line-height: 1.3;
+// //         }
+
+// //         p,
+// //         span {
+// //           font-family: $font-family !important;
+// //           font-size: 14px;
+// //           color: #666;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // --- MODAL UCHUN MAXSUS KLASLAR ---
+// // .dialogCustom {
+// //   :global(.MuiPaper-root) {
+// //     position: relative;
+// //     max-width: 850px !important;
+// //     width: 95%;
+// //     border-radius: 24px !important;
+// //     padding: 0;
+// //     overflow: hidden !important;
+// //     background-color: #fff !important;
+// //     font-family: $font-family !important;
+// //   }
+
+// //   .modalWrapper {
+// //     display: flex;
+// //     padding: 30px;
+// //     gap: 30px;
+// //     background-color: #fff !important;
+
+// //     @media (max-width: 768px) {
+// //       flex-direction: column;
+// //       padding: 20px;
+// //     }
+// //   }
+
+// //   .modalImagePart {
+// //     flex: 1;
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: center;
+// //     padding: 20px;
+// //     min-height: 300px;
+
+// //     img {
+// //       max-width: 100%;
+// //       height: auto;
+// //       object-fit: contain;
+// //     }
+// //   }
+
+// //   .modalInfoPart {
+// //     flex: 1.2;
+// //     display: flex;
+// //     flex-direction: column;
+// //     justify-content: space-between;
+
+// //     .modalTitle {
+// //       font-family: $font-family !important;
+// //       font-size: 28px !important;
+// //       font-weight: 800 !important;
+// //       color: #000 !important;
+// //       margin-bottom: 15px;
+// //       line-height: 1.4 !important;
+// //       padding-right: 45px;
+
+// //       @media (max-width: 600px) {
+// //         font-size: 22px !important;
+// //         line-height: 1.3 !important;
+// //       }
+// //     }
+
+// //     .modalDescription {
+// //       font-family: $font-family;
+// //       font-size: 16px;
+// //       color: #666;
+// //       line-height: 1.6;
+// //       margin-bottom: 20px;
+// //     }
+
+// //     .modalFooter {
+// //       margin-top: auto;
+// //       display: flex;
+// //       align-items: center;
+// //       justify-content: space-between;
+// //       border-top: none !important;
+// //       padding-top: 10px;
+
+// //       // MODAL ICHIDAGI ASOSIY NARX - MAKSIMAL QALINLIK
+// //       .modalPrice {
+// //         font-family: $font-family !important;
+// //         font-size: 30px !important;
+// //         font-weight: 900 !important; // Eng yuqori qalinlik
+// //         color: #000 !important;
+// //         letter-spacing: -1px; // Zichlik qalin ko'rsatadi
+// //         // Sun'iy qalinlashtirish (shrift o'zi qalin bo'lmasa ham yordam beradi)
+// //         text-shadow: 0.6px 0 0 #000, -0.2px 0 0 #000;
+// //       }
+
+// //       .productButton {
+// //         background: none;
+// //         border: 2px solid $primary-green;
+// //         height: 48px;
+// //         width: 150px;
+// //         border-radius: 20px;
+// //         color: $primary-green;
+// //         font-weight: 700;
+
+// //         &:hover {
+// //           background-color: $primary-green !important;
+// //           color: #fff !important;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // --- MODAL ICHIDAGI X TUGMASI ---
+// // .closeButtonInside {
+// //   position: absolute;
+// //   top: 15px;
+// //   right: 15px;
+// //   background: #f5f5f5;
+// //   border-radius: 50%;
+// //   padding: 8px;
+// //   cursor: pointer;
+// //   z-index: 110;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   transition: all 0.2s ease;
+
+// //   svg {
+// //     fill: #333 !important;
+// //     width: 20px;
+// //     height: 20px;
+// //   }
+
+// //   &:hover {
+// //     background: #e0e0e0;
+// //     transform: rotate(90deg);
+// //   }
+// // }
+
+// // // --- TAVSIYALAR QISMI ---
+// // .modalContentWrapper {
+// //   display: flex;
+// //   flex-direction: column;
+// //   background-color: #fff;
+// // }
+
+// // .recomSection {
+// //   padding: 20px 30px 30px;
+// //   background-color: #fff;
+// //   border-top: 1px solid #f0f0f0;
+
+// //   .recomHeading {
+// //     font-family: $font-family !important;
+// //     font-weight: 800 !important;
+// //     font-size: 20px !important;
+// //     margin-bottom: 20px !important;
+// //     color: #000;
+// //   }
+
+// //   .recomGrid {
+// //     display: flex;
+// //     gap: 16px;
+// //     overflow-x: auto;
+// //     padding-bottom: 10px;
+// //     scrollbar-width: none;
+
+// //     &::-webkit-scrollbar {
+// //       display: none;
+// //     }
+
+// //     @media (min-width: 768px) {
+// //       display: grid;
+// //       grid-template-columns: repeat(4, 1fr);
+// //     }
+// //   }
+// // }
+
+// // .recomCard {
+// //   border: 1px solid #eee;
+// //   border-radius: 17px;
+// //   padding: 12px;
+// //   display: flex;
+// //   flex-direction: column;
+// //   background: #fff;
+// //   transition: 0.2s;
+
+// //   &:hover {
+// //     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+// //   }
+
+// //   .recomImgBox {
+// //     width: 100%;
+// //     height: 90px;
+// //     display: flex;
+// //     justify-content: center;
+// //     margin-bottom: 8px;
+
+// //     img {
+// //       object-fit: contain;
+// //     }
+// //   }
+
+// //   .recomTitle {
+// //     font-family: $font-family !important;
+// //     font-size: 14px !important;
+// //     font-weight: 700 !important;
+// //     line-height: 1.4 !important;
+// //     height: 40px;
+// //     overflow: hidden;
+// //     margin-bottom: 6px;
+// //     color: #000;
+// //   }
+
+// //   .recomCardPrice {
+// //     font-family: $font-family;
+// //     font-weight: 800;
+// //     font-size: 15px;
+// //     margin-bottom: 12px;
+// //     color: $primary-green;
+// //   }
+
+// //   .recomAddBtn {
+// //     background: none;
+// //     border: 2px solid $primary-green;
+// //     height: 36px;
+// //     width: 100%;
+// //     border-radius: 17px;
+// //     color: $primary-green;
+// //     font-weight: 700;
+// //     font-family: $font-family;
+// //     cursor: pointer;
+// //     transition: 0.2s;
+
+// //     &:hover {
+// //       background-color: $primary-green;
+// //       color: #fff;
+// //     }
+// //   }
+
+// //   .recomCounterOutline {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     height: 36px;
+// //     border: 2px solid $primary-green;
+// //     border-radius: 17px;
+// //     padding: 0 4px;
+
+// //     span {
+// //       font-family: $font-family;
+// //       font-weight: 800;
+// //       color: $primary-green;
+// //       font-size: 14px;
+// //     }
+
+// //     button {
+// //       padding: 4px;
+
+// //       svg {
+// //         fill: $primary-green !important;
+// //         width: 18px;
+// //         height: 18px;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // MODAL ICHIDAGI YASHIL NARX (JIRNIY)
+// // .modalPriceGreen {
+// //   font-family: $font-family !important;
+// //   font-size: 30px !important;
+// //   font-weight: 900 !important;
+// //   color: $primary-green !important;
+// //   letter-spacing: -1px;
+// //   text-shadow: 0.6px 0 0 $primary-green, -0.2px 0 0 $primary-green;
+// // }
+
+
+
+
+
+
+
+
+
+// // // --- RESPONSIVE STILLAR (TEPADAGI KODGA QO'SHIMCHA) ---
+
+// // @media (max-width: 1024px) {
+// //   .root {
+// //     .productSection {
+// //       justify-content: center; // Kartochkalarni markazlash
+// //     }
+// //   }
+// // }
+
+// // @media (max-width: 768px) {
+// //   .root {
+// //     .product {
+// //       padding-top: 24px; // Mobil uchun paddingni kamaytirish
+// //     }
+
+// //     .productCard {
+// //       .productBody {
+// //         .productTexts {
+// //           h3 {
+// //             font-size: 18px !important;
+// //           }
+
+// //           // Sarlavha biroz kichikroq
+// //         }
+// //       }
+// //     }
+// //   }
+
+// //   .dialogCustom {
+// //     .modalWrapper {
+// //       padding: 16px; // Ichki masofani qisqartirish
+// //       gap: 16px;
+// //     }
+
+// //     .modalImagePart {
+// //       min-height: 200px;
+// //       padding: 10px;
+
+// //       img {
+// //         max-height: 250px;
+// //       }
+
+// //       // Rasm juda katta bo'lib ketmasligi uchun
+// //     }
+
+// //     .modalInfoPart {
+// //       .modalTitle {
+// //         font-size: 20px !important; // Mobil sarlavha
+// //         padding-right: 30px;
+// //         margin-bottom: 10px;
+// //       }
+
+// //       .modalDescription {
+// //         font-size: 14px;
+// //         margin-bottom: 15px;
+// //       }
+
+// //       .modalFooter {
+// //         flex-direction: row; // Narx va tugma yonma-yon qoladi
+// //         align-items: center;
+
+// //         .modalPrice,
+// //         .modalPriceGreen {
+// //           font-size: 24px !important; // Narx biroz kichikroq
+// //         }
+
+// //         .productButton {
+// //           width: 130px; // Tugma biroz kichikroq
+// //           height: 44px;
+// //         }
+// //       }
+// //     }
+
+// //     .recomSection {
+// //       padding: 16px;
+
+// //       .recomHeading {
+// //         font-size: 18px !important;
+// //         margin-bottom: 15px !important;
+// //       }
+
+// //       .recomGrid {
+// //         // Mobil qurilmalarda yon tomonga suriladigan (scroll) qilish
+// //         display: flex;
+// //         overflow-x: auto;
+// //         -webkit-overflow-scrolling: touch;
+// //         gap: 12px;
+// //         padding-bottom: 8px;
+
+// //         &::-webkit-scrollbar {
+// //           display: none;
+// //         }
+
+// //         // Scrollbarni yashirish
+// //       }
+
+// //       .recomCard {
+// //         min-width: 160px; // Mobil kartochka kengligi
+// //         padding: 10px;
+
+// //         .recomImgBox {
+// //           height: 80px;
+// //         }
+
+// //         .recomTitle {
+// //           font-size: 13px !important;
+// //           height: 36px;
+// //         }
+
+// //         .recomCardPrice {
+// //           font-size: 14px;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // @media (max-width: 480px) {
+// //   .dialogCustom {
+// //     :global(.MuiPaper-root) {
+// //       width: 100% !important;
+// //       margin: 10px !important;
+// //       border-radius: 16px !important; // Mobil uchun burchaklar biroz kichikroq
+// //     }
+
+// //     .modalInfoPart {
+// //       .modalFooter {
+// //         // O'ta kichik ekranlarda narx va tugmani ustma-ust qilish mumkin
+// //         // Agar yonma-yon sig'masa, buni yoqing:
+// //         // flex-direction: column; 
+// //         // gap: 10px;
+
+// //         .modalPrice,
+// //         .modalPriceGreen {
+// //           font-size: 22px !important;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+
+
+
+// // .dialogCustom {
+// //   z-index: 9999 !important;
+
+// //   // Modalni ekranning o'rtasiga joylashtirish konteyneri
+// //   :global(.MuiDialog-container) {
+// //     display: flex;
+// //     align-items: center; // Vertikal markaz
+// //     justify-content: center; // Gorizontal markaz
+// //     padding: 20px; // Ekran chetiga yopishib qolmasligi uchun
+// //   }
+
+// //   :global(.MuiPaper-root) {
+// //     position: relative;
+// //     max-width: 850px !important;
+// //     width: 100%;
+// //     margin: 0 !important; // Konteyner o'zi markazlashtiradi
+// //     border-radius: 24px !important;
+// //     overflow-y: auto !important; // Agar kontent sig'masa, modal ichida scroll bo'lishi uchun
+// //     max-height: calc(100vh - 40px) !important; // Ekrandan chiqib ketmasligi uchun
+
+// //     // NAVBARdan qochish:
+// //     // Agar Navbaringiz fixed bo'lsa, modalni biroz pastroqqa surish uchun:
+// //     transform: translateY(20px);
+
+// //     @media (max-width: 768px) {
+// //       width: 95%;
+// //       max-height: calc(100vh - 20px) !important;
+// //       transform: translateY(10px);
+// //     }
+// //   }
+// // }
+
+// // // --- X TUGMASI DOIM KO'RINIB TURISHI UCHUN ---
+// // .closeButtonInside {
+// //   position: absolute;
+// //   top: 15px;
+// //   right: 15px;
+// //   background: rgba(245, 245, 245, 0.9); // Orqa fon biroz shaffof
+// //   border-radius: 50%;
+// //   padding: 8px;
+// //   cursor: pointer;
+// //   z-index: 120; // Rasm va boshqa elementlardan ustun turishi shart
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+// //   svg {
+// //     fill: #333 !important;
+// //     width: 20px;
+// //     height: 20px;
+// //   }
+
+// //   &:hover {
+// //     background: #e0e0e0;
+// //     transform: scale(1.1);
+// //   }
+// // }
+
+
+
+// // .modifiersContainer {
+// //   padding: 20px;
+// //   background: #f9fafb;
+// //   border-top: 1px solid #eee;
+
+// //   .modSection {
+// //     margin-bottom: 24px;
+
+// //     .modHeading {
+// //       font-weight: 700;
+// //       font-size: 18px;
+// //       margin-bottom: 12px;
+// //       display: flex;
+// //       justify-content: space-between;
+
+// //       span {
+// //         font-size: 14px;
+// //         color: #888;
+// //         font-weight: 400;
+// //       }
+// //     }
+
+// //     .modGrid {
+// //       display: grid;
+// //       grid-template-columns: 1fr 1fr;
+// //       gap: 12px;
+
+// //       @media (max-width: 600px) {
+// //         grid-template-columns: 1fr;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // .modifierRow {
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: space-between;
+// //   background: #fff;
+// //   padding: 8px 12px;
+// //   border-radius: 12px;
+// //   border: 1px solid #ececec;
+
+// //   .modifierInfo {
+// //     display: flex;
+// //     align-items: center;
+// //     gap: 10px;
+
+// //     .modImg {
+// //       background: #f4f4f4;
+// //       border-radius: 8px;
+// //       padding: 4px;
+// //     }
+
+// //     .modTitle {
+// //       font-size: 14px;
+// //       font-weight: 500;
+// //     }
+
+// //     .modPrice {
+// //       font-size: 13px;
+// //       color: #00704a;
+// //       font-weight: 600;
+// //     }
+// //   }
+
+// //   .modCounter {
+// //     display: flex;
+// //     align-items: center;
+// //     gap: 8px;
+// //     background: #f1f1f5;
+// //     border-radius: 8px;
+// //     padding: 2px 6px;
+
+// //     span {
+// //       font-weight: 700;
+// //       font-size: 14px;
+// //     }
+// //   }
+// // }
+
+
+// // // --- FAQAT MODIFIKATORLAR COUNTERI UCHUN YANGI STIL ---
+// // // Bu blok boshqa elementlarga ta'sir qilmaydi
+
+// // .modCounterNew {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 12px;
+// //   padding: 4px 8px;
+// //   border: 1.5px solid #007855; // Siz aytgan yashil rangli border
+// //   border-radius: 50px; // Borderni dumaloq (oval) qilish
+// //   background: white;
+// //   min-width: fit-content;
+
+// //   .counterValue {
+// //     font-weight: 700;
+// //     font-size: 15px;
+// //     min-width: 20px;
+// //     text-align: center;
+// //     color: #333;
+// //     font-family: $font-family;
+// //   }
+
+// //   .counterBtn {
+// //     padding: 4px !important; // Mui IconButton paddingini to'g'irlash
+// //     transition: all 0.3s ease !important;
+// //     background: transparent !important;
+
+// //     svg {
+// //       width: 18px;
+// //       height: 18px;
+// //       fill: #007855; // Icon rangi border bilan bir xil
+// //       transition: fill 0.3s ease;
+// //     }
+
+// //     &:hover {
+// //       background-color: #007855 !important; // Hover bo'lganda yashil orqa fon
+// //       border-radius: 50% !important; // Hover shakli dumaloq
+
+// //       svg {
+// //         fill: white !important; // Hoverda icon oq bo'ladi
+// //       }
+// //     }
+// //   }
+// // }
+
+
+
+// // // Modifikator qatorini biroz chiroyli qilish (ixtiyoriy, mavjudiga qo'shimcha)
+// // .modifierRow {
+// //   transition: .3s ease;
+// //   border-color: #007855; // Ustiga borganda qator chegarasi ham yashil bo'ladi
+
+// //   &:hover {
+// //     box-shadow: 0 0 10px 6px rgba(70, 70, 70, 0.178);
+// //     background-color: #fafffd;
+// //   }
+// // }
+
+
+
+
+
+
+
+
+// // // =============================================
+// // // YANGI SPLIT LAYOUT — Chap rasm qotib, o'ng scroll
+// // // =============================================
+
+// // .dialogCustom {
+// //   :global(.MuiPaper-root) {
+// //     max-width: 900px !important;
+// //     width: 95%;
+// //     border-radius: 24px !important;
+// //     overflow: hidden !important;
+// //     // max-height ni olib tashlang yoki shu qiymatni bering:
+// //     max-height: calc(100vh - 60px) !important;
+// //   }
+// // }
+
+// // // Tashqi ikki ustunli wrapper
+// // .modalSplitLayout {
+// //   display: flex;
+// //   flex-direction: row;
+// //   height: calc(100vh - 100px); // Modal balandligi
+// //   max-height: 800px;
+// //   overflow: hidden; // Tashqariga chiqmasin
+
+// //   @media (max-width: 768px) {
+// //     flex-direction: column;
+// //     height: auto;
+// //     max-height: calc(100vh - 40px);
+// //     overflow-y: auto;
+// //   }
+// // }
+
+// // // CHAP — Rasm qotib turadi
+// // .modalLeftSticky {
+// //   width: 380px;
+// //   min-width: 320px;
+// //   flex-shrink: 0;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   padding: 30px 20px;
+// //   background: #fff;
+// //   position: sticky; // Bu key!
+// //   top: 0;
+// //   align-self: flex-start; // sticky ishlashi uchun kerak
+// //   height: 100%; // To'liq balandlik
+
+// //   img {
+// //     max-width: 100%;
+// //     height: auto;
+// //     object-fit: contain;
+// //     max-height: 320px;
+// //   }
+
+// //   @media (max-width: 768px) {
+// //     width: 100%;
+// //     min-width: unset;
+// //     height: 250px;
+// //     position: relative;
+// //     padding: 20px;
+// //   }
+// // }
+
+// // // O'NG — Kontent scroll bo'ladi
+// // .modalRightScroll {
+// //   flex: 1;
+// //   overflow-y: auto; // Bu asosiy scroll!
+// //   padding: 30px 28px 30px 20px;
+// //   display: flex;
+// //   flex-direction: column;
+// //   gap: 0;
+// //   background: #fff;
+
+// //   // Scrollbar chiroyli ko'rinsin
+// //   scrollbar-width: thin;
+// //   scrollbar-color: #e0e0e0 transparent;
+
+// //   &::-webkit-scrollbar {
+// //     width: 5px;
+// //   }
+
+// //   &::-webkit-scrollbar-track {
+// //     background: transparent;
+// //   }
+
+// //   &::-webkit-scrollbar-thumb {
+// //     background-color: #ddd;
+// //     border-radius: 10px;
+// //   }
+
+// //   @media (max-width: 768px) {
+// //     padding: 16px;
+// //     overflow-y: visible;
+// //   }
+
+// //   // Sarlavha
+// //   .modalTitle {
+// //     font-family: $font-family !important;
+// //     font-size: 26px !important;
+// //     font-weight: 800 !important;
+// //     color: #000 !important;
+// //     margin-bottom: 12px;
+// //     line-height: 1.35 !important;
+// //     padding-right: 40px; // X tugmasidan joy
+
+// //     @media (max-width: 600px) {
+// //       font-size: 20px !important;
+// //       padding-right: 30px;
+// //     }
+// //   }
+
+// //   // Tavsif
+// //   .modalDescription {
+// //     font-family: $font-family;
+// //     font-size: 15px;
+// //     color: #666;
+// //     line-height: 1.6;
+// //     margin-bottom: 20px;
+// //   }
+
+// //   // Narx + tugma qatori
+// //   .modalFooter {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     padding: 16px 0;
+// //     border-top: 1px solid #f0f0f0;
+// //     border-bottom: 1px solid #f0f0f0;
+// //     margin-bottom: 20px;
+// //   }
+// // }
+
+// // // Modifikatorlar container (o'ng scroll ichida)
+// // .modifiersContainer {
+// //   padding: 4px 0 20px;
+// //   background: transparent;
+
+// //   .modSection {
+// //     margin-bottom: 20px;
+
+// //     .modHeading {
+// //       font-weight: 700;
+// //       font-size: 17px;
+// //       margin-bottom: 10px;
+// //       color: #111;
+// //       font-family: $font-family;
+// //     }
+
+// //     .modGrid {
+// //       display: grid;
+// //       grid-template-columns: 1fr 1fr;
+// //       gap: 10px;
+
+// //       @media (max-width: 600px) {
+// //         grid-template-columns: 1fr;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // Modifikator qatori
+// // .modifierRow {
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: space-between;
+// //   background: #fff;
+// //   padding: 8px 12px;
+// //   border-radius: 12px;
+// //   border: 1px solid #007855;
+// //   transition: 0.3s ease;
+
+// //   &:hover {
+// //     box-shadow: 0 0 10px rgba(0, 120, 85, 0.15);
+// //     background-color: #fafffd;
+// //   }
+
+// //   .modifierInfo {
+// //     display: flex;
+// //     align-items: center;
+// //     gap: 10px;
+
+// //     .modImg {
+// //       background: #f4f4f4;
+// //       border-radius: 8px;
+// //       padding: 4px;
+// //     }
+
+// //     .modTitle {
+// //       font-size: 13px;
+// //       font-weight: 600;
+// //       color: #111;
+// //     }
+
+// //     .modPrice {
+// //       font-size: 12px;
+// //       color: #007855;
+// //       font-weight: 700;
+// //     }
+// //   }
+// // }
+
+// // // Modifikator counter (rounded)
+// // .modCounterRounded {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 6px;
+// //   padding: 3px 6px;
+// //   border: 1.5px solid #007855;
+// //   border-radius: 50px;
+// //   background: white;
+
+// //   .counterValue {
+// //     font-weight: 700;
+// //     font-size: 14px;
+// //     min-width: 18px;
+// //     text-align: center;
+// //     color: #333;
+// //     font-family: $font-family;
+// //   }
+
+// //   .counterBtn {
+// //     padding: 3px !important;
+// //     background: transparent !important;
+// //     transition: all 0.2s ease !important;
+
+// //     svg {
+// //       width: 16px;
+// //       height: 16px;
+// //       fill: #007855;
+// //     }
+
+// //     &:hover {
+// //       background-color: #007855 !important;
+// //       border-radius: 50% !important;
+
+// //       svg {
+// //         fill: white !important;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // Tavsiyalar (recom) section — o'ng scroll ichida
+// // .recomSection {
+// //   padding: 4px 0 20px;
+
+// //   .recomHeading {
+// //     font-family: $font-family !important;
+// //     font-weight: 800 !important;
+// //     font-size: 18px !important;
+// //     margin-bottom: 14px !important;
+// //     color: #000;
+// //   }
+
+// //   .recomGrid {
+// //     display: grid;
+// //     grid-template-columns: repeat(2, 1fr);
+// //     gap: 12px;
+
+// //     @media (max-width: 500px) {
+// //       grid-template-columns: 1fr 1fr;
+// //     }
+// //   }
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // $font-family: "Open Sans", sans-serif;
+// // $primary-green: #007855;
+
+// // // =============================================
+// // // ROOT — Asosiy sahifa stillari
+// // // =============================================
+// // .root {
+// //   font-family: $font-family;
+
+// //   .product {
+// //     border-radius: 20px;
+// //     padding-top: 48px;
+// //     background-color: #fff;
+// //   }
+
+// //   .productSection {
+// //     background-color: #fff;
+
+// //     @media (min-width: 1295px) {
+// //       column-gap: 16px;
+// //       row-gap: 16px;
+// //     }
+// //   }
+
+// //   .productItem {
+// //     background-color: #fff !important;
+
+// //     @media (min-width: 1295px) {
+// //       max-width: 300px;
+// //     }
+// //   }
+
+// //   .productButton {
+// //     background: none;
+// //     border: 2px solid $primary-green;
+// //     outline: none;
+// //     height: 48px;
+// //     width: 120px !important;
+// //     border-radius: 10px;
+// //     cursor: pointer;
+// //     transition: all 0.2s;
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// //     color: $primary-green;
+// //     font-weight: 700;
+// //     font-family: $font-family;
+
+// //     &:hover {
+// //       background-color: $primary-green !important;
+// //       color: #fff !important;
+// //     }
+
+// //     &:active {
+// //       transform: scale(0.96);
+// //     }
+// //   }
+
+// //   .productCounter {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     height: 48px;
+// //     border-radius: 25px;
+// //     background-color: transparent;
+// //     border: 1px solid $primary-green;
+// //     width: 120px;
+
+// //     button {
+// //       color: $primary-green !important;
+// //     }
+
+// //     span {
+// //       font-family: $font-family;
+// //       font-weight: 700;
+// //     }
+// //   }
+
+// //   .productCard {
+// //     position: relative;
+// //     background-color: #fff !important;
+// //     display: flex;
+// //     flex-direction: column;
+// //     justify-content: center;
+// //     border-radius: 16px;
+// //     transition: 0.3s;
+// //     overflow: hidden;
+// //     border: none !important;
+// //     box-shadow: none !important;
+
+// //     .productImage {
+// //       object-fit: contain;
+// //       width: 100%;
+// //       height: auto;
+// //       background-color: #fff !important;
+
+// //       img {
+// //         background-color: #fff !important;
+// //       }
+// //     }
+
+// //     &:hover {
+// //       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05) !important;
+// //       transform: translateY(-4px);
+// //     }
+
+// //     .productBody {
+// //       padding: 0 16px 16px;
+// //       background-color: #fff !important;
+
+// //       .productTexts {
+// //         margin-bottom: 20px;
+
+// //         & > *:not(:last-child) {
+// //           margin-bottom: 8px;
+// //         }
+
+// //         h3 {
+// //           font-family: $font-family !important;
+// //           font-weight: 800 !important;
+// //           font-size: 20px !important;
+// //           color: #000 !important;
+// //           line-height: 1.3;
+// //         }
+
+// //         p,
+// //         span {
+// //           font-family: $font-family !important;
+// //           font-size: 14px;
+// //           color: #666;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // DIALOG — MUI Paper sozlamalari
+// // // =============================================
+// // .dialogCustom {
+// //   z-index: 9999 !important;
+
+// //   :global(.MuiDialog-container) {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: center;
+// //     padding: 16px;
+// //   }
+
+// //   :global(.MuiPaper-root) {
+// //     position: relative;
+// //     max-width: 1000px !important;
+// //     width: 100% !important;
+// //     margin: 0 !important;
+// //     border-radius: 24px !important;
+// //     overflow: hidden !important;
+// //     background-color: #fff !important;
+// //     font-family: $font-family !important;
+// //     max-height: calc(100vh - 60px) !important;
+
+// //     @media (max-width: 768px) {
+// //       width: 100% !important;
+// //       border-radius: 20px !important;
+// //       max-height: calc(100vh - 30px) !important;
+// //     }
+
+// //     @media (max-width: 480px) {
+// //       border-radius: 16px !important;
+// //       max-height: 100vh !important;
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // X TUGMASI
+// // // =============================================
+// // .closeButtonInside {
+// //   position: absolute;
+// //   top: 14px;
+// //   right: 14px;
+// //   background: rgba(245, 245, 245, 0.95);
+// //   border-radius: 50%;
+// //   padding: 8px;
+// //   cursor: pointer;
+// //   z-index: 200;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+// //   transition: all 0.2s ease;
+
+// //   svg {
+// //     fill: #333 !important;
+// //     width: 20px;
+// //     height: 20px;
+// //   }
+
+// //   &:hover {
+// //     background: #e0e0e0;
+// //     transform: scale(1.1) rotate(90deg);
+// //   }
+// // }
+
+// // // =============================================
+// // // SPLIT LAYOUT — Chap rasm | O'ng scroll
+// // // =============================================
+// // .modalSplitLayout {
+// //   display: flex;
+// //   flex-direction: row;
+// //   height: calc(100vh - 60px);
+// //   max-height: 860px;
+// //   overflow: hidden;
+
+// //   @media (max-width: 768px) {
+// //     flex-direction: column;
+// //     height: auto;
+// //     max-height: calc(100vh - 30px);
+// //     overflow-y: auto;
+// //     overflow-x: hidden;
+
+// //     // Mobilda o'zi scroll bo'ladi
+// //     scrollbar-width: none;
+// //     &::-webkit-scrollbar {
+// //       display: none;
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // CHAP TOMON — Rasm qotib turadi
+// // // =============================================
+// // .modalLeftSticky {
+// //   width: 420px;
+// //   min-width: 360px;
+// //   flex-shrink: 0;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   padding: 40px 24px;
+// //   background: #fff;
+// //   // Sticky effekti — o'ng scroll qilganda rasm qimirlamaydi
+// //   position: sticky;
+// //   top: 0;
+// //   align-self: flex-start;
+// //   height: 100%;
+
+// //   img {
+// //     max-width: 100%;
+// //     height: auto;
+// //     object-fit: contain;
+// //     max-height: 360px;
+// //     width: 100%;
+// //   }
+
+// //   // Tablet
+// //   @media (max-width: 1024px) {
+// //     width: 360px;
+// //     min-width: 300px;
+// //     padding: 30px 16px;
+
+// //     img {
+// //       max-height: 300px;
+// //     }
+// //   }
+
+// //   // Mobil
+// //   @media (max-width: 768px) {
+// //     width: 100%;
+// //     min-width: unset;
+// //     height: 260px;
+// //     position: relative;
+// //     padding: 20px;
+// //     border-bottom: 1px solid #f0f0f0;
+
+// //     img {
+// //       max-height: 230px;
+// //     }
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     height: 220px;
+
+// //     img {
+// //       max-height: 190px;
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // O'NG TOMON — Barcha kontent, scroll qiladi
+// // // =============================================
+// // .modalRightScroll {
+// //   flex: 1;
+// //   overflow-y: auto;
+// //   overflow-x: hidden;
+// //   padding: 28px 28px 30px 24px;
+// //   display: flex;
+// //   flex-direction: column;
+// //   background: #fff;
+
+// //   // Chiroyli ingichka scrollbar
+// //   scrollbar-width: thin;
+// //   scrollbar-color: #ddd transparent;
+
+// //   &::-webkit-scrollbar {
+// //     width: 4px;
+// //   }
+
+// //   &::-webkit-scrollbar-track {
+// //     background: transparent;
+// //   }
+
+// //   &::-webkit-scrollbar-thumb {
+// //     background-color: #ddd;
+// //     border-radius: 10px;
+// //   }
+
+// //   @media (max-width: 768px) {
+// //     padding: 20px 16px;
+// //     overflow-y: visible; // Mobilda tashqi wrapper scroll qiladi
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     padding: 16px 14px;
+// //   }
+
+// //   // Sarlavha
+// //   .modalTitle {
+// //     font-family: $font-family !important;
+// //     font-size: 26px !important;
+// //     font-weight: 800 !important;
+// //     color: #000 !important;
+// //     margin-bottom: 10px;
+// //     line-height: 1.35 !important;
+// //     padding-right: 44px; // X tugmasidan joy
+
+// //     @media (max-width: 768px) {
+// //       font-size: 22px !important;
+// //       padding-right: 36px;
+// //     }
+
+// //     @media (max-width: 480px) {
+// //       font-size: 19px !important;
+// //       padding-right: 30px;
+// //     }
+// //   }
+
+// //   // Tavsif matni
+// //   .modalDescription {
+// //     font-family: $font-family;
+// //     font-size: 15px;
+// //     color: #666;
+// //     line-height: 1.65;
+// //     margin-bottom: 18px;
+
+// //     @media (max-width: 480px) {
+// //       font-size: 14px;
+// //       margin-bottom: 14px;
+// //     }
+// //   }
+
+// //   // Narx + Savatchaga qo'shish
+// //   .modalFooter {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     padding: 14px 0;
+// //     border-top: 1px solid #f0f0f0;
+// //     border-bottom: 1px solid #f0f0f0;
+// //     margin-bottom: 22px;
+
+// //     @media (max-width: 480px) {
+// //       padding: 12px 0;
+// //       margin-bottom: 16px;
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // NARX — Yashil, qalin
+// // // =============================================
+// // .modalPriceGreen {
+// //   font-family: $font-family !important;
+// //   font-size: 30px !important;
+// //   font-weight: 900 !important;
+// //   color: $primary-green !important;
+// //   letter-spacing: -0.5px;
+
+// //   @media (max-width: 768px) {
+// //     font-size: 26px !important;
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     font-size: 22px !important;
+// //   }
+// // }
+
+// // // =============================================
+// // // MODAL ICHIDAGI TUGMALAR
+// // // =============================================
+// // .productButton {
+// //   background: none;
+// //   border: 2px solid $primary-green;
+// //   outline: none;
+// //   height: 46px;
+// //   min-width: 140px;
+// //   border-radius: 23px;
+// //   cursor: pointer;
+// //   transition: all 0.2s;
+// //   display: flex;
+// //   justify-content: center;
+// //   align-items: center;
+// //   color: $primary-green;
+// //   font-weight: 700;
+// //   font-size: 15px;
+// //   font-family: $font-family;
+
+// //   &:hover {
+// //     background-color: $primary-green;
+// //     color: #fff;
+// //   }
+
+// //   &:active {
+// //     transform: scale(0.96);
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     height: 40px;
+// //     min-width: 120px;
+// //     font-size: 14px;
+// //   }
+// // }
+
+// // .productCounter {
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: space-between;
+// //   height: 46px;
+// //   border-radius: 23px;
+// //   background-color: transparent;
+// //   border: 2px solid $primary-green;
+// //   min-width: 130px;
+// //   padding: 0 4px;
+
+// //   button {
+// //     color: $primary-green !important;
+// //   }
+
+// //   span {
+// //     font-family: $font-family;
+// //     font-weight: 700;
+// //     font-size: 16px;
+// //     color: #000;
+// //     min-width: 24px;
+// //     text-align: center;
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     height: 40px;
+// //     min-width: 115px;
+// //   }
+// // }
+
+// // // =============================================
+// // // MODIFIKATORLAR BLOKI
+// // // =============================================
+// // .modifiersContainer {
+// //   padding: 0 0 24px;
+// //   background: transparent;
+
+// //   .modSection {
+// //     margin-bottom: 22px;
+
+// //     .modHeading {
+// //       font-family: $font-family;
+// //       font-weight: 800;
+// //       font-size: 17px;
+// //       margin-bottom: 12px;
+// //       color: #111;
+// //     }
+
+// //     .modGrid {
+// //       display: grid;
+// //       grid-template-columns: 1fr 1fr;
+// //       gap: 10px;
+
+// //       @media (max-width: 500px) {
+// //         grid-template-columns: 1fr;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // Modifikator kartochkasi (bitta qator)
+// // .modifierRow {
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: space-between;
+// //   background: #fff;
+// //   padding: 10px 12px;
+// //   border-radius: 14px;
+// //   border: 1.5px solid #007855;
+// //   transition: 0.25s ease;
+// //   gap: 8px;
+
+// //   &:hover {
+// //     box-shadow: 0 0 12px rgba(0, 120, 85, 0.15);
+// //     background-color: #fafffd;
+// //   }
+
+// //   .modifierInfo {
+// //     display: flex;
+// //     align-items: center;
+// //     gap: 10px;
+// //     flex: 1;
+// //     min-width: 0;
+
+// //     .modImg {
+// //       // RASM KATAROQ — 56x56
+// //       width: 56px;
+// //       height: 56px;
+// //       min-width: 56px;
+// //       background: #f4f4f4;
+// //       border-radius: 10px;
+// //       padding: 4px;
+// //       display: flex;
+// //       align-items: center;
+// //       justify-content: center;
+// //       overflow: hidden;
+
+// //       img {
+// //         width: 100% !important;
+// //         height: 100% !important;
+// //         object-fit: contain !important;
+// //       }
+
+// //       @media (max-width: 480px) {
+// //         width: 48px;
+// //         height: 48px;
+// //         min-width: 48px;
+// //       }
+// //     }
+
+// //     .modTitle {
+// //       font-size: 13px;
+// //       font-weight: 600;
+// //       color: #111;
+// //       line-height: 1.3;
+// //       font-family: $font-family;
+// //       overflow: hidden;
+// //       display: -webkit-box;
+// //       -webkit-line-clamp: 2;
+// //       -webkit-box-orient: vertical;
+// //     }
+
+// //     .modPrice {
+// //       font-size: 12px;
+// //       color: #007855;
+// //       font-weight: 700;
+// //       font-family: $font-family;
+// //       margin-top: 2px;
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // MODIFIKATOR COUNTER (dumaloq, yashil border)
+// // // =============================================
+// // .modCounterRounded {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 4px;
+// //   padding: 4px 6px;
+// //   border: 1.5px solid #007855;
+// //   border-radius: 50px;
+// //   background: white;
+// //   flex-shrink: 0;
+
+// //   .counterValue {
+// //     font-weight: 700;
+// //     font-size: 14px;
+// //     min-width: 20px;
+// //     text-align: center;
+// //     color: #222;
+// //     font-family: $font-family;
+// //   }
+
+// //   .counterBtn {
+// //     padding: 3px !important;
+// //     background: transparent !important;
+// //     transition: all 0.2s ease !important;
+// //     min-width: unset !important;
+
+// //     svg {
+// //       width: 16px;
+// //       height: 16px;
+// //       fill: #007855;
+// //     }
+
+// //     &:hover {
+// //       background-color: #007855 !important;
+// //       border-radius: 50% !important;
+
+// //       svg {
+// //         fill: white !important;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // TAVSIYALAR BLOKI
+// // // =============================================
+// // .recomSection {
+// //   padding: 0 0 24px;
+
+// //   .recomHeading {
+// //     font-family: $font-family !important;
+// //     font-weight: 800 !important;
+// //     font-size: 18px !important;
+// //     margin-bottom: 14px !important;
+// //     color: #000;
+// //   }
+
+// //   .recomGrid {
+// //     display: grid;
+// //     grid-template-columns: repeat(2, 1fr);
+// //     gap: 12px;
+
+// //     @media (max-width: 400px) {
+// //       grid-template-columns: 1fr;
+// //     }
+// //   }
+// // }
+
+// // .recomCard {
+// //   border: 1px solid #eee;
+// //   border-radius: 16px;
+// //   padding: 12px;
+// //   display: flex;
+// //   flex-direction: column;
+// //   background: #fff;
+// //   transition: 0.2s;
+
+// //   &:hover {
+// //     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+// //     border-color: #ddd;
+// //   }
+
+// //   .recomImgBox {
+// //     width: 100%;
+// //     height: 100px; // KATAROQ rasm
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// //     margin-bottom: 10px;
+
+// //     img {
+// //       object-fit: contain;
+// //       width: 100% !important;
+// //       height: 100% !important;
+// //     }
+
+// //     @media (max-width: 480px) {
+// //       height: 85px;
+// //     }
+// //   }
+
+// //   .recomTitle {
+// //     font-family: $font-family !important;
+// //     font-size: 13px !important;
+// //     font-weight: 700 !important;
+// //     line-height: 1.4 !important;
+// //     height: 38px;
+// //     overflow: hidden;
+// //     margin-bottom: 6px;
+// //     color: #000;
+// //     display: -webkit-box;
+// //     -webkit-line-clamp: 2;
+// //     -webkit-box-orient: vertical;
+// //   }
+
+// //   .recomCardPrice {
+// //     font-family: $font-family;
+// //     font-weight: 800;
+// //     font-size: 14px;
+// //     margin-bottom: 10px;
+// //     color: $primary-green;
+// //   }
+
+// //   .recomAddBtn {
+// //     background: none;
+// //     border: 2px solid $primary-green;
+// //     height: 34px;
+// //     width: 100%;
+// //     border-radius: 17px;
+// //     color: $primary-green;
+// //     font-weight: 700;
+// //     font-size: 13px;
+// //     font-family: $font-family;
+// //     cursor: pointer;
+// //     transition: 0.2s;
+
+// //     &:hover {
+// //       background-color: $primary-green;
+// //       color: #fff;
+// //     }
+// //   }
+
+// //   .recomCounterOutline {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     height: 34px;
+// //     border: 2px solid $primary-green;
+// //     border-radius: 17px;
+// //     padding: 0 4px;
+
+// //     span {
+// //       font-family: $font-family;
+// //       font-weight: 800;
+// //       color: $primary-green;
+// //       font-size: 14px;
+// //     }
+
+// //     button {
+// //       padding: 4px;
+
+// //       svg {
+// //         fill: $primary-green !important;
+// //         width: 16px;
+// //         height: 16px;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // RESPONSIVE — Kichik ekranlar uchun qo'shimcha
+// // // =============================================
+// // @media (max-width: 1024px) {
+// //   .root {
+// //     .productSection {
+// //       justify-content: center;
+// //     }
+// //   }
+// // }
+
+// // @media (max-width: 768px) {
+// //   .root {
+// //     .product {
+// //       padding-top: 24px;
+// //     }
+
+// //     .productCard {
+// //       .productBody {
+// //         .productTexts {
+// //           h3 {
+// //             font-size: 18px !important;
+// //           }
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // $font-family: "Open Sans", sans-serif;
+// // $primary-green: #007855;
+
+// // // =============================================
+// // // ROOT
+// // // =============================================
+// // .root {
+// //   font-family: $font-family;
+
+// //   .product {
+// //     border-radius: 20px;
+// //     padding-top: 48px;
+// //     background-color: #fff;
+// //   }
+
+// //   .productSection {
+// //     background-color: #fff;
+
+// //     @media (min-width: 1295px) {
+// //       column-gap: 16px;
+// //       row-gap: 16px;
+// //     }
+// //   }
+
+// //   .productItem {
+// //     background-color: #fff !important;
+
+// //     @media (min-width: 1295px) {
+// //       max-width: 300px;
+// //     }
+// //   }
+
+// //   .productCard {
+// //     position: relative;
+// //     background-color: #fff !important;
+// //     display: flex;
+// //     flex-direction: column;
+// //     justify-content: center;
+// //     border-radius: 16px;
+// //     transition: 0.3s;
+// //     overflow: hidden;
+// //     border: none !important;
+// //     box-shadow: none !important;
+
+// //     .productImage {
+// //       object-fit: contain;
+// //       width: 100%;
+// //       height: auto;
+// //       background-color: #fff !important;
+
+// //       img {
+// //         background-color: #fff !important;
+// //       }
+// //     }
+
+// //     &:hover {
+// //       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05) !important;
+// //       transform: translateY(-4px);
+// //     }
+
+// //     .productBody {
+// //       padding: 0 16px 16px;
+// //       background-color: #fff !important;
+
+// //       .productTexts {
+// //         margin-bottom: 20px;
+
+// //         & > *:not(:last-child) {
+// //           margin-bottom: 8px;
+// //         }
+
+// //         h3 {
+// //           font-family: $font-family !important;
+// //           font-weight: 800 !important;
+// //           font-size: 20px !important;
+// //           color: #000 !important;
+// //           line-height: 1.3;
+// //         }
+
+// //         p, span {
+// //           font-family: $font-family !important;
+// //           font-size: 14px;
+// //           color: #666;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // DIALOG
+// // // =============================================
+// // .dialogCustom {
+// //   z-index: 9999 !important;
+
+// //   :global(.MuiDialog-container) {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: center;
+// //     padding: 16px;
+// //   }
+
+// //   :global(.MuiPaper-root) {
+// //     position: relative;
+// //     max-width: 1000px !important;
+// //     width: 100% !important;
+// //     margin: 0 !important;
+// //     border-radius: 24px !important;
+// //     overflow: hidden !important;
+// //     background-color: #fff !important;
+// //     font-family: $font-family !important;
+// //     max-height: calc(100vh - 60px) !important;
+
+// //     @media (max-width: 768px) {
+// //       width: 100% !important;
+// //       border-radius: 20px !important;
+// //       max-height: calc(100vh - 30px) !important;
+// //     }
+
+// //     @media (max-width: 480px) {
+// //       border-radius: 16px !important;
+// //       max-height: 100vh !important;
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // X TUGMASI
+// // // =============================================
+// // .closeButtonInside {
+// //   position: absolute;
+// //   top: 14px;
+// //   right: 14px;
+// //   background: rgba(245, 245, 245, 0.95);
+// //   border-radius: 50%;
+// //   padding: 8px;
+// //   cursor: pointer;
+// //   z-index: 200;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+// //   transition: all 0.2s ease;
+
+// //   svg {
+// //     fill: #333 !important;
+// //     width: 20px;
+// //     height: 20px;
+// //   }
+
+// //   &:hover {
+// //     background: #e0e0e0;
+// //     transform: scale(1.1) rotate(90deg);
+// //   }
+// // }
+
+// // // =============================================
+// // // SPLIT LAYOUT
+// // // =============================================
+// // .modalSplitLayout {
+// //   display: flex;
+// //   flex-direction: row;
+// //   height: calc(100vh - 60px);
+// //   max-height: 860px;
+// //   overflow: hidden;
+
+// //   @media (max-width: 768px) {
+// //     flex-direction: column;
+// //     height: auto;
+// //     max-height: calc(100vh - 30px);
+// //     overflow-y: auto;
+// //     overflow-x: hidden;
+// //     scrollbar-width: none;
+
+// //     &::-webkit-scrollbar {
+// //       display: none;
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // CHAP — Rasm
+// // // =============================================
+// // .modalLeftSticky {
+// //   width: 420px;
+// //   min-width: 360px;
+// //   flex-shrink: 0;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   padding: 40px 24px;
+// //   background: #fff;
+// //   position: sticky;
+// //   top: 0;
+// //   align-self: flex-start;
+// //   height: 100%;
+
+// //   img {
+// //     max-width: 100%;
+// //     height: auto;
+// //     object-fit: contain;
+// //     max-height: 360px;
+// //     width: 100%;
+// //   }
+
+// //   @media (max-width: 1024px) {
+// //     width: 360px;
+// //     min-width: 300px;
+// //     padding: 30px 16px;
+
+// //     img { max-height: 300px; }
+// //   }
+
+// //   @media (max-width: 768px) {
+// //     width: 100%;
+// //     min-width: unset;
+// //     height: 260px;
+// //     position: relative;
+// //     padding: 20px;
+// //     border-bottom: 1px solid #f0f0f0;
+
+// //     img { max-height: 230px; }
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     height: 220px;
+// //     img { max-height: 190px; }
+// //   }
+// // }
+
+// // // =============================================
+// // // O'NG — Scroll
+// // // =============================================
+// // .modalRightScroll {
+// //   flex: 1;
+// //   overflow-y: auto;
+// //   overflow-x: hidden;
+// //   padding: 28px 28px 30px 24px;
+// //   display: flex;
+// //   flex-direction: column;
+// //   background: #fff;
+// //   scrollbar-width: thin;
+// //   scrollbar-color: #ddd transparent;
+
+// //   &::-webkit-scrollbar { width: 4px; }
+// //   &::-webkit-scrollbar-track { background: transparent; }
+// //   &::-webkit-scrollbar-thumb {
+// //     background-color: #ddd;
+// //     border-radius: 10px;
+// //   }
+
+// //   @media (max-width: 768px) {
+// //     padding: 20px 16px;
+// //     overflow-y: visible;
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     padding: 16px 14px;
+// //   }
+
+// //   .modalTitle {
+// //     font-family: $font-family !important;
+// //     font-size: 26px !important;
+// //     font-weight: 800 !important;
+// //     color: #000 !important;
+// //     margin-bottom: 10px;
+// //     line-height: 1.35 !important;
+// //     padding-right: 44px;
+
+// //     @media (max-width: 768px) { font-size: 22px !important; padding-right: 36px; }
+// //     @media (max-width: 480px) { font-size: 19px !important; padding-right: 30px; }
+// //   }
+
+// //   .modalDescription {
+// //     font-family: $font-family;
+// //     font-size: 15px;
+// //     color: #666;
+// //     line-height: 1.65;
+// //     margin-bottom: 18px;
+
+// //     @media (max-width: 480px) { font-size: 14px; margin-bottom: 14px; }
+// //   }
+
+// //   .modalFooter {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     padding: 14px 0;
+// //     border-top: 1px solid #f0f0f0;
+// //     border-bottom: 1px solid #f0f0f0;
+// //     margin-bottom: 16px;
+
+// //     @media (max-width: 480px) { padding: 12px 0; margin-bottom: 12px; }
+// //   }
+// // }
+
+// // // =============================================
+// // // NARX
+// // // =============================================
+// // .modalPriceGreen {
+// //   font-family: $font-family !important;
+// //   font-size: 30px !important;
+// //   font-weight: 900 !important;
+// //   color: $primary-green !important;
+// //   letter-spacing: -0.5px;
+
+// //   @media (max-width: 768px) { font-size: 26px !important; }
+// //   @media (max-width: 480px) { font-size: 22px !important; }
+// // }
+
+// // // =============================================
+// // // TUGMALAR
+// // // =============================================
+// // .productButton {
+// //   background: none;
+// //   border: 2px solid $primary-green;
+// //   outline: none;
+// //   height: 46px;
+// //   min-width: 150px;
+// //   border-radius: 23px;
+// //   cursor: pointer;
+// //   transition: all 0.25s;
+// //   display: flex;
+// //   justify-content: center;
+// //   align-items: center;
+// //   color: $primary-green;
+// //   font-weight: 700;
+// //   font-size: 15px;
+// //   font-family: $font-family;
+
+// //   &:hover {
+// //     background-color: $primary-green;
+// //     color: #fff;
+// //   }
+
+// //   &:active { transform: scale(0.96); }
+
+// //   @media (max-width: 480px) {
+// //     height: 40px;
+// //     min-width: 130px;
+// //     font-size: 14px;
+// //   }
+// // }
+
+// // // Disabled holat — majburiy tanlov bo'lmasa
+// // .productButtonDisabled {
+// //   border-color: #ccc !important;
+// //   color: #aaa !important;
+// //   cursor: not-allowed !important;
+// //   background: #f5f5f5 !important;
+
+// //   &:hover {
+// //     background: #f5f5f5 !important;
+// //     color: #aaa !important;
+// //   }
+// // }
+
+// // .productCounter {
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: space-between;
+// //   height: 46px;
+// //   border-radius: 23px;
+// //   background-color: transparent;
+// //   border: 2px solid $primary-green;
+// //   min-width: 130px;
+// //   padding: 0 4px;
+
+// //   button { color: $primary-green !important; }
+
+// //   span {
+// //     font-family: $font-family;
+// //     font-weight: 700;
+// //     font-size: 16px;
+// //     color: #000;
+// //     min-width: 24px;
+// //     text-align: center;
+// //   }
+
+// //   @media (max-width: 480px) { height: 40px; min-width: 115px; }
+// // }
+
+// // // =============================================
+// // // COMBO HINT — Tanlash eslatmasi
+// // // =============================================
+// // .comboHint {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 8px;
+// //   background: #fff8e6;
+// //   border: 1px solid #f0c050;
+// //   border-radius: 10px;
+// //   padding: 10px 14px;
+// //   margin-bottom: 16px;
+// //   font-family: $font-family;
+// //   font-size: 13px;
+// //   font-weight: 600;
+// //   color: #b07000;
+// //   animation: fadeInHint 0.3s ease;
+
+// //   @keyframes fadeInHint {
+// //     from { opacity: 0; transform: translateY(-4px); }
+// //     to { opacity: 1; transform: translateY(0); }
+// //   }
+// // }
+
+// // // =============================================
+// // // MODIFIKATORLAR
+// // // =============================================
+// // .modifiersContainer {
+// //   padding: 0 0 24px;
+// //   background: transparent;
+// // }
+
+// // .modSection {
+// //   margin-bottom: 22px;
+// // }
+
+// // .modHeading {
+// //   font-family: $font-family !important;
+// //   font-weight: 800 !important;
+// //   font-size: 17px !important;
+// //   margin-bottom: 12px !important;
+// //   color: #111;
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 10px;
+// // }
+
+// // .modRequired {
+// //   font-size: 12px !important;
+// //   font-weight: 600 !important;
+// //   color: #e05000 !important;
+// //   background: #fff0e6;
+// //   border-radius: 6px;
+// //   padding: 2px 8px;
+// // }
+
+// // .modGrid {
+// //   display: grid;
+// //   grid-template-columns: 1fr 1fr;
+// //   gap: 10px;
+
+// //   @media (max-width: 500px) {
+// //     grid-template-columns: 1fr;
+// //   }
+// // }
+
+// // // =============================================
+// // // MODIFIKATOR KARTOCHKASI
+// // // =============================================
+// // .modifierRow {
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: space-between;
+// //   background: #fff;
+// //   padding: 10px 14px 10px 10px;
+// //   border-radius: 14px;
+// //   border: 1.5px solid #d0d0d0;  // Default — kulrang
+// //   transition: all 0.25s ease;
+// //   gap: 8px;
+// //   cursor: pointer;
+// //   user-select: none;
+
+// //   &:hover {
+// //     border-color: $primary-green;
+// //     box-shadow: 0 0 0 3px rgba(0, 120, 85, 0.08);
+// //     background-color: #fafffd;
+// //   }
+// // }
+
+// // // Tanlangan holat — yashil border + background
+// // .modifierRowSelected {
+// //   border-color: $primary-green !important;
+// //   background: linear-gradient(135deg, #f0fff8 0%, #e8fff4 100%) !important;
+// //   box-shadow: 0 0 0 3px rgba(0, 120, 85, 0.12) !important;
+
+// //   // Tanlanganda yoqib o'chish animatsiyasi
+// //   animation: selectPulse 0.3s ease;
+
+// //   @keyframes selectPulse {
+// //     0% { transform: scale(1); }
+// //     40% { transform: scale(1.025); }
+// //     100% { transform: scale(1); }
+// //   }
+// // }
+
+// // .modifierInfo {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 10px;
+// //   flex: 1;
+// //   min-width: 0;
+// // }
+
+// // .modImg {
+// //   width: 56px;
+// //   height: 56px;
+// //   min-width: 56px;
+// //   background: #f4f4f4;
+// //   border-radius: 10px;
+// //   padding: 4px;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   overflow: hidden;
+// //   transition: background 0.2s;
+
+// //   .modifierRowSelected & {
+// //     background: #e0f5ec;
+// //   }
+
+// //   img {
+// //     width: 100% !important;
+// //     height: 100% !important;
+// //     object-fit: contain !important;
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     width: 48px;
+// //     height: 48px;
+// //     min-width: 48px;
+// //   }
+// // }
+
+// // .modTitle {
+// //   font-size: 13px !important;
+// //   font-weight: 600 !important;
+// //   color: #111 !important;
+// //   line-height: 1.3 !important;
+// //   font-family: $font-family !important;
+// //   overflow: hidden;
+// //   display: -webkit-box;
+// //   -webkit-line-clamp: 2;
+// //   -webkit-box-orient: vertical;
+// // }
+
+// // .modPrice {
+// //   font-size: 12px !important;
+// //   color: $primary-green !important;
+// //   font-weight: 700 !important;
+// //   font-family: $font-family !important;
+// //   margin-top: 3px !important;
+// // }
+
+// // // =============================================
+// // // RADIO CIRCLE — Tanlash indikatori
+// // // =============================================
+// // .radioCircle {
+// //   width: 22px;
+// //   height: 22px;
+// //   min-width: 22px;
+// //   border-radius: 50%;
+// //   border: 2px solid #ccc;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   transition: all 0.2s ease;
+// //   flex-shrink: 0;
+// // }
+
+// // .radioCircleActive {
+// //   border-color: $primary-green !important;
+// //   background: $primary-green;
+// // }
+
+// // .radioInner {
+// //   width: 8px;
+// //   height: 8px;
+// //   border-radius: 50%;
+// //   background: #fff;
+// // }
+
+// // // =============================================
+// // // TAVSIYALAR
+// // // =============================================
+// // .recomSection {
+// //   padding: 0 0 24px;
+
+// //   .recomHeading {
+// //     font-family: $font-family !important;
+// //     font-weight: 800 !important;
+// //     font-size: 18px !important;
+// //     margin-bottom: 14px !important;
+// //     color: #000;
+// //   }
+
+// //   .recomGrid {
+// //     display: grid;
+// //     grid-template-columns: repeat(2, 1fr);
+// //     gap: 12px;
+
+// //     @media (max-width: 400px) {
+// //       grid-template-columns: 1fr;
+// //     }
+// //   }
+// // }
+
+// // .recomCard {
+// //   border: 1px solid #eee;
+// //   border-radius: 16px;
+// //   padding: 12px;
+// //   display: flex;
+// //   flex-direction: column;
+// //   background: #fff;
+// //   transition: 0.2s;
+
+// //   &:hover {
+// //     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+// //     border-color: #ddd;
+// //   }
+
+// //   .recomImgBox {
+// //     width: 100%;
+// //     height: 100px;
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// //     margin-bottom: 10px;
+
+// //     img {
+// //       object-fit: contain;
+// //       width: 100% !important;
+// //       height: 100% !important;
+// //     }
+
+// //     @media (max-width: 480px) { height: 85px; }
+// //   }
+
+// //   .recomTitle {
+// //     font-family: $font-family !important;
+// //     font-size: 13px !important;
+// //     font-weight: 700 !important;
+// //     line-height: 1.4 !important;
+// //     height: 38px;
+// //     overflow: hidden;
+// //     margin-bottom: 6px;
+// //     color: #000;
+// //     display: -webkit-box;
+// //     -webkit-line-clamp: 2;
+// //     -webkit-box-orient: vertical;
+// //   }
+
+// //   .recomCardPrice {
+// //     font-family: $font-family;
+// //     font-weight: 800;
+// //     font-size: 14px;
+// //     margin-bottom: 10px;
+// //     color: $primary-green;
+// //   }
+
+// //   .recomAddBtn {
+// //     background: none;
+// //     border: 2px solid $primary-green;
+// //     height: 34px;
+// //     width: 100%;
+// //     border-radius: 17px;
+// //     color: $primary-green;
+// //     font-weight: 700;
+// //     font-size: 13px;
+// //     font-family: $font-family;
+// //     cursor: pointer;
+// //     transition: 0.2s;
+
+// //     &:hover {
+// //       background-color: $primary-green;
+// //       color: #fff;
+// //     }
+// //   }
+
+// //   .recomCounterOutline {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     height: 34px;
+// //     border: 2px solid $primary-green;
+// //     border-radius: 17px;
+// //     padding: 0 4px;
+
+// //     span {
+// //       font-family: $font-family;
+// //       font-weight: 800;
+// //       color: $primary-green;
+// //       font-size: 14px;
+// //     }
+
+// //     button {
+// //       padding: 4px;
+
+// //       svg {
+// //         fill: $primary-green !important;
+// //         width: 16px;
+// //         height: 16px;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // RESPONSIVE
+// // // =============================================
+// // @media (max-width: 1024px) {
+// //   .root {
+// //     .productSection { justify-content: center; }
+// //   }
+// // }
+
+// // @media (max-width: 768px) {
+// //   .root {
+// //     .product { padding-top: 24px; }
+
+// //     .productCard {
+// //       .productBody {
+// //         .productTexts {
+// //           h3 { font-size: 18px !important; }
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // $font-family: "Open Sans", sans-serif;
+// // $primary-green: #007855;
+
+// // .root {
+// //   font-family: $font-family;
+
+// //   .product {
+// //     border-radius: 20px;
+// //     padding-top: 48px;
+// //     padding-top: 20px;
+// //     padding-bottom: 32px;
+// //     background-color: rgb(255, 255, 255);
+
+// //     @media (max-width: 768px) {
+// //       padding-top: 28px;
+// //       padding-bottom: 20px;
+// //     }
+// //   }
+
+// //   .productTitle {
+// //     font-family: $font-family !important;
+// //     font-weight: 800 !important;
+// //     font-size: 28px !important;
+// //     color: #111 !important;
+// //     margin-bottom: 24px !important;
+// //     padding: 0 16px;
+
+// //     @media (max-width: 768px) {
+// //       font-size: 22px !important;
+// //       margin-bottom: 16px !important;
+// //     }
+// //   }
+
+// //   .productSection {
+// //     background-color: #fff;
+// //     row-gap: 24px !important;
+// //     column-gap: 16px !important;
+// //     padding: 0 8px 8px !important;
+
+// //     @media (max-width: 768px) {
+// //       row-gap: 16px !important;
+// //       column-gap: 10px !important;
+// //     }
+// //   }
+
+// //   .productItem {
+// //     background-color: #fff !important;
+// //     padding: 8px !important;
+
+// //     @media (min-width: 1295px) {
+// //       max-width: 300px;
+// //     }
+// //   }
+
+// //   .productCard {
+// //     position: relative;
+// //     background-color: #fff !important;
+// //     display: flex;
+// //     flex-direction: column;
+// //     justify-content: center;
+// //     border-radius: 16px;
+// //     transition: 0.3s;
+// //     overflow: hidden;
+// //     border: none !important;
+// //     box-shadow: none !important;
+
+// //     .productImage {
+// //       object-fit: contain;
+// //       width: 100%;
+// //       height: auto;
+// //       background-color: #fff !important;
+
+// //       img {
+// //         background-color: #fff !important;
+// //       }
+// //     }
+
+// //     &:hover {
+// //       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05) !important;
+// //       transform: translateY(-4px);
+// //     }
+
+// //     .productBody {
+// //       padding: 0 16px 16px;
+// //       background-color: #fff !important;
+
+// //       .productTexts {
+// //         margin-bottom: 20px;
+
+// //         &>*:not(:last-child) {
+// //           margin-bottom: 8px;
+// //         }
+
+// //         h3 {
+// //           font-family: $font-family !important;
+// //           font-weight: 800 !important;
+// //           font-size: 20px !important;
+// //           color: #000 !important;
+// //           line-height: 1.3;
+// //         }
+
+// //         p,
+// //         span {
+// //           font-family: $font-family !important;
+// //           font-size: 14px;
+// //           color: #666;
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+// // // =============================================
+// // // DIALOG
+// // // =============================================
+// // .dialogCustom {
+// //   z-index: 9999 !important;
+
+// //   :global(.MuiDialog-container) {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: center;
+// //     padding: 16px;
+// //   }
+
+// //   :global(.MuiPaper-root) {
+// //     position: relative;
+// //     max-width: 1000px !important;
+// //     width: 100% !important;
+// //     margin: 0 !important;
+// //     border-radius: 24px !important;
+// //     overflow: hidden !important;
+// //     background-color: #fff !important;
+// //     font-family: $font-family !important;
+// //     max-height: calc(100vh - 60px) !important;
+
+// //     @media (max-width: 768px) {
+// //       width: 100% !important;
+// //       border-radius: 20px !important;
+// //       max-height: calc(100vh - 30px) !important;
+// //     }
+
+// //     @media (max-width: 480px) {
+// //       border-radius: 16px !important;
+// //       max-height: 100vh !important;
+// //     }
+// //   }
+// // }
+
+// // .closeButtonInside {
+// //   position: absolute;
+// //   top: 14px;
+// //   right: 14px;
+// //   background: rgba(245, 245, 245, 0.95);
+// //   border-radius: 50%;
+// //   padding: 8px;
+// //   cursor: pointer;
+// //   z-index: 200;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+// //   transition: all 0.2s ease;
+
+// //   svg {
+// //     fill: #333 !important;
+// //     width: 20px;
+// //     height: 20px;
+// //   }
+
+// //   &:hover {
+// //     background: #e0e0e0;
+// //     transform: scale(1.1) rotate(90deg);
+// //   }
+// // }
+
+// // .modalSplitLayout {
+// //   display: flex;
+// //   flex-direction: row;
+// //   height: calc(100vh - 60px);
+// //   max-height: 860px;
+// //   overflow: hidden;
+
+// //   @media (max-width: 768px) {
+// //     flex-direction: column;
+// //     height: auto;
+// //     max-height: calc(100vh - 30px);
+// //     overflow-y: auto;
+// //     overflow-x: hidden;
+// //     scrollbar-width: none;
+
+// //     &::-webkit-scrollbar {
+// //       display: none;
+// //     }
+// //   }
+// // }
+
+// // .modalLeftSticky {
+// //   width: 420px;
+// //   min-width: 360px;
+// //   flex-shrink: 0;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   padding: 40px 24px;
+// //   background: #fff;
+// //   position: sticky;
+// //   top: 0;
+// //   align-self: flex-start;
+// //   height: 100%;
+
+// //   img {
+// //     max-width: 100%;
+// //     height: auto;
+// //     object-fit: contain;
+// //     max-height: 360px;
+// //     width: 100%;
+// //   }
+
+// //   @media (max-width: 1024px) {
+// //     width: 360px;
+// //     min-width: 300px;
+// //     padding: 30px 16px;
+
+// //     img {
+// //       max-height: 300px;
+// //     }
+// //   }
+
+// //   @media (max-width: 768px) {
+// //     width: 100%;
+// //     min-width: unset;
+// //     height: 260px;
+// //     position: relative;
+// //     padding: 20px;
+// //     border-bottom: 1px solid #f0f0f0;
+
+// //     img {
+// //       max-height: 230px;
+// //     }
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     height: 220px;
+
+// //     img {
+// //       max-height: 190px;
+// //     }
+// //   }
+// // }
+
+// // .modalRightScroll {
+// //   flex: 1;
+// //   overflow-y: auto;
+// //   overflow-x: hidden;
+// //   padding: 28px 28px 30px 24px;
+// //   display: flex;
+// //   flex-direction: column;
+// //   background: #fff;
+// //   scrollbar-width: thin;
+// //   scrollbar-color: #ddd transparent;
+
+// //   &::-webkit-scrollbar {
+// //     width: 4px;
+// //   }
+
+// //   &::-webkit-scrollbar-track {
+// //     background: transparent;
+// //   }
+
+// //   &::-webkit-scrollbar-thumb {
+// //     background-color: #ddd;
+// //     border-radius: 10px;
+// //   }
+
+// //   @media (max-width: 768px) {
+// //     padding: 20px 16px;
+// //     overflow-y: visible;
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     padding: 16px 14px;
+// //   }
+
+// //   .modalTitle {
+// //     font-family: $font-family !important;
+// //     font-size: 26px !important;
+// //     font-weight: 800 !important;
+// //     color: #000 !important;
+// //     margin-bottom: 10px;
+// //     line-height: 1.35 !important;
+// //     padding-right: 44px;
+
+// //     @media (max-width: 768px) {
+// //       font-size: 22px !important;
+// //       padding-right: 36px;
+// //     }
+
+// //     @media (max-width: 480px) {
+// //       font-size: 19px !important;
+// //       padding-right: 30px;
+// //     }
+// //   }
+
+// //   .modalDescription {
+// //     font-family: $font-family;
+// //     font-size: 15px;
+// //     color: #666;
+// //     line-height: 1.65;
+// //     margin-bottom: 18px;
+
+// //     @media (max-width: 480px) {
+// //       font-size: 14px;
+// //       margin-bottom: 14px;
+// //     }
+// //   }
+
+// //   .modalFooter {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     padding: 14px 0;
+// //     border-top: 1px solid #f0f0f0;
+// //     border-bottom: 1px solid #f0f0f0;
+// //     margin-bottom: 16px;
+
+// //     @media (max-width: 480px) {
+// //       padding: 12px 0;
+// //       margin-bottom: 12px;
+// //     }
+// //   }
+// // }
+
+// // .modalPriceGreen {
+// //   font-family: $font-family !important;
+// //   font-size: 30px !important;
+// //   font-weight: 900 !important;
+// //   color: $primary-green !important;
+// //   letter-spacing: -0.5px;
+
+// //   @media (max-width: 768px) {
+// //     font-size: 26px !important;
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     font-size: 22px !important;
+// //   }
+// // }
+
+// // .productButton {
+// //   background: none;
+// //   border: 2px solid $primary-green;
+// //   outline: none;
+// //   height: 46px;
+// //   min-width: 150px;
+// //   border-radius: 23px;
+// //   cursor: pointer;
+// //   transition: all 0.25s;
+// //   display: flex;
+// //   justify-content: center;
+// //   align-items: center;
+// //   color: $primary-green;
+// //   font-weight: 700;
+// //   font-size: 15px;
+// //   font-family: $font-family;
+
+// //   &:hover {
+// //     background-color: $primary-green;
+// //     color: #fff;
+// //   }
+
+// //   &:active {
+// //     transform: scale(0.96);
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     height: 40px;
+// //     min-width: 130px;
+// //     font-size: 14px;
+// //   }
+// // }
+
+// // .productButtonDisabled {
+// //   border-color: #ccc !important;
+// //   color: #aaa !important;
+// //   cursor: not-allowed !important;
+// //   background: #f5f5f5 !important;
+
+// //   &:hover {
+// //     background: #f5f5f5 !important;
+// //     color: #aaa !important;
+// //   }
+// // }
+
+// // .productCounter {
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: space-between;
+// //   height: 46px;
+// //   border-radius: 23px;
+// //   background-color: transparent;
+// //   border: 2px solid $primary-green;
+// //   min-width: 130px;
+// //   padding: 0 4px;
+
+// //   button {
+// //     color: $primary-green !important;
+// //   }
+
+// //   span {
+// //     font-family: $font-family;
+// //     font-weight: 700;
+// //     font-size: 16px;
+// //     color: #000;
+// //     min-width: 24px;
+// //     text-align: center;
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     height: 40px;
+// //     min-width: 115px;
+// //   }
+// // }
+
+// // .comboHint {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 8px;
+// //   background: #fff8e6;
+// //   border: 1px solid #f0c050;
+// //   border-radius: 10px;
+// //   padding: 10px 14px;
+// //   margin-bottom: 16px;
+// //   font-family: $font-family;
+// //   font-size: 13px;
+// //   font-weight: 600;
+// //   color: #b07000;
+// // }
+
+// // .modifiersContainer {
+// //   padding: 0 0 24px;
+// //   background: transparent;
+// // }
+
+// // .modSection {
+// //   margin-bottom: 22px;
+// // }
+
+// // .modHeading {
+// //   font-family: $font-family !important;
+// //   font-weight: 800 !important;
+// //   font-size: 17px !important;
+// //   margin-bottom: 12px !important;
+// //   color: #111;
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 10px;
+// // }
+
+// // .modRequired {
+// //   font-size: 12px !important;
+// //   font-weight: 600 !important;
+// //   color: #e05000 !important;
+// //   background: #fff0e6;
+// //   border-radius: 6px;
+// //   padding: 2px 8px;
+// // }
+
+// // .modGrid {
+// //   display: grid;
+// //   grid-template-columns: 1fr 1fr;
+// //   gap: 10px;
+
+// //   @media (max-width: 500px) {
+// //     grid-template-columns: 1fr;
+// //   }
+// // }
+
+// // .modifierRow {
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: space-between;
+// //   background: #fff;
+// //   padding: 10px 14px 10px 10px;
+// //   border-radius: 14px;
+// //   border: 1.5px solid #d0d0d0;
+// //   transition: all 0.25s ease;
+// //   gap: 8px;
+// //   cursor: pointer;
+// //   user-select: none;
+
+// //   &:hover {
+// //     border-color: $primary-green;
+// //     box-shadow: 0 0 0 3px rgba(0, 120, 85, 0.08);
+// //     background-color: #fafffd;
+// //   }
+// // }
+
+// // .modifierRowSelected {
+// //   border-color: $primary-green !important;
+// //   background: linear-gradient(135deg, #f0fff8 0%, #e8fff4 100%) !important;
+// //   box-shadow: 0 0 0 3px rgba(0, 120, 85, 0.12) !important;
+// // }
+
+// // .modifierInfo {
+// //   display: flex;
+// //   align-items: center;
+// //   gap: 10px;
+// //   flex: 1;
+// //   min-width: 0;
+// // }
+
+// // .modImg {
+// //   width: 56px;
+// //   height: 56px;
+// //   min-width: 56px;
+// //   background: #f4f4f4;
+// //   border-radius: 10px;
+// //   padding: 4px;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   overflow: hidden;
+// //   transition: background 0.2s;
+
+// //   img {
+// //     width: 100% !important;
+// //     height: 100% !important;
+// //     object-fit: contain !important;
+// //   }
+
+// //   @media (max-width: 480px) {
+// //     width: 48px;
+// //     height: 48px;
+// //     min-width: 48px;
+// //   }
+// // }
+
+// // .modTitle {
+// //   font-size: 13px !important;
+// //   font-weight: 600 !important;
+// //   color: #111 !important;
+// //   line-height: 1.3 !important;
+// //   font-family: $font-family !important;
+// //   overflow: hidden;
+// //   display: -webkit-box;
+// //   -webkit-line-clamp: 2;
+// //   -webkit-box-orient: vertical;
+// // }
+
+// // .modPrice {
+// //   font-size: 12px !important;
+// //   color: $primary-green !important;
+// //   font-weight: 700 !important;
+// //   font-family: $font-family !important;
+// //   margin-top: 3px !important;
+// // }
+
+// // .radioCircle {
+// //   width: 22px;
+// //   height: 22px;
+// //   min-width: 22px;
+// //   border-radius: 50%;
+// //   border: 2px solid #ccc;
+// //   display: flex;
+// //   align-items: center;
+// //   justify-content: center;
+// //   transition: all 0.2s ease;
+// //   flex-shrink: 0;
+// // }
+
+// // .radioCircleActive {
+// //   border-color: $primary-green !important;
+// //   background: $primary-green;
+// // }
+
+// // .radioInner {
+// //   width: 8px;
+// //   height: 8px;
+// //   border-radius: 50%;
+// //   background: #fff;
+// // }
+
+// // .recomSection {
+// //   padding: 0 0 24px;
+
+// //   .recomHeading {
+// //     font-family: $font-family !important;
+// //     font-weight: 800 !important;
+// //     font-size: 18px !important;
+// //     margin-bottom: 14px !important;
+// //     color: #000;
+// //   }
+
+// //   .recomGrid {
+// //     display: grid;
+// //     grid-template-columns: repeat(2, 1fr);
+// //     gap: 12px;
+
+// //     @media (max-width: 400px) {
+// //       grid-template-columns: 1fr;
+// //     }
+// //   }
+// // }
+
+// // .recomCard {
+// //   border: 1px solid #eee;
+// //   border-radius: 16px;
+// //   padding: 12px;
+// //   display: flex;
+// //   flex-direction: column;
+// //   background: #fff;
+// //   transition: 0.2s;
+
+// //   &:hover {
+// //     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+// //     border-color: #ddd;
+// //   }
+
+// //   .recomImgBox {
+// //     width: 100%;
+// //     height: 100px;
+// //     display: flex;
+// //     justify-content: center;
+// //     align-items: center;
+// //     margin-bottom: 10px;
+
+// //     img {
+// //       object-fit: contain;
+// //       width: 100% !important;
+// //       height: 100% !important;
+// //     }
+
+// //     @media (max-width: 480px) {
+// //       height: 85px;
+// //     }
+// //   }
+
+// //   .recomTitle {
+// //     font-family: $font-family !important;
+// //     font-size: 13px !important;
+// //     font-weight: 700 !important;
+// //     line-height: 1.4 !important;
+// //     height: 38px;
+// //     overflow: hidden;
+// //     margin-bottom: 6px;
+// //     color: #000;
+// //     display: -webkit-box;
+// //     -webkit-line-clamp: 2;
+// //     -webkit-box-orient: vertical;
+// //   }
+
+// //   .recomCardPrice {
+// //     font-family: $font-family;
+// //     font-weight: 800;
+// //     font-size: 14px;
+// //     margin-bottom: 10px;
+// //     color: $primary-green;
+// //   }
+
+// //   .recomAddBtn {
+// //     background: none;
+// //     border: 2px solid $primary-green;
+// //     height: 34px;
+// //     width: 100%;
+// //     border-radius: 17px;
+// //     color: $primary-green;
+// //     font-weight: 700;
+// //     font-size: 13px;
+// //     font-family: $font-family;
+// //     cursor: pointer;
+// //     transition: 0.2s;
+
+// //     &:hover {
+// //       background-color: $primary-green;
+// //       color: #fff;
+// //     }
+// //   }
+
+// //   .recomCounterOutline {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     height: 34px;
+// //     border: 2px solid $primary-green;
+// //     border-radius: 17px;
+// //     padding: 0 4px;
+
+// //     span {
+// //       font-family: $font-family;
+// //       font-weight: 800;
+// //       color: $primary-green;
+// //       font-size: 14px;
+// //     }
+
+// //     button {
+// //       padding: 4px;
+
+// //       svg {
+// //         fill: $primary-green !important;
+// //         width: 16px;
+// //         height: 16px;
+// //       }
+// //     }
+// //   }
+// // }
+
+// // @media (max-width: 1024px) {
+// //   .root {
+// //     .productSection {
+// //       justify-content: center;
+// //     }
+// //   }
+// // }
+
+// // @media (max-width: 768px) {
+// //   .root {
+// //     .product {
+// //       padding-top: 24px;
+// //     }
+
+// //     .productCard {
+// //       .productBody {
+// //         .productTexts {
+// //           h3 {
+// //             font-size: 18px !important;
+// //           }
+// //         }
+// //       }
+// //     }
+// //   }
+// // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $font-family: "Open Sans", sans-serif;
+// $primary-green: #007855;
+
+// .root {
+//   font-family: $font-family;
+
+//   .product {
+//     border-radius: 20px;
+//     padding-top: 48px;
+//     padding-bottom: 32px;
+//     background-color: #fff;
+
+//     @media (max-width: 768px) {
+//       padding-top: 28px;
+//       padding-bottom: 20px;
+//     }
+//   }
+
+//   .productTitle {
+//     font-family: $font-family !important;
+//     font-weight: 800 !important;
+//     font-size: 28px !important;
+//     color: #111 !important;
+//     margin-bottom: 24px !important;
+//     padding: 0 16px;
+
+//     @media (max-width: 768px) {
+//       font-size: 22px !important;
+//       margin-bottom: 16px !important;
+//     }
+//   }
+
+//   .productSection {
+//     background-color: #fff;
+//     row-gap: 24px !important;
+//     column-gap: 16px !important;
+//     padding: 0 8px 8px !important;
+
+//     @media (max-width: 768px) {
+//       row-gap: 16px !important;
+//       column-gap: 10px !important;
+//     }
+//   }
+
+//   .productItem {
+//     background-color: #fff !important;
+//     padding: 8px !important;
+
+//     @media (min-width: 1295px) {
+//       max-width: 300px;
+//     }
+//   }
+
+//   .productCard {
+//     position: relative;
+//     background-color: #fff !important;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     border-radius: 16px;
+//     transition: 0.3s;
+//     overflow: hidden;
+//     border: none !important;
+//     box-shadow: none !important;
+
+//     .productImage {
+//       object-fit: contain;
+//       width: 100%;
+//       height: auto;
+//       background-color: #fff !important;
+
+//       img {
+//         background-color: #fff !important;
+//       }
+//     }
+
+//     &:hover {
+//       box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05) !important;
+//       transform: translateY(-4px);
+//     }
+
+//     .productBody {
+//       padding: 0 16px 16px;
+//       background-color: #fff !important;
+
+//       .productTexts {
+//         margin-bottom: 20px;
+
+//         &>*:not(:last-child) {
+//           margin-bottom: 8px;
+//         }
+
+//         h3 {
+//           font-family: $font-family !important;
+//           font-weight: 800 !important;
+//           font-size: 20px !important;
+//           color: #000 !important;
+//           line-height: 1.3;
+//         }
+
+//         p,
+//         span {
+//           font-family: $font-family !important;
+//           font-size: 14px;
+//           color: #666;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// // =============================================
+// // DIALOG
+// // =============================================
+// .dialogCustom {
+//   z-index: 9999 !important;
+
+//   :global(.MuiDialog-container) {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     padding: 16px;
+//   }
+
+//   :global(.MuiPaper-root) {
+//     position: relative;
+//     max-width: 1000px !important;
+//     width: 100% !important;
+//     margin: 0 !important;
+//     border-radius: 24px !important;
+//     overflow: hidden !important;
+//     background-color: #fff !important;
+//     font-family: $font-family !important;
+//     max-height: calc(100vh - 60px) !important;
+
+//     @media (max-width: 768px) {
+//       width: 100% !important;
+//       border-radius: 20px !important;
+//       max-height: calc(100vh - 30px) !important;
+//     }
+
+//     @media (max-width: 480px) {
+//       border-radius: 16px !important;
+//       max-height: 100vh !important;
+//     }
+//   }
+// }
+
+// .closeButtonInside {
+//   position: absolute;
+//   top: 14px;
+//   right: 14px;
+//   background: rgba(245, 245, 245, 0.95);
+//   border-radius: 50%;
+//   padding: 8px;
+//   cursor: pointer;
+//   z-index: 200;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+//   transition: all 0.2s ease;
+
+//   svg {
+//     fill: #333 !important;
+//     width: 20px;
+//     height: 20px;
+//   }
+
+//   &:hover {
+//     background: #e0e0e0;
+//     transform: scale(1.1) rotate(90deg);
+//   }
+// }
+
+// .modalSplitLayout {
+//   display: flex;
+//   flex-direction: row;
+//   height: calc(100vh - 60px);
+//   max-height: 860px;
+//   overflow: hidden;
+
+//   @media (max-width: 768px) {
+//     flex-direction: column;
+//     height: auto;
+//     max-height: calc(100vh - 30px);
+//     overflow-y: auto;
+//     overflow-x: hidden;
+//     scrollbar-width: none;
+
+//     &::-webkit-scrollbar {
+//       display: none;
+//     }
+//   }
+// }
+
+// .modalLeftSticky {
+//   width: 420px;
+//   min-width: 360px;
+//   flex-shrink: 0;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding: 40px 24px;
+//   background: #fff;
+//   position: sticky;
+//   top: 0;
+//   align-self: flex-start;
+//   height: 100%;
+
+//   img {
+//     max-width: 100%;
+//     height: auto;
+//     object-fit: contain;
+//     max-height: 360px;
+//     width: 100%;
+//   }
+
+//   @media (max-width: 1024px) {
+//     width: 360px;
+//     min-width: 300px;
+//     padding: 30px 16px;
+
+//     img {
+//       max-height: 300px;
+//     }
+//   }
+
+//   @media (max-width: 768px) {
+//     width: 100%;
+//     min-width: unset;
+//     height: 260px;
+//     position: relative;
+//     padding: 20px;
+//     border-bottom: 1px solid #f0f0f0;
+
+//     img {
+//       max-height: 230px;
+//     }
+//   }
+
+//   @media (max-width: 480px) {
+//     height: 220px;
+
+//     img {
+//       max-height: 190px;
+//     }
+//   }
+// }
+
+// .modalRightScroll {
+//   flex: 1;
+//   overflow-y: auto;
+//   overflow-x: hidden;
+//   padding: 28px 28px 30px 24px;
+//   display: flex;
+//   flex-direction: column;
+//   background: #fff;
+//   scrollbar-width: thin;
+//   scrollbar-color: #ddd transparent;
+
+//   &::-webkit-scrollbar {
+//     width: 4px;
+//   }
+
+//   &::-webkit-scrollbar-track {
+//     background: transparent;
+//   }
+
+//   &::-webkit-scrollbar-thumb {
+//     background-color: #ddd;
+//     border-radius: 10px;
+//   }
+
+//   @media (max-width: 768px) {
+//     padding: 20px 16px;
+//     overflow-y: visible;
+//   }
+
+//   @media (max-width: 480px) {
+//     padding: 16px 14px;
+//   }
+
+//   .modalTitle {
+//     font-family: $font-family !important;
+//     font-size: 26px !important;
+//     font-weight: 800 !important;
+//     color: #000 !important;
+//     margin-bottom: 10px;
+//     line-height: 1.35 !important;
+//     padding-right: 44px;
+
+//     @media (max-width: 768px) {
+//       font-size: 22px !important;
+//       padding-right: 36px;
+//     }
+
+//     @media (max-width: 480px) {
+//       font-size: 19px !important;
+//       padding-right: 30px;
+//     }
+//   }
+
+//   .modalDescription {
+//     font-family: $font-family;
+//     font-size: 15px;
+//     color: #666;
+//     line-height: 1.65;
+//     margin-bottom: 18px;
+
+//     @media (max-width: 480px) {
+//       font-size: 14px;
+//       margin-bottom: 14px;
+//     }
+//   }
+
+//   .modalFooter {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 14px 0;
+//     border-top: 1px solid #f0f0f0;
+//     border-bottom: 1px solid #f0f0f0;
+//     margin-bottom: 16px;
+
+//     @media (max-width: 480px) {
+//       padding: 12px 0;
+//       margin-bottom: 12px;
+//     }
+//   }
+// }
+
+// .modalPriceGreen {
+//   font-family: $font-family !important;
+//   font-size: 30px !important;
+//   font-weight: 900 !important;
+//   color: $primary-green !important;
+//   letter-spacing: -0.5px;
+
+//   @media (max-width: 768px) {
+//     font-size: 26px !important;
+//   }
+
+//   @media (max-width: 480px) {
+//     font-size: 22px !important;
+//   }
+// }
+
+// .productButton {
+//   background: none;
+//   border: 2px solid $primary-green;
+//   outline: none;
+//   height: 46px;
+//   min-width: 150px;
+//   border-radius: 23px;
+//   cursor: pointer;
+//   transition: all 0.25s;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: $primary-green;
+//   font-weight: 700;
+//   font-size: 15px;
+//   font-family: $font-family;
+
+//   &:hover {
+//     background-color: $primary-green;
+//     color: #fff;
+//   }
+
+//   &:active {
+//     transform: scale(0.96);
+//   }
+
+//   @media (max-width: 480px) {
+//     height: 40px;
+//     min-width: 130px;
+//     font-size: 14px;
+//   }
+// }
+
+// .productButtonDisabled {
+//   border-color: #ccc !important;
+//   color: #aaa !important;
+//   cursor: not-allowed !important;
+//   background: #f5f5f5 !important;
+
+//   &:hover {
+//     background: #f5f5f5 !important;
+//     color: #aaa !important;
+//   }
+// }
+
+// .productCounter {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   height: 46px;
+//   border-radius: 23px;
+//   background-color: transparent;
+//   border: 2px solid $primary-green;
+//   min-width: 130px;
+//   padding: 0 4px;
+
+//   button {
+//     color: $primary-green !important;
+//   }
+
+//   span {
+//     font-family: $font-family;
+//     font-weight: 700;
+//     font-size: 16px;
+//     color: #000;
+//     min-width: 24px;
+//     text-align: center;
+//   }
+
+//   @media (max-width: 480px) {
+//     height: 40px;
+//     min-width: 115px;
+//   }
+// }
+
+// .comboHint {
+//   display: flex;
+//   align-items: center;
+//   gap: 8px;
+//   background: #fff8e6;
+//   border: 1px solid #f0c050;
+//   border-radius: 10px;
+//   padding: 10px 14px;
+//   margin-bottom: 16px;
+//   font-family: $font-family;
+//   font-size: 13px;
+//   font-weight: 600;
+//   color: #b07000;
+// }
+
+// .modifiersContainer {
+//   padding: 0 0 24px;
+//   background: transparent;
+// }
+
+// .modSection {
+//   margin-bottom: 22px;
+// }
+
+// .modHeading {
+//   font-family: $font-family !important;
+//   font-weight: 800 !important;
+//   font-size: 17px !important;
+//   margin-bottom: 12px !important;
+//   color: #111;
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+// }
+
+// .modRequired {
+//   font-size: 12px !important;
+//   font-weight: 600 !important;
+//   color: #e05000 !important;
+//   background: #fff0e6;
+//   border-radius: 6px;
+//   padding: 2px 8px;
+// }
+
+// .modGrid {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: 10px;
+
+//   @media (max-width: 500px) {
+//     grid-template-columns: 1fr;
+//   }
+// }
+
+// .modifierRow {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   background: #fff;
+//   padding: 10px 14px 10px 10px;
+//   border-radius: 14px;
+//   border: 1.5px solid #d0d0d0;
+//   transition: all 0.25s ease;
+//   gap: 8px;
+//   cursor: pointer;
+//   user-select: none;
+
+//   &:hover {
+//     border-color: $primary-green;
+//     box-shadow: 0 0 0 3px rgba(0, 120, 85, 0.08);
+//     background-color: #fafffd;
+//   }
+// }
+
+// .modifierRowSelected {
+//   border-color: $primary-green !important;
+//   background: linear-gradient(135deg, #f0fff8 0%, #e8fff4 100%) !important;
+//   box-shadow: 0 0 0 3px rgba(0, 120, 85, 0.12) !important;
+// }
+
+// .modifierInfo {
+//   display: flex;
+//   align-items: center;
+//   gap: 10px;
+//   flex: 1;
+//   min-width: 0;
+// }
+
+// .modImg {
+//   width: 56px;
+//   height: 56px;
+//   min-width: 56px;
+//   background: #f4f4f4;
+//   border-radius: 10px;
+//   padding: 4px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   overflow: hidden;
+//   transition: background 0.2s;
+
+//   img {
+//     width: 100% !important;
+//     height: 100% !important;
+//     object-fit: contain !important;
+//   }
+
+//   @media (max-width: 480px) {
+//     width: 48px;
+//     height: 48px;
+//     min-width: 48px;
+//   }
+// }
+
+// .modTitle {
+//   font-size: 13px !important;
+//   font-weight: 600 !important;
+//   color: #111 !important;
+//   line-height: 1.3 !important;
+//   font-family: $font-family !important;
+//   overflow: hidden;
+//   display: -webkit-box;
+//   -webkit-line-clamp: 2;
+//   -webkit-box-orient: vertical;
+// }
+
+// .modPrice {
+//   font-size: 12px !important;
+//   color: $primary-green !important;
+//   font-weight: 700 !important;
+//   font-family: $font-family !important;
+//   margin-top: 3px !important;
+// }
+
+// .radioCircle {
+//   width: 22px;
+//   height: 22px;
+//   min-width: 22px;
+//   border-radius: 50%;
+//   border: 2px solid #ccc;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   transition: all 0.2s ease;
+//   flex-shrink: 0;
+// }
+
+// .radioCircleActive {
+//   border-color: $primary-green !important;
+//   background: $primary-green;
+// }
+
+// .radioInner {
+//   width: 8px;
+//   height: 8px;
+//   border-radius: 50%;
+//   background: #fff;
+// }
+
+// .recomSection {
+//   padding: 0 0 24px;
+
+//   .recomHeading {
+//     font-family: $font-family !important;
+//     font-weight: 800 !important;
+//     font-size: 18px !important;
+//     margin-bottom: 14px !important;
+//     color: #000;
+//   }
+
+//   .recomGrid {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     gap: 12px;
+
+//     @media (max-width: 400px) {
+//       grid-template-columns: 1fr;
+//     }
+//   }
+// }
+
+// .recomCard {
+//   border: 1px solid #eee;
+//   border-radius: 16px;
+//   padding: 12px;
+//   display: flex;
+//   flex-direction: column;
+//   background: #fff;
+//   transition: 0.2s;
+
+//   &:hover {
+//     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+//     border-color: #ddd;
+//   }
+
+//   .recomImgBox {
+//     width: 100%;
+//     height: 100px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin-bottom: 10px;
+
+//     img {
+//       object-fit: contain;
+//       width: 100% !important;
+//       height: 100% !important;
+//     }
+
+//     @media (max-width: 480px) {
+//       height: 85px;
+//     }
+//   }
+
+//   .recomTitle {
+//     font-family: $font-family !important;
+//     font-size: 13px !important;
+//     font-weight: 700 !important;
+//     line-height: 1.4 !important;
+//     height: 38px;
+//     overflow: hidden;
+//     margin-bottom: 6px;
+//     color: #000;
+//     display: -webkit-box;
+//     -webkit-line-clamp: 2;
+//     -webkit-box-orient: vertical;
+//   }
+
+//   .recomCardPrice {
+//     font-family: $font-family;
+//     font-weight: 800;
+//     font-size: 14px;
+//     margin-bottom: 10px;
+//     color: $primary-green;
+//   }
+
+//   .recomAddBtn {
+//     background: none;
+//     border: 2px solid $primary-green;
+//     height: 34px;
+//     width: 100%;
+//     border-radius: 17px;
+//     color: $primary-green;
+//     font-weight: 700;
+//     font-size: 13px;
+//     font-family: $font-family;
+//     cursor: pointer;
+//     transition: 0.2s;
+
+//     &:hover {
+//       background-color: $primary-green;
+//       color: #fff;
+//     }
+//   }
+
+//   .recomCounterOutline {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     height: 34px;
+//     border: 2px solid $primary-green;
+//     border-radius: 17px;
+//     padding: 0 4px;
+
+//     span {
+//       font-family: $font-family;
+//       font-weight: 800;
+//       color: $primary-green;
+//       font-size: 14px;
+//     }
+
+//     button {
+//       padding: 4px;
+
+//       svg {
+//         fill: $primary-green !important;
+//         width: 16px;
+//         height: 16px;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 1024px) {
+//   .root {
+
+//     .productSection {
+//       justify-content: center;
+//     }
+//   }
+// }
+
+// @media (max-width: 768px) {
+//   .root {
+//     .product {
+//       padding-top: 16px;
+//       padding-bottom: 12px;
+//     }
+
+//     .productSection {
+//       display: flex !important;
+//       row-gap: 10px !important;
+//       column-gap: 8px !important;
+//       padding: 0 4px 4px !important;
+//     }
+
+//     .productItem {
+//       padding: 4px !important;
+//     }
+
+//     .productCard {
+//       border-radius: 12px;
+
+//       .productBody {
+//         padding: 0 8px 10px !important;
+
+//         .productTexts {
+//           margin-bottom: 10px !important;
+
+//           h3 {
+//             font-size: 13px !important;
+//             font-weight: 700 !important;
+//             line-height: 1.2 !important;
+//             margin-bottom: 3px !important;
+//             margin-top: 10px !important;
+//           }
+
+//           p,
+//           span {
+//             font-size: 11px !important;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .root {
+
+//     .productCard {
+//       .productBody {
+//         padding: 0 6px 8px !important;
+
+//         .productTexts {
+//           h3 {
+//             font-size: 12px !important;
+//           }
+
+//           p,
+//           span {
+//             font-size: 10px !important;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+
+
+
+
+
+$font-family: "Open Sans", sans-serif;
+$primary-green: #007855;
+
+.root {
+  font-family: $font-family;
+
+  .product {
+    border-radius: 20px;
+    padding-top: 48px;
+    padding-bottom: 32px;
+    background-color: #fff;
+
+    @media (max-width: 768px) {
+      padding-top: 28px;
+      padding-bottom: 20px;
+    }
+  }
+
+  .productTitle {
+    font-family: $font-family !important;
+    font-weight: 800 !important;
+    font-size: 28px !important;
+    color: #111 !important;
+    margin-bottom: 24px !important;
+    padding: 0 16px;
+
+    @media (max-width: 768px) {
+      font-size: 22px !important;
+      margin-bottom: 16px !important;
+    }
+  }
+
+  .productSection {
+    background-color: #fff;
+    row-gap: 24px !important;
+    column-gap: 16px !important;
+    padding: 0 8px 8px !important;
+
+    @media (max-width: 768px) {
+      row-gap: 16px !important;
+      column-gap: 10px !important;
+    }
+  }
+
+  .productItem {
+    background-color: #fff !important;
+    padding: 8px !important;
+
+    @media (min-width: 1295px) {
+      max-width: 300px;
+    }
+  }
+
+  .productCard {
+    position: relative;
+    background-color: #fff !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 16px;
+    transition: 0.3s;
+    overflow: hidden;
+    border: none !important;
+    box-shadow: none !important;
+
+    .productImage {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+      background-color: #fff !important;
+
+      img {
+        background-color: #fff !important;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05) !important;
+      transform: translateY(-4px);
+    }
+
+    .productBody {
+      padding: 0 16px 16px;
+      background-color: #fff !important;
+
+      .productTexts {
+        margin-bottom: 20px;
+
+        &>*:not(:last-child) {
+          margin-bottom: 8px;
+        }
+
+        h3 {
+          font-family: $font-family !important;
+          font-weight: 800 !important;
+          font-size: 20px !important;
+          color: #000 !important;
+          line-height: 1.3;
+        }
+
+        p,
+        span {
+          font-family: $font-family !important;
+          font-size: 14px;
+          color: #666;
+        }
+      }
+    }
+  }
+}
+
+// =============================================
+// DIALOG
+// =============================================
+.dialogCustom {
+  z-index: 9999 !important;
+
+  :global(.MuiDialog-container) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+  }
+
+  :global(.MuiPaper-root) {
+    position: relative;
+    max-width: 1000px !important;
+    width: 100% !important;
+    margin: 0 !important;
+    border-radius: 24px !important;
+    overflow: hidden !important;
+    background-color: #fff !important;
+    font-family: $font-family !important;
+    max-height: calc(100vh - 60px) !important;
+
+    @media (max-width: 768px) {
+      width: 100% !important;
+      border-radius: 20px !important;
+      max-height: calc(100vh - 30px) !important;
+    }
+
+    @media (max-width: 480px) {
+      border-radius: 16px !important;
+      max-height: 100vh !important;
+    }
+  }
+}
+
+.closeButtonInside {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(245, 245, 245, 0.95);
+  border-radius: 50%;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+  transition: all 0.2s ease;
+
+  svg {
+    fill: #333 !important;
+    width: 20px;
+    height: 20px;
+  }
+
+  &:hover {
+    background: #e0e0e0;
+    transform: scale(1.1) rotate(90deg);
+  }
+}
+
+.modalSplitLayout {
+  display: flex;
+  flex-direction: row;
+  height: calc(100vh - 60px);
+  max-height: 860px;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    max-height: calc(100vh - 30px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.modalLeftSticky {
+  width: 420px;
+  min-width: 360px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: 100%;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    max-height: 360px;
+    width: 100%;
+  }
+
+  @media (max-width: 1024px) {
+    width: 360px;
+    min-width: 300px;
+    padding: 30px 16px;
+
+    img {
+      max-height: 300px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    min-width: unset;
+    height: 260px;
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid #f0f0f0;
+
+    img {
+      max-height: 230px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    height: 220px;
+
+    img {
+      max-height: 190px;
+    }
+  }
+}
+
+.modalRightScroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 28px 28px 30px 24px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #ddd;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 16px;
+    overflow-y: visible;
+  }
+
+  @media (max-width: 480px) {
+    padding: 16px 14px;
+  }
+
+  .modalTitle {
+    font-family: $font-family !important;
+    font-size: 26px !important;
+    font-weight: 800 !important;
+    color: #000 !important;
+    margin-bottom: 10px;
+    line-height: 1.35 !important;
+    padding-right: 44px;
+
+    @media (max-width: 768px) {
+      font-size: 22px !important;
+      padding-right: 36px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 19px !important;
+      padding-right: 30px;
+    }
+  }
+
+  .modalDescription {
+    font-family: $font-family;
+    font-size: 15px;
+    color: #666;
+    line-height: 1.65;
+    margin-bottom: 18px;
+
+    @media (max-width: 480px) {
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+  }
+
+  .modalFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 16px;
+
+    @media (max-width: 480px) {
+      padding: 12px 0;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.modalPriceGreen {
+  font-family: $font-family !important;
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  color: $primary-green !important;
+  letter-spacing: -0.5px;
+
+  @media (max-width: 768px) {
+    font-size: 26px !important;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 22px !important;
+  }
+}
+
+.productButton {
+  background: none;
+  border: 2px solid $primary-green;
+  outline: none;
+  height: 46px;
+  min-width: 150px;
+  border-radius: 23px;
+  cursor: pointer;
+  transition: all 0.25s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-green;
+  font-weight: 700;
+  font-size: 15px;
+  font-family: $font-family;
+
+  &:hover {
+    background-color: $primary-green;
+    color: #fff;
+  }
+
+  &:active {
+    transform: scale(0.96);
+  }
+
+  @media (max-width: 480px) {
+    height: 40px;
+    min-width: 130px;
+    font-size: 14px;
+  }
+}
+
+.productButtonDisabled {
+  border-color: #ccc !important;
+  color: #aaa !important;
+  cursor: not-allowed !important;
+  background: #f5f5f5 !important;
+
+  &:hover {
+    background: #f5f5f5 !important;
+    color: #aaa !important;
+  }
+}
+
+.productCounter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 46px;
+  border-radius: 23px;
+  background-color: transparent;
+  border: 2px solid $primary-green;
+  min-width: 130px;
+  padding: 0 4px;
+
+  button {
+    color: $primary-green !important;
+  }
+
+  span {
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000;
+    min-width: 24px;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    height: 40px;
+    min-width: 115px;
+  }
+}
+
+.comboHint {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #fff8e6;
+  border: 1px solid #f0c050;
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  font-family: $font-family;
+  font-size: 13px;
+  font-weight: 600;
+  color: #b07000;
+}
+
+.modifiersContainer {
+  padding: 0 0 24px;
+  background: transparent;
+}
+
+.modSection {
+  margin-bottom: 22px;
+}
+
+.modHeading {
+  font-family: $font-family !important;
+  font-weight: 800 !important;
+  font-size: 17px !important;
+  margin-bottom: 12px !important;
+  color: #111;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modRequired {
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  color: #e05000 !important;
+  background: #fff0e6;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.modGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.modifierRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 10px 14px 10px 10px;
+  border-radius: 14px;
+  border: 1.5px solid #d0d0d0;
+  transition: all 0.25s ease;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    border-color: $primary-green;
+    box-shadow: 0 0 0 3px rgba(0, 120, 85, 0.08);
+    background-color: #fafffd;
+  }
+}
+
+.modifierRowSelected {
+  border-color: $primary-green !important;
+  background: linear-gradient(135deg, #f0fff8 0%, #e8fff4 100%) !important;
+  box-shadow: 0 0 0 3px rgba(0, 120, 85, 0.12) !important;
+}
+
+.modifierInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.modImg {
+  width: 56px;
+  height: 56px;
+  min-width: 56px;
+  background: #f4f4f4;
+  border-radius: 10px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: background 0.2s;
+
+  img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+
+  @media (max-width: 480px) {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+}
+
+.modTitle {
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: #111 !important;
+  line-height: 1.3 !important;
+  font-family: $font-family !important;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.modPrice {
+  font-size: 12px !important;
+  color: $primary-green !important;
+  font-weight: 700 !important;
+  font-family: $font-family !important;
+  margin-top: 3px !important;
+}
+
+.radioCircle {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.radioCircleActive {
+  border-color: $primary-green !important;
+  background: $primary-green;
+}
+
+.radioInner {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.recomSection {
+  padding: 0 0 24px;
+
+  .recomHeading {
+    font-family: $font-family !important;
+    font-weight: 800 !important;
+    font-size: 18px !important;
+    margin-bottom: 14px !important;
+    color: #000;
+  }
+
+  .recomGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+
+    @media (max-width: 400px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.recomCard {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  transition: 0.2s;
+
+  &:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+    border-color: #ddd;
+  }
+
+  .recomImgBox {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+    img {
+      object-fit: contain;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    @media (max-width: 480px) {
+      height: 85px;
+    }
+  }
+
+  .recomTitle {
+    font-family: $font-family !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    height: 38px;
+    overflow: hidden;
+    margin-bottom: 6px;
+    color: #000;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .recomCardPrice {
+    font-family: $font-family;
+    font-weight: 800;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: $primary-green;
+  }
+
+  .recomAddBtn {
+    background: none;
+    border: 2px solid $primary-green;
+    height: 34px;
+    width: 100%;
+    border-radius: 17px;
+    color: $primary-green;
+    font-weight: 700;
+    font-size: 13px;
+    font-family: $font-family;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      background-color: $primary-green;
+      color: #fff;
+    }
+  }
+
+  .recomCounterOutline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 34px;
+    border: 2px solid $primary-green;
+    border-radius: 17px;
+    padding: 0 4px;
+
+    span {
+      font-family: $font-family;
+      font-weight: 800;
+      color: $primary-green;
+      font-size: 14px;
+    }
+
+    button {
+      padding: 4px;
+
+      svg {
+        fill: $primary-green !important;
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}
+
+// =============================================
+// RESPONSIVE
+// =============================================
+@media (max-width: 1024px) {
+  .root {
+    .productSection {
+      justify-content: center;
+    }
+  }
+}
+
+// ✅ ASOSIY FIX — mobilda 2 ta yonma-yon
+@media (max-width: 768px) {
+  .root {
+    .product {
+      padding-top: 16px;
+      padding-bottom: 12px;
+    }
+
+    .productSection {
+      // ✅ flex emas, flex-wrap ishlatamiz — 2 ta yonma-yon bo'ladi
+      display: flex !important;
+      flex-wrap: wrap !important;
+      row-gap: 10px !important;
+      column-gap: 8px !important;
+      padding: 0 4px 4px !important;
+    }
+
+    // ✅ Har bir item 50% kenglik egallaydi (gap ni ayirib)
+    .productItem {
+      padding: 4px !important;
+      width: calc(50% - 4px) !important;
+      flex-shrink: 0 !important;
+      max-width: calc(50% - 4px) !important;
+    }
+
+    .productCard {
+      border-radius: 12px;
+
+      .productBody {
+        padding: 0 8px 10px !important;
+
+        .productTexts {
+          margin-bottom: 10px !important;
+
+          h3 {
+            font-size: 13px !important;
+            font-weight: 700 !important;
+            line-height: 1.2 !important;
+            margin-bottom: 3px !important;
+            margin-top: 10px !important;
+          }
+
+          p,
+          span {
+            font-size: 11px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .root {
+    .productItem {
+      width: calc(50% - 4px) !important;
+      max-width: calc(50% - 4px) !important;
+    }
+
+    .productCard {
+      .productBody {
+        padding: 0 6px 8px !important;
+
+        .productTexts {
+          h3 {
+            font-size: 12px !important;
+          }
+
+          p,
+          span {
+            font-size: 10px !important;
+          }
+        }
+      }
+    }
+  }
+}

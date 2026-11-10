@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.root {
+  background: linear-gradient(to right, #007855 0%, #33e19d 100%);
+  font-family: "Inter", sans-serif;
+}
+.root table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+.root td,
+.root th {
+  border: 1px solid #333;
+  text-align: left;
+  padding: 8px;
+}
+.root .banner {
+  background-image: url("/images/banner.png");
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=styles.module.scss.css.map */

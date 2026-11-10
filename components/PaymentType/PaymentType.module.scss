@@ -1,0 +1,105 @@
+.radioCard {
+  position: relative;
+  display: block;
+  // width: calc(33.3333% - 12px); if three columns
+  width: 100%;
+  height: 64px;
+  margin-right: 16px;
+  // &:last-child {
+  //   margin: 0;
+  //   label {
+  //     cursor: not-allowed;
+  //   }
+  // }
+  input[type='radio'] {
+    visibility: hidden;
+    width: 0;
+    margin: 0;
+    &:checked + label {
+      background-color: #4fad251a;
+      .cardIcon {
+        background-color: #fff;
+      }
+      .cardTitle {
+        color: var(--primary-green);
+      }
+      .radio {
+        background-color: var(--primary-green);
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 6px;
+          height: 6px;
+          background-color: #fff;
+          border-radius: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  label {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    transition: all 0.25s ease 0s;
+    cursor: pointer;
+    background-color: #f6f8f9;
+    .cardTitle {
+      flex: 1 0 50%;
+      margin: 0 8px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 25px;
+      color: #000;
+    }
+    .cardIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #eef0f2;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .radio {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      border: 1px solid #d5dadd;
+      border-radius: 50%;
+    }
+  }
+}
+
+.inputWrapper {
+  flex-direction: row;
+  margin-right: 4px;
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: 50% 50% !important;
+  column-gap: 16px;
+  row-gap: 16px;
+}
+
+@media (max-width: 800px) {
+  .inputWrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    margin-right: 0;
+  }
+  .radioCard {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}

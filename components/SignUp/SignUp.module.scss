@@ -1,0 +1,286 @@
+// .icon {
+//   cursor: pointer;
+//   display: flex;
+//   justify-content: flex-end;
+//   margin: 22px 22px 0 22px;
+
+//   svg {
+//     transition: transform 0.25s ease-in;
+
+//     &:hover {
+//       transform: rotate(90deg);
+//     }
+//   }
+// }
+
+// .wrapper {
+//   margin: 51px;
+//   position: relative;
+// }
+
+// .title {
+//   padding: 0 !important;
+//   display: grid;
+//   display: flex;
+//   flex-direction: column;
+
+//   & > *:first-child {
+//     // justify-self: end;
+//     position: absolute;
+//     top: 10px;
+//     right: 10px;
+//   }
+
+//   & > *:nth-child(2) {
+//     // text-align: center;
+//     margin-top: 20px;
+
+//     @media (max-width: 576px) {
+//       font-size: 24px;
+//       padding-bottom: 12px;
+//     }
+//   }
+
+//   & > *:nth-child(3) {
+//     @media (max-width: 576px) {
+//       font-size: 18px;
+//       padding-bottom: 12px;
+//     }
+//   }
+// }
+
+// .policy,
+// .offert {
+//   display: flex;
+//   font-weight: 550;
+//   font-size: 10px;
+//   line-height: 22px;
+//   letter-spacing: -0.41px;
+//   color: #5b6871;
+
+//   & > *:first-child {
+//     margin-right: 10px;
+//   }
+
+//   .container {
+//     display: flex;
+//     align-items: center;
+//     position: relative;
+//     padding-left: 35px;
+//     cursor: pointer;
+
+//     span {
+//       padding-left: 2px;
+//     }
+//   }
+
+//   /* Hide the default checkbox */
+//   .container input {
+//     visibility: hidden;
+//   }
+
+//   /* Create a custom checkbox */
+//   .mark {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 20px;
+//     width: 20px;
+//     background-color: #fff;
+//     border: 1px solid #a7a7a7;
+//   }
+
+//   .container:hover input ~ .mark {
+//     background-color: lightgray;
+//   }
+
+//   .container input:checked ~ .mark {
+//     background-color: var(--primary-green);
+//   }
+
+//   /* Create the mark/indicator (hidden when not checked) */
+//   .mark:after {
+//     content: '';
+//     position: absolute;
+//     display: none;
+//   }
+
+//   /* Show the mark when checked */
+//   .container input:checked ~ .mark:after {
+//     display: block;
+//   }
+
+//   /* Style the mark/indicator */
+//   .container .mark:after {
+//     left: 5px;
+//     top: 0px;
+//     width: 8px;
+//     height: 14px;
+//     border: solid white;
+//     border-width: 0 3px 3px 0;
+//     transform: rotate(45deg);
+//   }
+
+//   input {
+//     width: 20px !important;
+//     height: 20px !important;
+//     border: 1px solid #a7a7a7 !important;
+//     background: #000 !important;
+//     visibility: hidden;
+//     cursor: pointer;
+//   }
+
+//   .link {
+//     padding-left: 2px;
+//     font-weight: 550;
+//     font-size: 10px;
+//     line-height: 22px;
+//     letter-spacing: -0.41px;
+//     color: #309b42;
+
+//     &:hover {
+//       text-decoration-line: underline;
+//     }
+//   }
+// }
+
+// .policy {
+//   margin-bottom: 7px;
+// }
+
+// .offert {
+//   margin-bottom: 25px;
+// }
+
+// .btn {
+//   cursor: pointer;
+//   width: 100%;
+//   background-color: #259b07;
+//   font-size: 16px;
+//   font-weight: 600;
+//   line-height: 25px;
+//   color: #fff;
+//   padding: 13px 30px;
+//   border: 1px solid #ffffff59;
+//   outline: none;
+//   transition: 0.2s ease-out;
+//   display: block;
+//   border-radius: 6px;
+
+//   @media (max-width: 576px) {
+//     padding: 9px 15px;
+//     font-size: 15px;
+//     line-height: 22px;
+//   }
+
+//   &:hover {
+//     background-color: #259b07;
+//     box-shadow: 0px 2px 18px -8px rgba(255, 255, 255, 0.9);
+//   }
+// }
+
+// .error {
+//   padding: 0 !important;
+//   color: tomato;
+//   font-weight: 550;
+//   font-size: 17px;
+//   line-height: 22px;
+//   text-align: center;
+//   letter-spacing: -0.41px;
+// }
+
+
+.policy,
+.offert {
+  display: flex;
+  font-weight: 550;
+  font-size: 13px; /* oldin 10px edi */
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  color: #5b6871;
+
+  & > *:first-child {
+    margin-right: 10px;
+  }
+  
+
+  .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 40px; /* joy ko'proq */
+    cursor: pointer;
+
+    span {
+      padding-left: 4px;
+    }
+  }
+
+  /* Default checkbox yashirinadi */
+  .container input {
+    visibility: hidden;
+  }
+
+  /* Custom checkbox */
+  .mark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 26px; /* oldin 20px edi */
+    width: 26px; /* oldin 20px edi */
+    background-color: #fff;
+    border: 2px solid #a7a7a7;
+    border-radius: 6px; /* yumaloqroq */
+  }
+
+  .container:hover input ~ .mark {
+    background-color: #f2f2f2;
+  }
+
+  .container input:checked ~ .mark {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+  }
+
+  /* Tick belgisi */
+  .mark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .mark:after {
+    display: block;
+  }
+
+  .container .mark:after {
+    left: 8px;
+    top: 3px;
+    width: 7px;
+    height: 14px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+
+  input {
+    width: 26px !important;
+    height: 26px !important;
+    visibility: hidden;
+    margin-top: 6px;
+    cursor: pointer;
+  }
+
+  .link {
+    padding-left: 4px;
+    font-weight: 550;
+    font-size: 13px; /* oldin 10px edi */
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    color: #309b42;
+
+    &:hover {
+      text-decoration-line: underline;
+    }
+  }
+}

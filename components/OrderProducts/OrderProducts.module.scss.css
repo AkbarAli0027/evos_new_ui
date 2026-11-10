@@ -1,0 +1,32 @@
+.orderItem {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.orderItem:last-child {
+  margin-bottom: 0;
+}
+.orderItem .itemInfo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.orderItem .itemInfo .itemName {
+  margin-left: 16px;
+  max-width: 300px;
+}
+.orderItem .itemInfo .itemName .itemDescription {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .orderItem {
+    display: none;
+  }
+  .orderItem .itemInfo .itemName .itemDescription {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=OrderProducts.module.scss.css.map */

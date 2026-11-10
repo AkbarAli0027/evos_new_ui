@@ -1,0 +1,15 @@
+.icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
+.icon svg {
+  transition: transform 0.25s ease-in;
+  vertical-align: middle;
+}
+.icon svg:hover {
+  transform: rotate(90deg);
+}
+
+/*# sourceMappingURL=CloseIcon.module.scss.css.map */

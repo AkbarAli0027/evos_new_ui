@@ -1,0 +1,928 @@
+// .root {
+//   position: static;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100px;
+//   background-color: #fff;
+//   box-shadow: inset 0px -1px 0px #e5e5e5;
+//   z-index: 9999;
+//   display: flex;
+//   align-items: center;
+
+//   .navbar {
+//     display: block;
+//     margin-left: 32px;
+//   }
+
+//   .brandLogo {
+//     display: block;
+
+//     svg {
+//       height: 48px;
+//       vertical-align: middle;
+//     }
+//   }
+
+//   .evosLogo {
+//     display: none;
+//   }
+
+//   .header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     width: 100%;
+//   }
+
+//   .headerLeftBox {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//   }
+
+//   .headerRightBox {
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+
+//     .address {
+//       height: 48px;
+//       padding: 0 10px;
+//       background: none;
+//       border-radius: 4px;
+//       border: none;
+//       margin-right: 16px;
+//       display: flex;
+//       align-items: center;
+//       gap: 6px;
+//       cursor: pointer;
+//       width: 180px;
+
+//       p {
+//         white-space: nowrap;
+//         text-overflow: ellipsis;
+//         overflow: hidden;
+//         font-size: 16px;
+//         width: 75%;
+//         line-height: 22px;
+//         font-weight: 500;
+//       }
+//     }
+//   }
+
+//   .headerText {
+//     font-weight: 500;
+//   }
+
+//   .form {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//     padding-left: 15px;
+//     background-color: #f6f8f9;
+//     margin: 0 24px;
+//   }
+
+//   .formInput {
+//     width: 100%;
+//     outline: none;
+//     border: none;
+//     padding: 12px 0 12px 12px;
+//     font-weight: 300;
+//     background: #f6f8f9;
+//     font-size: 17px;
+//     line-height: 22px;
+//   }
+
+//   .shop {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     vertical-align: middle;
+//     background: none;
+//     padding: 12px 12px;
+//     margin-right: 16px;
+//     border-radius: 4px;
+//     cursor: pointer;
+//     color: #000;
+//     outline: none;
+//     border: none;
+
+//     &.total {
+//       background-color: var(--primary-green); //secondary
+//       color: #fff;
+
+//       .shopIcon {
+//         svg {
+//           fill: #fff;
+//         }
+//       }
+//     }
+
+//     .shopIcon {
+//       svg {
+//         fill: #323232;
+//       }
+//     }
+//   }
+
+//   .shopText {
+//     font-weight: 500;
+//     color: inherit;
+//     font-size: 17px;
+//     line-height: 22px;
+//     margin-left: 12px;
+//   }
+
+//   .lang {
+//     position: relative;
+//     background: none;
+//     padding: 11px;
+//     margin-right: 16px;
+//     border-radius: 4px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     cursor: pointer;
+
+//     .wrapper {
+//       position: absolute;
+//       cursor: default;
+//       top: 45px;
+//       right: -30px;
+//       padding: 30px;
+//       display: none;
+//       width: 300px;
+//       transition: max-height 0.5s ease-out;
+//       max-height: 0;
+
+//       img {
+//         width: 24px;
+//         height: 24px;
+//       }
+//     }
+
+//     .langList {
+//       cursor: default;
+//       width: 100%;
+//       box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.06);
+//       background: #fff;
+//       position: relative;
+//       z-index: 9999;
+//       border-radius: 4px;
+
+//       &::before {
+//         content: '';
+//         position: absolute;
+//         width: 0;
+//         height: 0;
+//         border-bottom: 15px solid #fff;
+//         border-left: 15px solid transparent;
+//         border-right: 15px solid transparent;
+//         top: -13px;
+//         right: 15px;
+//       }
+//     }
+
+//     .expandIcon svg {
+//       transition: transform 0.3s ease-out;
+//     }
+
+//     &:hover {
+//       .expandIcon svg {
+//         transform: rotate(-180deg);
+//       }
+
+//       .wrapper {
+//         display: block;
+//         max-height: 100vh;
+//       }
+//     }
+//   }
+
+//   .user {
+//     cursor: pointer;
+
+//     &:hover .userIcon {
+//       color: #ff0000; // hoverda rang qizil bo‘ladi
+//     }
+//   }
+
+//   // .userIcon {
+//   //   width: 60px !important;
+//   //   height: 60px !important;
+//   //   display: block;
+//   // }
+
+//   // .user {
+//   //   background: none;
+//   //   border: 2px solid #007855;
+//   //   width: 40px;
+//   //   height: 40px;
+//   //   border-radius: 50%;
+//   //   cursor: pointer;
+//   //   position: relative;
+//   //   display: flex;
+//   //   justify-content: center;
+//   //   align-items: center;
+
+//   //   .loginWrapper {
+//   //     position: absolute;
+//   //     top: 45px;
+//   //     right: -50px;
+//   //     background: none;
+//   //     padding: 30px;
+//   //     display: none;
+//   //     cursor: default;
+//   //     opacity: 0;
+//   //     max-height: 0;
+//   //     transition: opacity 0.3s ease-out;
+
+//   //     &::before {
+//   //       content: '';
+//   //       position: absolute;
+//   //       width: 0;
+//   //       height: 0;
+//   //       border-bottom: 15px solid #fff;
+//   //       border-left: 15px solid transparent;
+//   //       border-right: 15px solid transparent;
+//   //       top: 15px;
+//   //       right: 50px;
+//   //     }
+//   //   }
+
+//   //   &:hover {
+//   //     .loginWrapper {
+//   //       z-index: 1899;
+//   //       display: block;
+//   //       opacity: 1;
+//   //       max-height: 100vh;
+//   //     }
+//   //   }
+//   // }
+
+//   // .userActive {
+//   //   background: var(--primary-green); //secondary
+//   //   padding: 6px 12px;
+//   //   cursor: pointer;
+//   //   border-radius: 4px;
+//   //   position: relative;
+
+//   //   .loginWrapper {
+//   //     position: absolute;
+//   //     top: 45px;
+//   //     right: -50px;
+//   //     background: none;
+//   //     padding: 30px;
+//   //     display: none;
+//   //     cursor: default;
+//   //     opacity: 0;
+//   //     max-height: 0;
+//   //     transition: opacity 0.3s ease-out;
+
+//   //     &::before {
+//   //       content: '';
+//   //       position: absolute;
+//   //       width: 0;
+//   //       height: 0;
+//   //       border-bottom: 15px solid #fff;
+//   //       border-left: 15px solid transparent;
+//   //       border-right: 15px solid transparent;
+//   //       top: 15px;
+//   //       right: 50px;
+//   //     }
+//   //   }
+
+//   //   &:hover {
+//   //     .loginWrapper {
+//   //       z-index: 1899;
+//   //       display: block;
+//   //       opacity: 1;
+//   //       max-height: 100vh;
+//   //     }
+//   //   }
+//   // }
+
+
+
+// .userIcon {
+//     width: 24px !important; // Icon hajmini me'yoriga keltirdik
+//     height: 24px !important;
+//     display: block;
+//   }
+
+//   // Registratsiyadan oldingi holat (o'sha-o'sha qoladi)
+//   .user {
+//     background: none;
+//     border: 2px solid #309b42; // Sening brend ranging
+//     width: 40px;
+//     height: 40px;
+//     border-radius: 50%;
+//     cursor: pointer;
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     .loginWrapper {
+//       position: absolute;
+//       top: 45px;
+//       right: -50px;
+//       background: none;
+//       padding: 30px;
+//       display: none;
+//       cursor: default;
+//       opacity: 0;
+//       max-height: 0;
+//       transition: opacity 0.3s ease-out;
+
+//       &::before {
+//         content: '';
+//         position: absolute;
+//         width: 0;
+//         height: 0;
+//         border-bottom: 15px solid #fff;
+//         border-left: 15px solid transparent;
+//         border-right: 15px solid transparent;
+//         top: 15px;
+//         right: 50px;
+//       }
+//     }
+
+//     &:hover {
+//       .loginWrapper {
+//         z-index: 1899;
+//         display: block;
+//         opacity: 1;
+//         max-height: 100vh;
+//       }
+//     }
+//   }
+
+//   // REGISTRATSIYADAN O'TGANDAN KEYINGI HOLAT (TUZATILDI)
+//   .userActive {
+//     background: #007855; // Yashil fon
+//     width: 40px; // To'rtburchak bo'lib qolmasligi uchun aniq o'lcham
+//     height: 40px;
+//     border-radius: 50%; // Doira shaklida qolishi uchun
+//     cursor: pointer;
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 2px solid #007855; // Chetiga ham yashil chiziq
+
+//     .loginWrapper {
+//       position: absolute;
+//       top: 45px;
+//       right: -50px;
+//       background: none;
+//       padding: 30px;
+//       display: none;
+//       cursor: default;
+//       opacity: 0;
+//       max-height: 0;
+//       transition: opacity 0.3s ease-out;
+
+//       &::before {
+//         content: '';
+//         position: absolute;
+//         width: 0;
+//         height: 0;
+//         border-bottom: 15px solid #fff;
+//         border-left: 15px solid transparent;
+//         border-right: 15px solid transparent;
+//         top: 15px;
+//         right: 50px;
+//       }
+//     }
+
+//     &:hover {
+//       .loginWrapper {
+//         z-index: 1899;
+//         display: block;
+//         opacity: 1;
+//         max-height: 100vh;
+//       }
+//     }
+//   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//   .shopping {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+
+//   .shopIcon {
+//     vertical-align: middle;
+//   }
+
+//   .expandIcon {
+//     cursor: pointer;
+//     margin-left: 12px;
+
+//     svg {
+//       vertical-align: middle;
+//     }
+//   }
+
+//   .responsiveIconsWrapper {
+//     display: none;
+//   }
+
+//   .basketDesktop {
+//     display: block;
+//   }
+
+//   .basketMobile {
+//     display: none;
+//   }
+// }
+
+// .listClickBtn,
+// .promotionBtn {
+//   background: red;
+//   color: white;
+//   height: 48px;
+//   width: 120px;
+//   border-radius: 4px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   color: #fff;
+//   font-size: 17px;
+//   cursor: pointer;
+//   border: none;
+//   outline: none;
+//   margin-right: 0px;
+//   font-weight: 500;
+
+//   @media (max-width: 768px) {
+//     height: 44px;
+//     margin-right: 4px;
+//   }
+// }
+
+// // .promotionBtn {
+// //   font-size: 14px;
+// //   margin-right: 0;
+// //   width: fit-content;
+// //   padding: 4px 13px;
+// //   display: none;
+// //   @media (max-width: 600px) {
+// //     display: block;
+// //     //margin-right: 10px;
+// //   }
+// // }
+
+// .langList {
+//   padding: 16px;
+//   display: flex;
+//   flex-direction: column;
+//   width: 100%;
+// }
+
+// .listItem {
+//   display: flex;
+//   padding: 13px 12px;
+//   cursor: pointer;
+//   width: 100%;
+
+//   &:hover {
+//     background-color: #f6f8f9;
+//     padding: 13px 12px;
+//   }
+// }
+
+// .menuIconBox {
+//   display: none;
+// }
+
+// @media screen and (max-width: 576px) {
+//   .root {
+//     position: sticky;
+//     z-index: 999;
+//     height: 65px;
+//     top: -1px;
+//     box-shadow: none;
+//     background-color: var(--primary-green);
+
+//     // box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08),
+//     //   inset 0px -1px 0px rgba(0, 0, 0, 0.05);
+//     .navbar {
+//       display: none;
+//     }
+
+//     .brandLogo {
+//       display: none;
+//       margin-right: 20px;
+
+//       svg {
+//         width: 108px;
+//         height: 40px;
+//         vertical-align: middle;
+//       }
+//     }
+
+//     .evosLogo {
+//       display: block;
+//       margin-right: 10px;
+
+//       svg {
+//         width: 108px;
+//         height: 40px;
+//         vertical-align: middle;
+//       }
+//     }
+
+//     .formInput {
+//       display: none;
+//     }
+
+//     .logo {
+//       display: none;
+//     }
+
+//     .lang {
+//       display: none;
+//     }
+
+//     .user {
+//       display: none;
+//     }
+
+//     .headerRightBox {
+//       display: none;
+//     }
+
+//     .headerLeftBox {
+//       display: flex;
+//       justify-content: flex-start;
+//       align-items: center;
+//     }
+
+//     .form {
+//       display: none;
+//     }
+
+//     .menuIconBox {
+//       display: block;
+//       background-color: #f6f8f9;
+//       padding: 9px 11px 5px 11px;
+//       align-self: flex-end;
+//       border-radius: 4px;
+//     }
+
+//     .responsiveIconsWrapper {
+//       display: block;
+//     }
+
+//     .basketDesktop {
+//       display: none;
+//     }
+
+//     .basketMobile {
+//       display: block;
+//     }
+
+//     .addressMobile {
+//       height: 44px;
+//       padding: 0 10px;
+//       background-color: #f6f8f9;
+//       border-radius: 4px;
+//       border: none;
+//       margin-right: 5px;
+//       display: flex;
+//       align-items: center;
+//       gap: 6px;
+//       cursor: pointer;
+//       width: 48px;
+//     }
+
+//     .shop {
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       vertical-align: middle;
+//       background-color: #f6f8f9;
+//       padding: 8px 12px;
+//       margin-right: 5px;
+//       cursor: pointer;
+//       color: #000;
+//       outline: none;
+//       border: none;
+
+//       &.total {
+//         background-color: #309b42;
+//         color: #fff;
+
+//         .shopIcon {
+//           svg {
+//             fill: #fff;
+//           }
+//         }
+//       }
+
+//       .shopIcon {
+//         svg {
+//           fill: #323232;
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .langIcon {
+//   display: flex;
+//   align-items: center;
+//   margin-right: 5px;
+// }
+
+
+.root {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: inset 0px -1px 0px #e5e5e5;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .headerLeftBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .navbar {
+      display: block;
+      margin-left: 32px;
+    }
+
+    .brandLogo {
+      display: block;
+
+      svg {
+        height: 48px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .headerRightBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+
+    .address {
+      height: 48px;
+      padding: 0 10px;
+      background: none;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      width: 180px;
+
+      p {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 500;
+        margin: 0;
+      }
+    }
+  }
+
+  /* LANGUAGE DROPDOWN SECTION */
+  .lang {
+    position: relative;
+    background: none;
+    padding: 15px 10px; // Hover maydonini kengaytirdik
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .expandIcon svg {
+      transition: transform 0.3s ease-out;
+      margin-left: 4px;
+    }
+
+    .wrapper {
+      position: absolute;
+      top: 100%; // Triggerning aynan tagidan boshlanadi
+      right: -20px;
+      width: 240px;
+      padding-top: 15px; // "Shaffof ko'prik" - mishka uzilib qolmasligi uchun
+      display: none;
+      z-index: 9999;
+      cursor: default;
+    }
+
+    &:hover {
+      .expandIcon svg {
+        transform: rotate(-180deg);
+      }
+
+      .wrapper {
+        display: block;
+      }
+    }
+  }
+
+  .langList {
+    background: #fff;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    padding: 8px 0;
+    position: relative;
+    border: 1px solid #f0f0f0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      right: 35px;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid #fff;
+    }
+
+    .listItem {
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
+      text-decoration: none;
+      color: #323232;
+      transition: background 0.2s;
+
+      &:hover {
+        background-color: #f6f8f9;
+      }
+
+      img {
+        width: 22px;
+        height: 22px;
+        margin-right: 12px;
+      }
+    }
+  }
+
+  /* USER ICON SECTION */
+  .user,
+  .userActive {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #007855;
+  }
+
+  .user {
+    background: transparent;
+  }
+
+  .userActive {
+    background: #007855; // Registratsiyadan keyin to'la yashil
+  }
+
+  .userIcon {
+    width: 24px !important;
+    height: 24px !important;
+    display: block;
+  }
+
+  /* SHOPPING SECTION */
+  .shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+
+    &.total {
+      background-color: #007855;
+      color: #fff;
+
+      .shopIcon svg {
+        fill: #fff;
+      }
+    }
+
+    .shopIcon svg {
+      fill: #323232;
+    }
+  }
+
+  .shopText {
+    font-weight: 500;
+    font-size: 17px;
+    margin-left: 10px;
+  }
+}
+
+/* MOBILE RESPONSIVE PART */
+@media screen and (max-width: 576px) {
+  .root {
+    position: sticky;
+    height: 65px;
+    background-color: #309b42; // Mobile primary green
+
+    .navbar,
+    .lang,
+    .user,
+    .headerRightBox,
+    .brandLogo {
+      display: none;
+    }
+
+    .evosLogo {
+      display: block;
+
+      svg {
+        width: 108px;
+        height: 40px;
+      }
+    }
+
+    .menuIconBox {
+      display: block;
+      background-color: #f6f8f9;
+      padding: 5px 10px;
+      border-radius: 4px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+/* Header.module.scss ga QO'SHING — mavjud .root {} ichiga */
+
+/* Mobile hamburger tugma — desktop da yashirin */
+.mobileMenuBtn {
+  display: none;
+}
+
+/* 800px dan kichikda: desktop elementlar yashiriladi, hamburger chiqadi */
+@media screen and (max-width: 800px) {
+  .root {
+    .headerRightBox {
+      display: none !important;
+    }
+
+    .navbar {
+      display: none !important;
+    }
+
+    .mobileMenuBtn {
+      display: flex !important;
+      align-items: center;
+    }
+  }
+}

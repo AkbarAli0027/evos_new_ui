@@ -1,0 +1,33 @@
+.ItemWrap {
+  .line {
+    width: 100%;
+    height: 55px;
+    background-color: #309b42;
+    margin-top: 60px;
+    position: relative;
+    margin-bottom: 40px;
+
+    img {
+      width: 186px;
+      height: 186px;
+      position: absolute;
+      top: -90px;
+    }
+  }
+  .itemUzWrap {
+    .itemWrapTitle {
+      color: #0a0909;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      user-select: none;
+    }
+    .itemList {
+      width: 80%;
+      color: #0a0909;
+      font-size: 18px;
+      font-weight: 500;
+      user-select: none;
+    }
+  }
+}

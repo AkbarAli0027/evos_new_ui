@@ -1,0 +1,21 @@
+.wrapper {
+  width: 100%;
+}
+
+@media (max-width: 575px) {
+  .root {
+  }
+}
+.title {
+  display: grid;
+  & > *:first-child {
+    justify-self: end;
+  }
+}
+.regionElement {
+  width: 100%;
+  cursor: pointer;
+  &:hover {
+    background-color: #f6f8f9;
+  }
+}

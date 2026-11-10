@@ -1,0 +1,60 @@
+.title {
+  display: block;
+}
+
+.statusBox {
+  display: block;
+}
+.statusBoxResponsive {
+  display: none;
+}
+.maxWidthBox {
+  width: 60%;
+}
+
+.verticalMargin {
+  margin: 32px 0;
+}
+
+.orderDate {
+  margin-left: 32px;
+}
+.mobileTitle {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .title {
+    display: none;
+  }
+  .verticalMargin {
+    margin: 16px 0;
+  }
+  .maxWidthBox {
+    width: 100%;
+  }
+  .statusBox {
+    display: none;
+  }
+  .statusBoxResponsive {
+    display: block;
+  }
+  .iconWrapper {
+    padding: 8px 10px;
+    background-color: #f6f8f9;
+    border-radius: 50%;
+    svg {
+      vertical-align: middle;
+    }
+  }
+  .orderDate {
+    margin-left: 16px;
+  }
+  .mobileTitle {
+    display: block;
+  }
+  .branchBox {
+    box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.08);
+    margin-bottom: 16px;
+  }
+}

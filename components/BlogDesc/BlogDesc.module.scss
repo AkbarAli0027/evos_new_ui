@@ -1,0 +1,46 @@
+.title {
+  display: block;
+}
+.paddingBox {
+  padding: 16px;
+  margin: 32px 0;
+}
+
+.blogTitle {
+  font-size: 24px !important;
+  line-height: 25px;
+  color: #000 !important;
+  font-weight: 500;
+  margin-top: 8px !important;
+}
+
+.marginBox {
+  margin: 8px 0;
+  p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #5b6871;
+    letter-spacing: 0.24px;
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+}
+@media (max-width: 575px) {
+  .title {
+    display: none;
+  }
+  .paddingBox {
+    padding: 16px;
+    margin: 16px 0;
+  }
+  .marginBox {
+    margin: 16px 0;
+  }
+  .blogTitle {
+    font-size: 16px;
+    line-height: 25px;
+    color: #000 !important;
+    font-weight: 500;
+  }
+}

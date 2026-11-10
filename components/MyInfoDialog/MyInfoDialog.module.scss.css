@@ -1,0 +1,37 @@
+.btn {
+  cursor: pointer;
+  width: 43%;
+  background-color: #F6F8F9;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.41px;
+  color: #25282A;
+  padding: 17px 20px;
+  border: 0;
+  outline: none;
+  margin-right: 16px;
+}
+.btn:hover {
+  background: rgba(37, 40, 42, 0.1);
+}
+
+.btnPrimary {
+  width: 57%;
+  white-space: nowrap;
+  background-color: #309B42;
+  color: white;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.41px;
+  padding: 17px 10px;
+  border: 0;
+  outline: none;
+}
+.btnPrimary:hover {
+  background: rgba(48, 155, 66, 0.9);
+}
+
+/*# sourceMappingURL=MyInfoDialog.module.scss.css.map */

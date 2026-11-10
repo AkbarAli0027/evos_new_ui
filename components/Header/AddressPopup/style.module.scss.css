@@ -1,0 +1,23 @@
+.list {
+  width: 256px;
+}
+.list .item {
+  cursor: pointer;
+  display: flex;
+  padding: 18px 24px;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+}
+.list .item p {
+  font-weight: 500;
+  width: 80%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.list .item:hover {
+  background-color: #f6f8f9;
+}
+
+/*# sourceMappingURL=style.module.scss.css.map */

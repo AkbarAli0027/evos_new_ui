@@ -1,0 +1,18 @@
+.icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin: 22px 22px 0 22px;
+}
+.icon svg {
+  transition: transform 0.25s ease-in;
+}
+.icon svg:hover {
+  transform: rotate(90deg);
+}
+
+.wrapper {
+  margin: 32px;
+}
+
+/*# sourceMappingURL=LoginForm.module.scss.css.map */

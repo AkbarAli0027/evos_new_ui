@@ -1,0 +1,428 @@
+.root {
+  margin: 108px auto;
+  &__title {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 100%;
+    color: #000;
+  }
+  &__mb {
+    margin-bottom: 36px;
+  }
+  &__mt {
+    margin-top: 58px;
+  }
+
+  &__wrapper {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 40px;
+    &__box {
+      display: flex;
+      gap: 20px;
+    }
+    &__leftBox {
+      width: 76%;
+    }
+    &__imageBlue {
+      position: relative;
+      width: 30%;
+      height: 550px;
+      display: block;
+    }
+    &__imageYellow {
+      position: relative;
+      width: 24%;
+      height: 550px;
+      display: block;
+    }
+    &__imageRed {
+      position: relative;
+      width: 60%;
+      height: 500px;
+      display: block;
+    }
+    &__title {
+      font-weight: 900;
+      font-size: 50px;
+      line-height: 100%;
+      margin-bottom: 22px;
+
+      &__blue {
+        color: #0a8cdc;
+      }
+      &__red {
+        color: #fa6464;
+      }
+      &__green {
+        color: #00b987;
+      }
+    }
+    &__card {
+      margin-top: 20px;
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      align-items: stretch;
+      border-radius: 20px;
+      overflow: hidden;
+      background-color: #f6f8f9;
+      &__left {
+        color: #ffeb32;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 100%;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__blue {
+          background-color: #0a8cdc;
+        }
+        &__red {
+          background-color: #fa6464;
+        }
+        &__green {
+          background-color: #00b987;
+        }
+      }
+      &__right {
+        padding: 21px 33px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 90%;
+        &__title {
+          font-size: 20px;
+          font-weight: 900;
+          line-height: 100%;
+          color: #000;
+        }
+        &__description {
+          font-weight: 400;
+          line-height: normal;
+          color: #000;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .title {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+      h1 {
+        font-size: 40px;
+        font-weight: 900;
+        color: #000;
+        letter-spacing: 0%;
+        line-height: 100%;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+        letter-spacing: 0%;
+        line-height: 100%;
+      }
+    }
+    .logo {
+      position: relative;
+      .evosLogo {
+        background-color: #00b987;
+        border-radius: 16px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px;
+
+        p {
+          font-size: 122px;
+          line-height: 100%;
+          color: #fff;
+          font-weight: 900;
+          display: inline-block;
+        }
+        span {
+          color: #fff;
+          vertical-align: text-top;
+        }
+      }
+      .eventsLogo {
+        position: absolute;
+        top: 117%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        height: 105px;
+        padding: 0 42px;
+      }
+    }
+    .mobileBannerContent {
+      display: none;
+    }
+  }
+
+  .blueCard {
+    background-color: #0a8cdc;
+    border-radius: 20px;
+    padding: 25px 38px;
+    margin: 55px 0 40px;
+
+    p {
+      font-size: 30px;
+      font-weight: 900;
+      line-height: 100%;
+      color: #fff;
+      &:first-child {
+        color: #fff;
+      }
+      &:last-child {
+        color: #ffeb32;
+      }
+    }
+  }
+  &__events {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-self: stretch;
+    height: fit-content;
+    margin: 24px 0;
+
+    &__card {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 28px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 24px;
+      width: 33.3333%;
+      &__yellow {
+        background-color: #ffeb32;
+      }
+      &__title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 100%;
+        color: #808080;
+      }
+      &__description {
+        font-weight: 700;
+        color: #000;
+        font-size: 25px;
+        line-height: 100%;
+        &__yellow {
+          color: #0a8cdc;
+        }
+        &__yellowRed {
+          color: #fa6464;
+        }
+        &__yellowGreen {
+          color: #00b987;
+        }
+      }
+    }
+  }
+}
+
+// ========================================================
+// ========================================================
+// =====  M  E  D  I  A     Q  U  E  R  I  E  S ==========
+// =========================================================
+// =========================================================
+
+@media (max-width: 870px) {
+  .root {
+    margin: 20px auto;
+    .banner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .title {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+          font-size: 20px;
+          font-weight: 900;
+          color: #000;
+          letter-spacing: 0%;
+          line-height: normal;
+        }
+        p {
+          display: none;
+        }
+      }
+      .mobileBannerContent {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        p {
+          font-size: 12px;
+          font-weight: 500;
+          color: #000;
+          letter-spacing: 0%;
+          line-height: normal;
+        }
+        p:nth-of-type(2) {
+          font-style: italic;
+        }
+      }
+
+      .logoWrapper {
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        height: 243px;
+        border-radius: 4px;
+        .logo {
+          position: relative;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .evosLogo {
+            background-color: #00b987;
+            border-radius: 16px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            width: 70%;
+            margin-top: -30px;
+
+            p {
+              font-size: 70px;
+              line-height: normal;
+              color: #fff;
+              font-weight: 900;
+              display: inline-block;
+            }
+            span {
+              color: #fff;
+              vertical-align: text-top;
+            }
+          }
+          .eventsLogo {
+            // background-color: red;
+            position: absolute;
+            top: 117%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            width: 40%;
+            height: 50px;
+            img {
+              width: 260px;
+            }
+            // padding: 0 10px;
+          }
+        }
+      }
+    }
+    .blueCard {
+      background-color: #0a8cdc;
+      border-radius: 20px;
+      padding: 20px 15px;
+      margin: 10px 0 20px;
+
+      p {
+        font-size: 20px;
+        line-height: normal;
+      }
+    }
+    &__title {
+      font-size: 20px;
+      line-height: normal;
+    }
+    &__mb {
+      margin-bottom: 10px;
+    }
+    &__mt {
+      margin-top: 12px;
+    }
+    &__wrapper {
+      padding: 20px 15px;
+      &__leftBox {
+        width: 100%;
+      }
+      &__imageBlue {
+        display: none;
+      }
+      &__imageYellow {
+        display: none;
+      }
+      &__imageRed {
+        display: none;
+      }
+      &__title {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: normal;
+      }
+      &__card {
+        margin-top: 5px;
+        border-radius: 8px;
+
+        &__left {
+          font-size: 25px;
+          line-height: normal;
+          width: 40px;
+        }
+        &__right {
+          padding: 10px 7px;
+          gap: 5px;
+
+          &__title {
+            font-size: 12px;
+            line-height: normal;
+          }
+          &__description {
+            line-height: normal;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    &__events {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin: 10px 0;
+
+      &__card {
+        width: 100%;
+        border-radius: 15px;
+        padding: 20px 15px;
+        gap: 10px;
+
+        &__title {
+          font-size: 12px;
+        }
+        &__description {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

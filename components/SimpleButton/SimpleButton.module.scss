@@ -1,0 +1,31 @@
+.button {
+  cursor: pointer;
+  background-color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  color: black;
+  padding: 17px 49px;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  &:focus {
+    background-color: var(--primary-green); //secondary
+    color: white;
+  }
+}
+.active {
+  background-color: var(--primary-green); //secondary
+  color: #fff;
+}
+.button:not(:last-child) {
+  margin-right: 24px;
+  border-radius: 4px;
+}
+
+@media (max-width: 575px) {
+  .button {
+    width: 50%;
+  }
+}

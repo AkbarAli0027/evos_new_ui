@@ -1,0 +1,59 @@
+.led {
+  position: absolute;
+  /* background-image: url(/images/lavash.png); */
+  background-position: 0 0;
+  background-repeat: no-repeat !important;
+  -moz-background-size: 100% auto !important;
+  background-size: 100% auto !important;
+  left: 0;
+  right: 0;
+  /* top: 32px; */
+  bottom: 32px;
+  width: 640px;
+  max-width: 640px;
+  height: 479px;
+  margin: auto;
+}
+.led.forward {
+  -webkit-animation: sprite-open 1.2s steps(60) forwards;
+  -moz-animation: sprite-open 1.2s steps(60) forwards;
+  -o-animation: sprite-open 1.2s steps(60) forwards;
+  animation: sprite-open 1.2s steps(60) forwards;
+}
+.led.backward {
+  -webkit-animation: sprite-close 1.2s steps(60) backwards;
+  -moz-animation: sprite-close 1.2s steps(60) backwards;
+  -o-animation: sprite-close 1.2s steps(60) backwards;
+  animation: sprite-close 1.2s steps(60) backwards;
+}
+.hide {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+@media (max-width: 960px) {
+  .led {
+    width: 320px;
+    height: 236px;
+    max-width: 320px;
+    top: 80px;
+    bottom: auto;
+  }
+}
+
+@keyframes sprite-open {
+  from {
+    background-position: 0 0%;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+@keyframes sprite-close {
+  from {
+    background-position: 0 100%;
+  }
+  to {
+    background-position: 0 0%;
+  }
+}

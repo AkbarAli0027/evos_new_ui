@@ -1,0 +1,124 @@
+.wrapper {
+  position: relative;
+  margin-bottom: 169px;
+  display: none;
+}
+@media (max-width: 992px) {
+  .wrapper {
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper .title {
+    font-size: 20px;
+  }
+}
+.wrapper .box {
+  margin-top: 53px;
+}
+@media (max-width: 576px) {
+  .wrapper .box {
+    margin-top: 20px;
+  }
+}
+.wrapper .box .desc {
+  width: 100%;
+}
+.wrapper .box .desc .img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -165px;
+}
+@media (max-width: 576px) {
+  .wrapper .box .desc .img img {
+    width: 77%;
+  }
+}
+.wrapper .box .desc .card {
+  padding: 200px 10px 48px;
+  background: #fff;
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  border-radius: 8px;
+  width: 100%;
+}
+.wrapper .box .desc .card .title {
+  font-size: 30px;
+  line-height: 39px;
+  color: #585c7b;
+  font-weight: 550;
+  max-width: 400px;
+}
+@media (max-width: 1265px) {
+  .wrapper .box .desc .card .title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper .box .desc .card .title {
+    font-size: 18px;
+  }
+}
+.wrapper .box .desc .card .review {
+  font-size: 16px;
+  line-height: 25px;
+  color: #585c7b;
+  font-weight: 400;
+  margin: 24px 0;
+  max-width: 415px;
+}
+.wrapper .box .desc .card .description {
+  font-size: 18px;
+  line-height: 28px;
+  color: #585c7b;
+  font-weight: 400;
+}
+@media (max-width: 1265px) {
+  .wrapper .box .desc .card .description {
+    line-height: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper .box .desc .card .description {
+    font-size: 16px;
+  }
+}
+
+.arrowBtns {
+  position: absolute;
+  z-index: 99;
+  bottom: -76px;
+  right: 0;
+  display: flex;
+  column-gap: 16px;
+}
+.arrowBtns .prevBtn {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  border-radius: 40px;
+  justify-content: center;
+}
+.arrowBtns .prevBtn svg {
+  width: 11px;
+  height: 20px;
+  color: #3e4265;
+  display: flex;
+}
+.arrowBtns .nextBtn {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  border-radius: 40px;
+  justify-content: center;
+}
+.arrowBtns .nextBtn svg {
+  width: 11px;
+  height: 20px;
+  color: #3e4265;
+  display: flex;
+}
+
+/*# sourceMappingURL=MobileCareerItem.module.scss.css.map */

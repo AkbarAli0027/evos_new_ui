@@ -1,0 +1,84 @@
+.root {
+  display: none;
+  position: sticky;
+  top: 65px;
+  left: 0;
+  z-index: 50;
+}
+@media (max-width: 576px) {
+  .root {
+    display: block;
+  }
+}
+.root .items {
+  overflow: auto;
+  padding: 0 40px 0 40px;
+  margin-top: 0;
+}
+@media (max-width: 575px) {
+  .root .items {
+    padding: 0;
+  }
+}
+.root .items::-webkit-scrollbar {
+  width: 0;
+}
+.root .items .nextButton {
+  right: 5px;
+  top: 20px;
+}
+.root .items .nextButton::before {
+  display: none;
+}
+.root .items .prevButton {
+  left: 0;
+  top: 20px;
+}
+.root .items .prevButton::before {
+  display: none;
+}
+.root .menuListTop {
+  background-color: #fff;
+  padding: 8px;
+  overflow-y: auto;
+  margin-right: 0;
+  border-radius: 0;
+  box-shadow: inset 0px -1px 0px #e5e5e5;
+}
+.root .menuListTop::-webkit-scrollbar {
+  display: none;
+}
+.root .list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+.root .listItem {
+  color: #000;
+  font-weight: 500;
+  font-size: 17px;
+  font-weight: 22px;
+  border-radius: 30px;
+  white-space: nowrap;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.root .listItem a {
+  display: block;
+  padding: 8px 14px;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.root .listItem a:hover {
+  background-color: transparent;
+}
+.root .listItem a.active {
+  background: #309b42 !important;
+  color: #fff;
+}
+
+/*# sourceMappingURL=MobileMenu.module.scss.css.map */

@@ -1,0 +1,98 @@
+.helperText {
+  font-size: 14px !important;
+  line-height: 21px !important;
+  margin-left: 5px !important;
+}
+
+.country_input .Mui-disabled {
+  color: #000 !important;
+}
+.country_input input {
+  color: #000 !important;
+}
+
+.dialogM {
+  border-radius: 33px !important;
+}
+.dialogM .dialogContent {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 30px !important;
+  padding: 0 !important;
+  position: relative;
+}
+.dialogM .dialogContent .cancel {
+  background: #fff;
+  padding: 5px;
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  z-index: 999;
+  border-radius: 50%;
+  min-width: 35px;
+}
+.dialogM .dialogContent .cancel svg {
+  width: 26px;
+  height: 26px;
+}
+.dialogM .dialogContent .cancel svg path {
+  fill: #000;
+  font-weight: 700;
+}
+.dialogM .dialogContent .contentWrapper {
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 30px !important;
+}
+.dialogM .dialogContent .contentWrapper .dialogHeader {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 39px;
+}
+.dialogM .dialogContent .contentWrapper .selectBox {
+  margin-right: 0px !important;
+  cursor: pointer;
+}
+.dialogM .dialogContent .contentWrapper .inputText {
+  color: #BFBFBF;
+  width: 320px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #BFBFBF;
+  outline: none;
+  background-color: #fefefe;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 0 25px 0 25px;
+  color: #000000;
+}
+.dialogM .dialogContent .contentWrapper .inputText::placeholder {
+  color: #BFBFBF;
+}
+.dialogM .dialogContent .contentWrapper .saveButton {
+  margin-top: 20px;
+  width: 320px;
+  height: 50px;
+  border-radius: 52px;
+  border: 1px solid #BFBFBF;
+  color: #BFBFBF;
+}
+.dialogM .dialogContent .mapSection {
+  flex: 1;
+}
+.dialogM .dialogContent .closeIcon {
+  position: absolute;
+  font-size: 10px;
+  top: 35px;
+  right: -7px;
+}
+.dialogM .dialogContent .closeIcon .closeButton {
+  font-size: 45px;
+}
+
+/*# sourceMappingURL=MapDialog.module.scss.css.map */

@@ -1,0 +1,366 @@
+//   .root {
+//   background-color: #fff;
+// }
+
+// .footerBox {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+
+//   .footerList {
+//     // flex-wrap: wrap;
+//     justify-content: flex-start;
+//   }
+// }
+
+// .footerList {
+//   list-style: none;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+// .lang {
+//   position: relative;
+//   background: transparent;
+//   padding: 11px;
+//   // margin-right: 16px;
+//   border-radius: 4px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   cursor: pointer;
+//   width: max-content;
+
+//   .wrapper {
+//     position: absolute;
+//     cursor: default;
+//     top: 20px;
+//     left: -30px;
+//     padding: 30px;
+//     display: none;
+//     width: max-content;
+//     transition: max-height 0.5s ease-out;
+//     max-height: 0;
+
+//     img {
+//       width: 24px;
+//       height: 24px;
+//     }
+//   }
+
+//   .langList {
+//     cursor: default;
+//     width: 100%;
+//     box-shadow: 0px 2px 4px 0px #00000033;
+//     background: #fff;
+//     position: relative;
+//     z-index: 9999;
+//     border-radius: 4px;
+
+//     &::before {
+//       content: '';
+//       position: absolute;
+//       width: 0;
+//       height: 0;
+//       border-bottom: 15px solid #fff;
+//       border-left: 15px solid transparent;
+//       border-right: 15px solid transparent;
+//       top: -13px;
+//       right: 15px;
+//     }
+//   }
+//   .expandIcon {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .expandIcon svg {
+//     transition: transform 0.3s ease-out;
+//   }
+
+//   &:hover {
+//     .expandIcon svg {
+//       transform: rotate(-180deg);
+//     }
+
+//     .wrapper {
+//       display: block;
+//       max-height: 100vh;
+//     }
+//   }
+// }
+
+// .listLink {
+//   position: relative;
+//   color: black;
+//   font-size: 16px;
+//   line-height: 22px;
+//   font-weight: 400;
+//   // letter-spacing: -0.41px;
+//   white-space: nowrap;
+
+//   .anchorTag {
+//     cursor: pointer;
+//     display: block;
+//     padding: 10px 8px;
+//     transition: 0.2s -ms-transform cubic-bezier(0, 0, 0.1, 1),
+//       0.2s -webkit-transform cubic-bezier(0, 0, 0.1, 1),
+//       0.2s transform cubic-bezier(0, 0, 0.1, 1);
+
+//     &::before {
+//       background-color: currentcolor;
+//       border-radius: 1px;
+//       bottom: 0px;
+//       content: '';
+//       height: 2px;
+//       left: 50%;
+//       margin-left: -9px;
+//       position: absolute;
+//       -webkit-transform: scaleX(0);
+//       -ms-transform: scaleX(0);
+//       transform: scaleX(0);
+//       -webkit-transition: 0.2s -webkit-transform cubic-bezier(0, 0, 0.1, 1),
+//         0.2s transform cubic-bezier(0, 0, 0.1, 1);
+//       -moz-transition: 0.2s transform cubic-bezier(0, 0, 0.1, 1);
+//       transition: 0.2s -ms-transform cubic-bezier(0, 0, 0.1, 1),
+//         0.2s -webkit-transform cubic-bezier(0, 0, 0.1, 1),
+//         0.2s transform cubic-bezier(0, 0, 0.1, 1);
+//       width: 18px;
+//     }
+
+//     &:hover::before {
+//       -webkit-transform: scaleX(0.2222222222222222);
+//       -ms-transform: scaleX(0.2222222222222222);
+//       transform: scaleX(0.2222222222222222);
+//     }
+//   }
+// }
+
+// .kidsWrapper {
+//   border-radius: 16px;
+//   background-color: #0a8cdc;
+//   transform: rotate(-6deg);
+//   width: 80px;
+//   height: 32px;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   margin-left: 5px;
+//   z-index: 999999;
+//   .kids {
+//     color: #ffeb32;
+//     font-family: 'Nunito', sans-serif !important;
+//     font-size: 27px;
+//     font-weight: 900;
+//   }
+//   .wrapper {
+//     transform: rotate(6deg);
+//     position: absolute;
+//     cursor: default;
+//     top: 20px;
+//     left: -40px;
+//     padding: 30px;
+//     display: none;
+//     width: max-content;
+//     transition: max-height 0.5s ease-out;
+//     max-height: 0;
+
+//     img {
+//       width: 24px;
+//       height: 24px;
+//     }
+//   }
+
+//   .langList {
+//     cursor: default;
+//     width: 100%;
+//     box-shadow: 0px 2px 4px 0px #00000033;
+//     background: #fff;
+//     position: relative;
+//     z-index: 9999;
+//     border-radius: 4px;
+//     padding: 14px;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+//   }
+
+//   .expandIcon svg {
+//     transition: transform 0.3s ease-out;
+//   }
+
+//   &:hover {
+//     .expandIcon svg {
+//       transform: rotate(-180deg);
+//     }
+
+//     .wrapper {
+//       display: block;
+//       max-height: 100vh;
+//     }
+//   }
+// }
+
+// .activeLink {
+//   color: var(--primary-green);
+// }
+// .content {
+//   background: #f6f8f9;
+//   border-radius: 20px;
+//   color: #0a8cdc;
+//   padding: 6px 12px !important;
+//   font-weight: 700;
+//   font-size: 13px;
+
+//   &__green {
+//     color: #ffeb32;
+//     background: #00b987;
+//   }
+//   &__red {
+//     color: #ffeb32;
+//     background-color: #fa6464;
+//   }
+//   &__yellow {
+//     color: #fa6464;
+//     background: #ffeb32;
+//   }
+// }
+
+// @media screen and (max-width: 1200px) {
+//   .root {
+//     display: none;
+//   }
+// }
+
+
+.root {
+  background-color: #fff;
+  position: relative; 
+  z-index: 100; // Navbar boshqa kontentlardan tepada turishi uchun
+}
+
+.footerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .footerList {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px; // Linklar orasidagi masofa
+    padding: 0;
+    margin: 0;
+  }
+}
+
+/* Umumiy Dropdown stili (About va Kids uchun) */
+.wrapper {
+  position: absolute;
+  cursor: default;
+  top: 100%; // Tugmaning tagidan boshlanadi
+  left: 50%;
+  transform: translateX(-50%) rotate(6deg); // Rotate(6deg) kids tugmasining qiyshayishini kompensatsiya qiladi
+  padding-top: 15px;
+  display: none;
+  width: max-content;
+  z-index: 999999; // Eng ustki qavatda turishi shart
+}
+
+.langList {
+  cursor: default;
+  width: 100%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Kids Tugmasi */
+.kidsWrapper {
+  position: relative; // Dropdown tugmaga nisbatan joylashishi uchun
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a8cdc;
+  border-radius: 16px;
+  transform: rotate(-6deg);
+  width: 85px;
+  height: 35px;
+  margin-left: 10px;
+  /* overflow: hidden; <--- BU BO'LMASLIGI KERAK */
+
+  .kids {
+    color: #ffeb32;
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 24px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+
+  // Hover bo'lganda dropdown chiqishi
+  &:hover {
+    z-index: 9999999; // Hover bo'lganda yanada tepaga chiqadi
+    .wrapper {
+      display: block;
+    }
+  }
+}
+
+/* Biz haqimizda Dropdown uchun */
+.lang {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .wrapper {
+    transform: translateX(-20%); // About uchun rotate shart emas
+    left: 0;
+  }
+
+  &:hover .wrapper {
+    display: block;
+  }
+}
+
+.anchorTag {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: 0.3s;
+  
+  &:hover {
+    color: #00b987;
+  }
+}
+
+/* Kids ichidagi rangli linklar */
+.content {
+  border-radius: 20px;
+  padding: 6px 15px;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap; // Text bir qatorda bo'lishi uchun
+
+  &__green { color: #ffeb32; background: #00b987; }
+  &__red { color: #ffeb32; background-color: #fa6464; }
+  &__yellow { color: #fa6464; background: #ffeb32; }
+}
+
+.activeLink {
+  color: #00b987 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .root { display: none; }
+}

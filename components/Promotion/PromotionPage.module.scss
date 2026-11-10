@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.titleComponent {
+  color: #fff;
+  font-size: 65px;
+  font-weight: 700;
+  line-height: normal;
+  font-family: 'Inter', sans-serif;
+
+  .signColor {
+    font-weight: 700;
+    color: #ffe500;
+  }
+
+  @media (max-width: 1202) {
+    font-size: 48px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 38px;
+  }
+  @media (max-width: 700px) {
+    font-size: 20px;
+  }
+}
+
+.descriptionText {
+  color: #fff;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+  @media (max-width: 1000px) {
+    font-size: 14px;
+  }
+  @media (max-width: 700px) {
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 400;
+    line-height: 110%;
+  }
+}
+
+.achievement {
+  color: #fff;
+  font-family: Inter;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 700;
+  margin-top: 16px;
+
+  @media (max-width: 1000px) {
+    font-size: 20px;
+  }
+  @media (max-width: 700px) {
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 110%;
+    font-weight: 600;
+  }
+}
+
+.root {
+  width: 100%;
+  height: auto;
+  background: linear-gradient(300deg, #008a10 14.71%, #246440 97.22%);
+  @media (max-width: 500px) {
+    background: linear-gradient(300deg, #008a10 34.71%, #246440 87.22%);
+  }
+  .topIcon {
+    width: 100%;
+    position: relative;
+    .imgJuniper {
+      position: absolute;
+      right: 0;
+      @media (max-width: 1000px) {
+        display: none;
+      }
+    }
+    .imgJuniperMobile {
+      display: none;
+      @media (max-width: 900px) {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        display: block;
+      }
+    }
+  }
+
+  .icon1 {
+    position: absolute;
+    right: 0;
+  }
+  .qrCodeWrap {
+    position: absolute;
+    margin-left: 50px;
+    background-color: #fff;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+    .qrHeader {
+      img {
+        background-color: #fff;
+        padding: 12px;
+      }
+    }
+
+    .qrBody {
+      padding: 17px;
+      position: relative;
+      background-color: #ffe500;
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+
+      .bodyTtile {
+        color: #2776b7;
+        font-family: Inter;
+        font-size: 20.944px;
+        font-weight: 700;
+        line-height: 120%;
+      }
+      .link {
+        color: #2776b7;
+        font-size: 13.251px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  .carIm {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    @media (max-width: 450px) {
+      aspect-ratio: 2/1.2;
+      margin-top: 20px;
+    }
+  }
+}
+
+.section2 {
+  position: relative;
+  background-color: yellow;
+
+  .participation {
+    position: relative;
+    width: auto;
+    top: -24vw;
+    z-index: 2;
+
+    // background-color: red;
+    @media (max-width: 1700px) {
+      top: -22vw;
+      height: 100vw;
+    }
+    @media (max-width: 1500px) {
+      top: -22vw;
+      height: 110vw;
+    }
+
+    @media (max-width: 1300px) {
+      top: -22vw;
+      height: 130vw;
+    }
+
+    @media (max-width: 1000px) {
+      top: -22vw;
+      height: 100vw;
+    }
+    @media (max-width: 600px) {
+      top: -23vw;
+      height: 700px;
+    }
+    @media (max-width: 500px) {
+      top: -23vw;
+      height: 640px;
+    }
+    @media (max-width: 450px) {
+      top: -30vw;
+      height: 550px;
+    }
+
+    .ellipseImg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    top: -5vw;
+    text-align: center;
+    @media (max-width: 600px) {
+      position: relative;
+      top: -8vw !important;
+    }
+    @media (max-width: 450px) {
+      position: relative;
+      top: -11vw !important;
+    }
+    p {
+      background-color: #ffe500;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #701080;
+      @media (max-width: 900px) {
+        font-size: 12px;
+      }
+      @media (max-width: 500px) {
+        padding: 4px !important;
+        font-size: 7px;
+      }
+    }
+  }
+
+  .participationDesc {
+    position: relative;
+    border-radius: 16px;
+    background-color: #ffe500;
+    z-index: 3;
+    top: 0;
+    padding: 20px 40px;
+
+    @media (max-width: 500px) {
+      font-size: 7px;
+      border-radius: 8px;
+      margin-top: 20px;
+      padding: 10px !important;
+    }
+    p {
+      
+      font-size: 18px;
+      font-weight: 700;
+      color: #701080;
+      line-height: 120%;
+      @media (max-width: 900px) {
+        font-size: 12px;
+      }
+      @media (max-width: 500px) {
+      
+        font-size: 9px;
+      }
+    }
+  }
+  .contentWrap {
+    width: 100%;
+    position: absolute;
+    top: -13vw;
+    z-index: 3;
+
+    .box {
+      margin-top: 30px;
+      @media (max-width: 450px) {
+        margin-top: 10px;
+      }
+      .number {
+        font-family: Inter;
+        font-size: 180px;
+        font-weight: 700;
+        line-height: normal;
+        margin-right: 16px;
+        -webkit-text-stroke: 3px #ffe500;
+        color: transparent;
+
+        @media (max-width: 1000px) {
+          font-size: 90px;
+        }
+
+        @media (max-width: 700px) {
+          font-size: 58px;
+          -webkit-text-stroke: 1px #ffe500;
+        }
+      }
+    }
+  }
+  .leftImg {
+    position: absolute;
+    top: -20vw;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    img {
+      object-fit: cover;
+    }
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
+}
+
+.section3 {
+  height: 100%;
+  position: relative;
+
+  .section3WrapCon {
+    position: relative;
+    top: -39vw;
+    width: 100%;
+    height: auto;
+    padding-top: 18vw;
+    background: linear-gradient(308deg, #006c14 85.31%, #eaee20 106.4%);
+    border-radius: 0% 0% 67% 20% / 82% 78% 10% 10%;
+    @media (max-width: 1400px) {
+      border-radius: 0% 0% 67% 20% / 87% 85% 7% 7%;
+    }
+    @media (max-width: 1000px) {
+      border-radius: 0% 0% 67% 20% / 91% 88% 5% 5%;
+    }
+    @media (max-width: 700px) {
+      border-radius: 0% 0% 67% 20% / 96% 92% 3% 3%;
+    }
+    padding-bottom: 90px;
+    .section3Wrap {
+      width: 80%;
+      height: auto;
+      position: relative;
+      z-index: 5;
+      .gridCon {
+        display: grid;
+        row-gap: 50px;
+        margin-top: 50px;
+        width: 70%;
+        @media (max-width: 600px) {
+          width: 80%;
+          row-gap: 20px;
+          margin-top: 20px;
+        }
+
+        .gridItemTitle {
+          color: #ffe500;
+          font-family: Inter;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          @media (max-width: 600px) {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+
+    .giftImg {
+      position: absolute;
+      top: 3vw;
+      right: 0;
+      z-index: 4;
+    
+      @media (max-width: 1400px) {
+        height: 100vw;
+        top: 20vw;
+      }
+
+      @media (max-width: 1000px) {
+        height: 100vw;
+        top: 20vw;
+      }
+      @media (max-width: 700px) {
+        height: 120vw;
+        top: 25vw;
+      }
+
+      @media (max-width: 450px) {
+        height: 140vw;
+        top: 25vw;
+      }
+    }
+
+    .carImg {
+      position: absolute;
+      bottom: 8vw;
+      right: 9vw;
+      @media (max-width: 1400px) {
+        height: 50vw;
+        right: 0;
+      }
+      @media (max-width: 1000px) {
+        height: 50vw;
+        bottom: 80vw;
+
+        right: 0;
+      }
+      @media (max-width: 700px) {
+        height: 50vw;
+        bottom: 80vw;
+        right: 0;
+      }
+      @media (max-width: 450px) {
+        height: 35vw;
+        bottom: 106vw;
+        right: 0;
+      }
+    }
+  }
+}
+
+.section4 {
+  width: 100%;
+  position: relative;
+  top: -40vw;
+
+  .section4Wrap {
+    width: 100%;
+    height: auto;
+
+    .conpanyLogo {
+      width: 90%;
+      height: 100px;
+      border-radius: 77px;
+      background: #fff;
+      box-shadow: 12px 16px 14px 0px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: relative;
+      top: -30px;
+      margin: 0 auto;
+      padding: 0 20px;
+      img {
+        aspect-ratio: 3/2;
+        object-fit: contain;
+
+        @media (max-width: 1000px) {
+          width: 10vw;
+          aspect-ratio: 2/1;
+          object-fit: contain;
+        }
+      }
+      @media (max-width: 700px) {
+        height: 50px;
+        border-radius: 25px;
+        box-shadow: 2.81px 3.747px 3.279px 0px rgba(0, 0, 0, 0.2);
+      }
+      @media (max-width: 450px) {
+        height: 40px;
+        border-radius: 25px;
+        box-shadow: 2.81px 3.747px 3.279px 0px rgba(0, 0, 0, 0.2);
+      }
+    }
+    .acardion {
+      .accordionSummary {
+        .acardionTitle {
+          color: #000;
+          font-family: Inter;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          @media (max-width: 1000px) {
+            font-size: 22px;
+          }
+          @media (max-width: 600px) {
+            font-size: 15px;
+          }
+        }
+      }
+      .accordionDetails {
+        margin-bottom: 30px;
+        @media (max-width: 600px) {
+          margin-bottom: 1px;
+        }
+        .accordionText {
+          color: #000;
+          font-family: Inter;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          @media (max-width: 1000px) {
+            font-size: 15px;
+          }
+          @media (max-width: 600px) {
+            font-size: 11px;
+          }
+        }
+      }
+      .carTextCon {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 0;
+        img {
+          width: 25%;
+        }
+        @media (max-width: 1000px) {
+          margin: 50px 0;
+        }
+        @media (max-width: 600px) {
+          margin: 30px 0;
+          img {
+            width: 50%;
+          }
+        }
+        .carTitle {
+          color: #000;
+          font-family: Inter;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          @media (max-width: 1000px) {
+            font-size: 30px;
+          }
+          @media (max-width: 600px) {
+            font-size: 22px;
+          }
+        }
+      }
+    
+    }
+  }
+}
+
+.section5 {
+  .allWrap {
+    position: relative;
+    top: -35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -27vw;
+
+    button {
+      color: #00704a;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      @media (max-width: 700px) {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      top: -30vw;
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    .oferWrap {
+        margin-bottom: 50px;
+      @media (max-width: 1000px) {
+        margin-top: 40px;
+      }
+
+      @media (max-width: 700px) {
+        margin-top: 31px;
+      }
+    }
+  }
+
+  .allClose {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+      color: #00704a;
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-family: Inter;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      @media (max-width: 700px) {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .textWrap {
+    transition: .3s ease-in-out;
+    .allIm {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        width: 50%;
+        height: auto;
+      }
+    }
+
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border: solid black 2px;
+      color: #000;
+    }
+
+    td,
+    th {
+      border-left: solid black 2px;
+      border-top: solid black 2px;
+      padding: 10px;
+      @media (max-width: 700px) {
+        font-size: 12px !important;
+        padding: 4px;
+        line-height: 100%;
+      }
+    }
+
+    th {
+      border-top: none;
+    }
+
+    .firsttd {
+      border-left: none;
+    }
+  }
+}

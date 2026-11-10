@@ -1,0 +1,23 @@
+.icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin: 22px 22px 0 22px;
+  svg {
+    transition: transform 0.25s ease-in;
+    &:hover {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+.wrapper {
+  margin: 32px;
+}
+.title {
+  padding: 0;
+  display: grid;
+  & > *:first-child {
+    justify-self: end;
+  }
+}

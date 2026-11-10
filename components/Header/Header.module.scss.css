@@ -1,0 +1,224 @@
+@charset "UTF-8";
+.root {
+  position: static;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #fff;
+  box-shadow: inset 0px -1px 0px #e5e5e5;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  /* LANGUAGE DROPDOWN SECTION */
+  /* USER ICON SECTION */
+  /* SHOPPING SECTION */
+}
+.root .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.root .headerLeftBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.root .headerLeftBox .navbar {
+  display: block;
+  margin-left: 32px;
+}
+.root .headerLeftBox .brandLogo {
+  display: block;
+}
+.root .headerLeftBox .brandLogo svg {
+  height: 48px;
+  vertical-align: middle;
+}
+.root .headerRightBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+.root .headerRightBox .address {
+  height: 48px;
+  padding: 0 10px;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  width: 180px;
+}
+.root .headerRightBox .address p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  margin: 0;
+}
+.root .lang {
+  position: relative;
+  background: none;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.root .lang .expandIcon svg {
+  transition: transform 0.3s ease-out;
+  margin-left: 4px;
+}
+.root .lang .wrapper {
+  position: absolute;
+  top: 100%;
+  right: -20px;
+  width: 240px;
+  padding-top: 15px;
+  display: none;
+  z-index: 9999;
+  cursor: default;
+}
+.root .lang:hover .expandIcon svg {
+  transform: rotate(-180deg);
+}
+.root .lang:hover .wrapper {
+  display: block;
+}
+.root .langList {
+  background: #fff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  padding: 8px 0;
+  position: relative;
+  border: 1px solid #f0f0f0;
+}
+.root .langList::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: 35px;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #fff;
+}
+.root .langList .listItem {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #323232;
+  transition: background 0.2s;
+}
+.root .langList .listItem:hover {
+  background-color: #f6f8f9;
+}
+.root .langList .listItem img {
+  width: 22px;
+  height: 22px;
+  margin-right: 12px;
+}
+.root .user,
+.root .userActive {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #007855;
+}
+.root .user {
+  background: transparent;
+}
+.root .userActive {
+  background: #007855;
+}
+.root .userIcon {
+  width: 24px !important;
+  height: 24px !important;
+  display: block;
+}
+.root .shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  padding: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+}
+.root .shop.total {
+  background-color: #007855;
+  color: #fff;
+}
+.root .shop.total .shopIcon svg {
+  fill: #fff;
+}
+.root .shop .shopIcon svg {
+  fill: #323232;
+}
+.root .shopText {
+  font-weight: 500;
+  font-size: 17px;
+  margin-left: 10px;
+}
+
+/* MOBILE RESPONSIVE PART */
+@media screen and (max-width: 576px) {
+  .root {
+    position: sticky;
+    height: 65px;
+    background-color: #309b42;
+  }
+  .root .navbar,
+  .root .lang,
+  .root .user,
+  .root .headerRightBox,
+  .root .brandLogo {
+    display: none;
+  }
+  .root .evosLogo {
+    display: block;
+  }
+  .root .evosLogo svg {
+    width: 108px;
+    height: 40px;
+  }
+  .root .menuIconBox {
+    display: block;
+    background-color: #f6f8f9;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+}
+/* Header.module.scss ga QO'SHING — mavjud .root {} ichiga */
+/* Mobile hamburger tugma — desktop da yashirin */
+.mobileMenuBtn {
+  display: none;
+}
+
+/* 800px dan kichikda: desktop elementlar yashiriladi, hamburger chiqadi */
+@media screen and (max-width: 800px) {
+  .root .headerRightBox {
+    display: none !important;
+  }
+  .root .navbar {
+    display: none !important;
+  }
+  .root .mobileMenuBtn {
+    display: flex !important;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=Header.module.scss.css.map */

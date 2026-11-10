@@ -1,0 +1,513 @@
+@media (max-width: 576px) {
+  .lable {
+    font-size: 18px !important;
+  }
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.helperText {
+  font-size: 14px !important;
+  line-height: 21px !important;
+  margin-left: 5px !important;
+}
+
+@media (max-width: 576px) {
+  .listStyle {
+    font-size: 16px;
+  }
+}
+.listStyle::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #309b42;
+  margin-right: 8px;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+.textItem {
+  text-align: center;
+  position: relative;
+}
+.textItem h1 {
+  margin-bottom: 40px;
+}
+.textItem .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: pointer;
+}
+.textItem .back svg {
+  color: black;
+  font-size: 30px;
+}
+
+.btn {
+  cursor: pointer;
+  width: 50%;
+  background-color: #f6f8f9;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  color: #25282a;
+  padding: 17px 23px;
+  border: 0;
+  border-radius: 4px;
+  outline: none;
+  margin-right: 24px;
+}
+.btn:hover {
+  background: rgba(37, 40, 42, 0.1);
+}
+
+.btnPrimary {
+  width: 100%;
+  background-color: #309b42;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  padding: 17px 20px;
+  border: 0;
+  outline: none;
+}
+.btnPrimary:hover {
+  background: rgba(48, 155, 66, 0.9);
+}
+
+.title {
+  text-align: left;
+  color: #00704a;
+  font-size: 39.477px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 165.023%;
+}
+.title:last-child {
+  padding: 20px;
+}
+@media (max-width: 576px) {
+  .title {
+    font-size: 20px !important;
+  }
+}
+
+.myCustomClass {
+  display: flex;
+  gap: 55px;
+}
+.myCustomClass .desc {
+  text-align: left;
+  background: #f2f2f2;
+  padding: 17px 27px 17px 28px;
+  border-radius: 27px;
+}
+@media (max-width: 576px) {
+  .myCustomClass .desc {
+    font-size: 16px !important;
+  }
+}
+.myCustomClass .desc .mainText .mainTitle {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.myCustomClass .desc .mainText:last-child .mainTitle {
+  margin-top: 10px;
+}
+.myCustomClass .desc .mainText .mainTextContent {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  line-height: 1.3em;
+}
+.myCustomClass .desc .mainText ul li {
+  margin-bottom: 0.7em;
+  list-style: inside;
+}
+.myCustomClass .right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 450px;
+}
+.myCustomClass .right .mainSquare {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  text-align: left;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 12px;
+  margin-top: 28px;
+  border-bottom: 1px solid #00704a;
+}
+.myCustomClass .right .mainSquare:first-child {
+  margin-top: 0;
+}
+.myCustomClass .right .mainSquare .iconPlace {
+  display: flex;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  border-radius: 3px;
+  background: #f2f2f2;
+  justify-content: center;
+  align-items: center;
+}
+.myCustomClass .right .mainSquare .mainTextSection {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+.myCustomClass .right .mainSquare .mainTextSection .textSection {
+  color: #000;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.myCustomClass .right .mainSquare .mainTextSection .underTextSection {
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.TextMain .titleOne {
+  width: 790px;
+  text-align: left;
+  color: #00704a;
+  font-size: 39.477px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 165.023%;
+  margin: 64px 0 0 0;
+}
+.TextMain .request {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.TextMain .request .requestLeft {
+  display: flex;
+  flex-direction: column;
+  width: 390px;
+  text-align: left;
+}
+.TextMain .request .requestLeft .requestPerson .requestText {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+.TextMain .request .requestLeft .requestPerson .induvidualEntity {
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.TextMain .request .requestLeft .requestPerson .induvidualEntity > button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 187px;
+  height: 54px;
+  border-radius: 10px;
+  color: #6e7c87;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  border: 1px solid #9d99ac;
+  background: #f7f7fd;
+  cursor: pointer;
+}
+.TextMain .request .requestLeft .requestPerson .induvidualEntity > button.active {
+  color: #fff;
+  border: 1px solid #00704a;
+  background: #00704a;
+}
+.TextMain .request .requestLeft .requestPerson .induvidualEntityActive {
+  color: #fff !important;
+  border: 1px solid #00704a !important;
+  background: #00704a !important;
+}
+.TextMain .request .requestLeft .requestPerson .aboutPerson1,
+.TextMain .request .requestLeft .requestPerson .aboutPerson {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 12px 0 17px 0;
+}
+.TextMain .request .requestLeft .requestPerson .aboutPerson1 .overalName,
+.TextMain .request .requestLeft .requestPerson .aboutPerson .overalName {
+  width: 100%;
+  height: 54px;
+  border: 1px solid #9d99ac;
+  display: flex;
+  background: #f7f7fd;
+  flex-direction: column;
+  padding-left: 16px;
+  border-radius: 10px;
+  border: 1px solid #9d99ac;
+}
+.TextMain .request .requestLeft .requestPerson .aboutPerson1 .overalName .nameSecondName,
+.TextMain .request .requestLeft .requestPerson .aboutPerson .overalName .nameSecondName {
+  color: #00704a;
+  font-size: 10px;
+  font-weight: 700;
+}
+.TextMain .request .requestLeft .requestPerson .aboutPerson1 .overalName .inputText,
+.TextMain .request .requestLeft .requestPerson .aboutPerson .overalName .inputText {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: #f7f7fd;
+  color: var(--, #9d99ac);
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 0 22px 22px 0;
+}
+.TextMain .request .requestLeft .requestPerson .chooseMap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7px;
+  height: 54px;
+  border-radius: 10px;
+  background: #f7f7fd;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 12px 0 6px 0;
+  color: #00704a;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.TextMain .request .requestLeft .requestPerson .orderText {
+  color: #9d99ac;
+  font-size: 12px;
+  font-weight: 700;
+}
+.TextMain .request .requestLeft .requestPerson .documentImport {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #00704a;
+  background: #f7f7fd;
+  position: relative;
+}
+.TextMain .request .requestLeft .requestPerson .documentImport svg {
+  position: absolute;
+  color: #00704a;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+}
+.TextMain .request .requestLeft .requestPerson .documentImport .importText {
+  color: #00704a;
+  font-size: 16px;
+  font-weight: 700;
+}
+.TextMain .request .requestLeft .requestPerson .documentImport .importText .selectFile {
+  color: rgba(0, 112, 74, 0.39);
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.TextMain .request .requestLeft .requestPerson .sendRequest {
+  width: 100%;
+  margin-top: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 54px;
+  border-radius: 10px;
+  border: 1px solid #00704a;
+  background: #00704a;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.TextMain .request .requestLeft .requestText {
+  width: 153%;
+}
+.TextMain .request .requestLeft .requestText .successText {
+  color: #00704a;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3em;
+  word-spacing: 3px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+.TextMain .request .requestLeft .requestText .informationText {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3em;
+  word-spacing: 3px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.TextMain .request .requestLeft .requestText .informationLink {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3em;
+  word-spacing: 3px;
+  margin-bottom: 10px;
+}
+.TextMain .request .requestLeft .requestText .informationLink a {
+  text-decoration: underline;
+}
+.TextMain .request .requestLeft .requestText .contactText {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.7em;
+}
+.TextMain .request .requestLeft .requestText .contactText .undelineText {
+  text-decoration-line: underline;
+}
+.TextMain .request .requestRight {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 41px;
+}
+.TextMain .request .requestRight .imgSxema {
+  display: flex;
+  gap: 22px;
+}
+
+.aplication {
+  margin-top: 30px;
+  width: 90%;
+}
+.aplication .aplicationText {
+  line-height: 1.3em;
+  text-align: left;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.vacansyCards {
+  display: -webkit-box;
+  align-items: center;
+  column-gap: 16px;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.vacansyCards .cardWrapper {
+  max-width: 405px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 4px;
+  height: fit-content;
+}
+
+.arrowBtns {
+  z-index: 99;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 36px;
+  column-gap: 16px;
+}
+.arrowBtns .prevBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 40px;
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  background: #fff;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.arrowBtns .prevBtn svg {
+  width: 11px;
+  color: #3e4265;
+}
+.arrowBtns .nextBtn {
+  width: 36px;
+  height: 36px;
+  border-radius: 40px;
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  background: #fff;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.arrowBtns .nextBtn svg {
+  width: 11px;
+  color: #3e4265;
+}
+
+.wrapper {
+  margin: 116px 0;
+}
+.wrapper ::-webkit-scrollbar {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 71px;
+  }
+  .wrapper {
+    justify-content: center;
+  }
+}
+.requirements ul > *:not(:last-child) {
+  margin-bottom: 12px;
+}
+.requirements ul li::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #309b42;
+  margin-right: 8px;
+  align-self: flex-start;
+  margin-top: 5px;
+}
+
+/*# sourceMappingURL=PartnersOne.module.scss.css.map */

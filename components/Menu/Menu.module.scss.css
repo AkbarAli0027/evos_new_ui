@@ -1,0 +1,434 @@
+.navbar_scroll {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 19px 8px;
+  margin-right: 0;
+  overflow: auto;
+  position: fixed;
+  bottom: -35px;
+  width: 1248px;
+}
+.navbar_scroll::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-width: 991px) {
+  .navbar_scroll {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 1191px) {
+  .navbar_scroll {
+    width: 98%;
+  }
+}
+.navbar_scroll:hover {
+  bottom: 0;
+  transition: 0.4s ease;
+}
+.navbar_scroll::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 767px) {
+  .navbar_scroll {
+    margin-right: 0;
+    box-shadow: inset 0px -1px 0px #e5e5e5;
+    width: 98% !important;
+  }
+}
+
+.root {
+  position: relative;
+  bottom: 40px;
+}
+.root .items {
+  overflow: auto;
+  padding: 0 40px 0 40px;
+  margin-top: 0;
+}
+@media (max-width: 575px) {
+  .root .items {
+    padding: 0;
+  }
+}
+.root .items::-webkit-scrollbar {
+  width: 0;
+}
+.root .items .nextButton {
+  right: 5px;
+  top: 20px;
+}
+.root .items .nextButton::before {
+  display: none;
+}
+@media (max-width: 576px) {
+  .root .items .nextButton {
+    display: none;
+  }
+}
+.root .items .prevButton {
+  left: 0;
+  top: 20px;
+}
+.root .items .prevButton::before {
+  display: none;
+}
+@media (max-width: 576px) {
+  .root .items .prevButton {
+    display: none;
+  }
+}
+.root .animation {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  transition: all 0.2s;
+  top: 0;
+  background: rgba(251, 251, 251, 0.8509803922) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0px -1px 0px #e5e5e5;
+  z-index: 99;
+}
+.root .animation ul {
+  margin-top: 0 !important;
+}
+.root .animation .active {
+  border-bottom: 2px solid #00704A;
+}
+.root .animation .listItem {
+  color: #000;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 10px;
+  white-space: nowrap;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.root .animation .listItem a {
+  display: block;
+  border-radius: 0;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.root .animation .listItem a:hover {
+  border-bottom: 2px solid #00704A;
+}
+@media (max-width: 576px) {
+  .root .animation .listItem a:hover {
+    background-color: transparent;
+  }
+  .root .animation .listItem a.active {
+    background: #309b42 !important;
+    color: #fff;
+  }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  .root .animation .listItem a.active {
+    border-radius: 30px;
+    padding: 6px 12px;
+  }
+}
+.root .menuListTop {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 19px 8px;
+  margin-right: 0;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.root .menuListTop::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width: 576px) {
+  .root .menuListTop {
+    margin-right: 0;
+    box-shadow: inset 0px -1px 0px #e5e5e5;
+  }
+}
+.root .menuList {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 8px;
+  height: 80px;
+}
+@media (max-width: 576px) {
+  .root .menuList {
+    height: 60px;
+  }
+}
+.root .list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+}
+.root .listItem {
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 24px;
+  border-radius: 10px;
+  white-space: nowrap;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+.root .listItem a {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.root .listItem a:hover {
+  background-color: #f6f8f9;
+}
+@media (max-width: 576px) {
+  .root .listItem a:hover {
+    background-color: transparent;
+  }
+  .root .listItem a.active {
+    background: #007855 !important;
+    color: #fff;
+  }
+}
+@media (max-width: 576px) and (max-width: 576px) {
+  .root .listItem a.active {
+    border-radius: 30px;
+    padding: 6px 12px;
+  }
+}
+.root .productButton {
+  width: 100%;
+  padding: 13px 94px;
+  color: #000;
+}
+.root .nextButton,
+.root .prevButton {
+  z-index: 99;
+}
+.root .nextButton svg,
+.root .prevButton svg {
+  fill: #000;
+  font-size: 24px;
+}
+@media (max-width: 575px) {
+  .root .nextButton,
+  .root .prevButton {
+    display: none;
+  }
+}
+.root .nextButton::before {
+  display: none;
+}
+.root .prevButton::before {
+  display: none;
+}
+.root .shopIconWrapper {
+  display: block;
+}
+.root .shopBagWrapper {
+  display: none;
+}
+.root .shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #f6f8f9;
+  padding: 11px 12px;
+  margin-left: 32px;
+  border-radius: 18px;
+  cursor: pointer;
+  color: #000;
+  outline: none;
+  border: none;
+}
+.root .shop.total {
+  background-color: var(--primary-green);
+  color: #fff;
+}
+.root .shop.total .shopIcon svg {
+  fill: #fff;
+}
+.root .shop .shopIcon svg {
+  fill: #323232;
+}
+.root .shop .shopText {
+  font-weight: 500;
+  color: inherit;
+  font-size: 17px;
+  line-height: 22px;
+  margin-left: 12px;
+  white-space: nowrap;
+}
+.root .shopping {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.root .shopIcon {
+  vertical-align: middle;
+}
+
+.shop {
+  background-color: #007855;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  min-width: 150px;
+}
+.shop .shopText {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+.shop:not(.total) {
+  background-color: #f5f5f5;
+  color: #007855;
+  border: 1px solid #007855;
+}
+
+@media screen and (max-width: 1200px) {
+  .root {
+    margin-top: 24px;
+  }
+  .root .shopBagWrapper {
+    display: block;
+  }
+  .root .shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    background-color: #f6f8f9;
+    padding: 11px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: #000;
+    outline: none;
+    border: none;
+  }
+  .root .shop.total {
+    background-color: #309b42;
+    color: #fff;
+  }
+  .root .shop.total .shopIcon svg {
+    fill: #fff;
+  }
+  .root .shop .shopIcon svg {
+    fill: #323232;
+  }
+  .root .shop .shopText {
+    font-weight: 500;
+    color: inherit;
+    font-size: 17px;
+    line-height: 22px;
+    margin-left: 12px;
+    white-space: nowrap;
+  }
+  .root .menuList {
+    padding: 4px;
+    overflow-x: scroll;
+  }
+  .root .menuList::-webkit-scrollbar {
+    display: none;
+  }
+  .root .menuListTop {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 8px;
+    overflow-y: auto;
+  }
+  .root .menuListTop::-webkit-scrollbar {
+    display: none;
+  }
+  .root .listItem {
+    margin-right: 7px;
+  }
+  .root .listItem:last-child {
+    padding-right: 16px;
+  }
+}
+@media screen and (max-width: 1200px) and (max-width: 576px) {
+  .root .listItem:last-child {
+    padding: 0 !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .root .listItem a {
+    padding: 14px 14px;
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 1200px) and (max-width: 576px) {
+  .root .listItem a {
+    padding: 6px 20px;
+  }
+}
+.listItemDropdownLink .listItem {
+  position: relative;
+}
+.listItemDropdownLink a {
+  display: flex !important;
+  align-items: center !important;
+  gap: 6px;
+}
+.listItemDropdownLink:hover .listItemDropdown {
+  display: block;
+}
+.listItemDropdownLink svg {
+  transform: rotate(180deg);
+}
+.listItemDropdownLink:hover svg {
+  transform: rotate(0deg);
+  transition: 0.2s;
+}
+
+.listItemDropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: none;
+  z-index: 2;
+}
+.listItemDropdown ul {
+  list-style-type: none;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+.listItemDropdown ul li a:hover {
+  border-radius: 0px !important;
+}
+
+@media (max-width: 1366px) {
+  .menuListTop {
+    overflow-y: unset !important;
+  }
+}
+@media (max-width: 1280px) {
+  .listItem {
+    margin-right: 20px !important;
+  }
+}
+@media (max-width: 1060px) {
+  .listItem {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 960px) {
+  .menuListTop {
+    overflow-y: auto !important;
+  }
+  .listItem {
+    margin-right: 17px !important;
+  }
+}
+
+/*# sourceMappingURL=Menu.module.scss.css.map */

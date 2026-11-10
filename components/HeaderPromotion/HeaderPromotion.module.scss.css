@@ -1,0 +1,192 @@
+.wrapperHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 9;
+  display: flex;
+  align-items: center;
+}
+.wrapperHeader .navbar {
+  display: block;
+}
+.wrapperHeader .brandLogo {
+  display: block;
+}
+.wrapperHeader .brandLogo svg {
+  height: 48px;
+  vertical-align: middle;
+}
+.wrapperHeader .evosLogo {
+  display: none;
+}
+.wrapperHeader .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.wrapperHeader .listClickBtn {
+  background: #309b42;
+  height: 48px;
+  width: 120px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 17px;
+  cursor: pointer;
+  border: none;
+  margin-right: 16px;
+  outline: none;
+}
+.wrapperHeader .headerLeftBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wrapperHeader .headerLeftBox .navbar {
+  display: flex;
+  align-items: center;
+}
+.wrapperHeader .headerLeftBox .navbar .navbarList {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.wrapperHeader .headerLeftBox .navbar .navbarList .navbarListItem .navbarListLink {
+  text-decoration: none;
+  color: #fff;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 33px;
+}
+@media (max-width: 1202px) {
+  .wrapperHeader .headerLeftBox .navbar {
+    display: none;
+  }
+}
+.wrapperHeader .menuIconBox {
+  display: none;
+}
+@media (max-width: 600px) {
+  .wrapperHeader .menuIconBox {
+    display: block;
+    background-color: #f6f8f9;
+    padding: 9px 11px 5px 11px;
+    align-self: flex-end;
+    border-radius: 4px;
+  }
+}
+.wrapperHeader .headerRightBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.wrapperHeader .headerRightBox .boteLink {
+  padding: 10px 20px;
+  background-color: #FFE500;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  color: #701080;
+}
+@media (max-width: 500px) {
+  .wrapperHeader .headerRightBox .boteLink {
+    font-size: 9px;
+    padding: 5px 11px;
+    border-radius: 12px;
+  }
+}
+.wrapperHeader .headerRightBox .lang {
+  position: relative;
+  background: rgba(246, 248, 249, 0);
+  padding: 11px;
+  margin-right: 16px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.wrapperHeader .headerRightBox .lang .activelang {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+.wrapperHeader .headerRightBox .lang .wrapper {
+  position: absolute;
+  cursor: default;
+  top: 45px;
+  right: -30px;
+  padding: 30px;
+  display: none;
+  width: 300px;
+  transition: max-height 0.5s ease-out;
+  max-height: 0;
+}
+.wrapperHeader .headerRightBox .lang .wrapper img {
+  width: 24px;
+  height: 24px;
+}
+.wrapperHeader .headerRightBox .lang .wrapper .langList {
+  cursor: default;
+  width: 100%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.06);
+  background: #fff;
+  position: relative;
+  z-index: 9999;
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.wrapperHeader .headerRightBox .lang .wrapper .langList::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid #fff;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  top: -13px;
+  right: 15px;
+}
+.wrapperHeader .headerRightBox .lang .wrapper .langList .listItem {
+  display: flex;
+  padding: 13px 12px;
+  cursor: pointer;
+  width: 100%;
+}
+.wrapperHeader .headerRightBox .lang .wrapper .langList .listItem:hover {
+  background-color: #f6f8f9;
+  padding: 13px 12px;
+}
+.wrapperHeader .headerRightBox .lang .expandIcon {
+  display: flex;
+  align-items: center;
+}
+.wrapperHeader .headerRightBox .lang .expandIcon svg {
+  transition: transform 0.3s ease-out;
+  color: #fff !important;
+}
+.wrapperHeader .headerRightBox .lang:hover .expandIcon svg {
+  transform: rotate(-180deg);
+}
+.wrapperHeader .headerRightBox .lang:hover .wrapper {
+  display: block;
+  max-height: 100vh;
+}
+@media (max-width: 1202px) {
+  .wrapperHeader .headerRightBox .lang {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=HeaderPromotion.module.scss.css.map */

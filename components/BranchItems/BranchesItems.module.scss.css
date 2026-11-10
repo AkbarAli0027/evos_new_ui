@@ -1,0 +1,95 @@
+.active {
+  display: none;
+}
+.active:hover svg {
+  transform: translateX(20px);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.box svg {
+  transition: all 0.3s ease-out;
+}
+.box:hover .icon {
+  transition: all 0.3s ease-out;
+}
+.box:hover .icon svg {
+  transform: translateX(12px);
+}
+
+.boxWidth {
+  width: 60%;
+  margin-right: 8px;
+}
+
+.workingHoursBox {
+  display: block;
+}
+
+.marginVertical {
+  margin: 32px 0;
+}
+
+.branchBox {
+  flex-basis: 70%;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .branchBox {
+    column-gap: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .branchBox .title {
+    font-size: 19px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .branchBox .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.branchBox .imageBox {
+  flex-shrink: 0;
+  width: 95px;
+  height: 95px;
+}
+.branchBox .imageBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 1200px) {
+  .branchBox {
+    flex-basis: 90%;
+  }
+  .branchBox .imageBox {
+    width: 70px;
+    height: 70px;
+  }
+}
+@media (max-width: 576px) {
+  .branchBox {
+    flex-basis: 95%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .boxWidth {
+    width: 100%;
+    margin-right: 0;
+  }
+  .workingHoursBox {
+    display: none;
+  }
+  .marginVertical {
+    margin: 26px 0;
+  }
+}
+
+/*# sourceMappingURL=BranchesItems.module.scss.css.map */

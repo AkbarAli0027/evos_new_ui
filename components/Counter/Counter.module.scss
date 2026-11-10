@@ -1,0 +1,24 @@
+.root {
+  // background-color: #f6f8f9;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 8px;
+  height: 40px;
+  min-width: 120px;
+  border: 1px solid #309B42;
+  transition: 0.3s ease-in;
+}
+
+.root:hover{
+  box-shadow: 0 0 8px 3px #309b425d;
+}
+
+@media (max-width: 800px) {
+  .root {
+    height: 38px;
+    min-width: 96px;
+  }
+}

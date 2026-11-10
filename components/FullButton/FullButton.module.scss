@@ -1,0 +1,22 @@
+.link {
+  width: 100%;
+  display: block;
+}
+.button {
+  width: 100%;
+  background-color: var(--primary-green); //secondary
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.41px;
+  font-weight: 700;
+  border-radius: 15px;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  padding: 17px 0;
+  &:hover {
+    background-color: rgba($color: #077855, $alpha: 0.9);
+  }
+}

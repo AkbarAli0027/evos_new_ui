@@ -1,0 +1,23 @@
+.wrapper {
+  margin: 56px 0;
+}
+
+.title {
+  display: block;
+}
+
+@media (max-width: 575px) {
+  .title {
+    display: none;
+  }
+  .wrapper {
+    margin: 16px 0;
+  }
+  .btnWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/*# sourceMappingURL=BranchMain.module.scss.css.map */

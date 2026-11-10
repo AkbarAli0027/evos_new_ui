@@ -1,0 +1,292 @@
+.root {
+  margin: 108px auto;
+  //   height: 100vh;
+
+  .banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    .title {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 42px;
+      h1 {
+        font-size: 40px;
+        font-weight: 900;
+        color: #000;
+        letter-spacing: 0%;
+        line-height: normal;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+        letter-spacing: 0%;
+        line-height: normal;
+      }
+      p:nth-of-type(2) {
+        font-style: italic;
+      }
+    }
+    .mobileBannerContent {
+      display: none;
+    }
+    .logo {
+      position: relative;
+      .evosLogo {
+        background-color: #00b987;
+        border-radius: 16px;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 40px;
+
+        p {
+          font-size: 122px;
+          line-height: 100%;
+          color: #fff;
+          font-weight: 900;
+          display: inline-block;
+        }
+        span {
+          color: #fff;
+          vertical-align: text-top;
+        }
+      }
+      .kidsLogo {
+        position: absolute;
+        top: 117%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-7deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #0a8cdc;
+        border-radius: 100px;
+        height: 105px;
+        padding: 0 42px;
+
+        p {
+          font-family: 'Nunito', sans-serif !important;
+          list-style: 100%;
+          color: #ffeb32;
+          font-weight: 900;
+          font-size: 90px;
+        }
+      }
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    margin: 130px 0;
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.kidsCard {
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 16px;
+  height: 550px;
+  width: 100%;
+  &__image {
+    height: 58%;
+    width: 100%;
+    position: relative;
+  }
+  &__content {
+    padding: 25px 35px;
+  }
+  &__title {
+    font-size: 27px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b987;
+    border-radius: 50px;
+    width: 40%;
+    cursor: pointer;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    outline: none;
+    border: none;
+
+    &:hover {
+      background-color: #009f7a;
+    }
+  }
+}
+
+// ========================================================
+// ========================================================
+// =====  M  E  D  I  A     Q  U  E  R  I  E  S ==========
+// =========================================================
+// =========================================================
+
+@media (max-width: 870px) {
+  .root {
+    margin: 20px auto;
+    .banner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      .title {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        h1 {
+          font-size: 20px;
+          font-weight: 900;
+          color: #000;
+          letter-spacing: 0%;
+          line-height: normal;
+        }
+        p {
+          display: none;
+        }
+      }
+      .mobileBannerContent {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        p {
+          font-size: 12px;
+          font-weight: 500;
+          color: #000;
+          letter-spacing: 0%;
+          line-height: normal;
+        }
+        p:nth-of-type(2) {
+          font-style: italic;
+        }
+      }
+
+      .logoWrapper {
+        background-color: #fff;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        height: 243px;
+        border-radius: 4px;
+        .logo {
+          position: relative;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          .evosLogo {
+            background-color: #00b987;
+            border-radius: 16px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+            width: 70%;
+            margin-top: -30px;
+
+            p {
+              font-size: 70px;
+              line-height: normal;
+              color: #fff;
+              font-weight: 900;
+              display: inline-block;
+            }
+            span {
+              color: #fff;
+              vertical-align: text-top;
+            }
+          }
+          .kidsLogo {
+            position: absolute;
+            top: 130%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-7deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #0a8cdc;
+            border-radius: 100px;
+            height: 68px;
+            padding: 0 24px;
+
+            p {
+              font-family: 'Nunito', sans-serif !important;
+              list-style: normal;
+              color: #ffeb32;
+              font-weight: 900;
+              font-size: 50px;
+            }
+          }
+        }
+      }
+    }
+    .cards {
+      margin: 10px 0;
+    }
+  }
+
+  .kidsCard {
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 16px;
+    height: 400px;
+    width: 100%;
+    &__image {
+      height: 55%;
+      width: 100%;
+      position: relative;
+    }
+    &__content {
+      padding: 20px 30px;
+    }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 8px;
+      line-height: normal;
+    }
+    &__description {
+      font-size: 14px;
+      margin-bottom: 20px;
+      line-height: normal;
+    }
+    &__btn {
+      font-size: 12px;
+      border-radius: 20px;
+      width: 35%;
+    }
+  }
+}

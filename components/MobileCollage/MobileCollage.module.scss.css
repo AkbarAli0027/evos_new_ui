@@ -1,0 +1,65 @@
+.imgWrapper {
+  display: flex;
+  column-gap: 9px;
+  justify-content: flex-end;
+  margin-bottom: 47px;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  .imgWrapper {
+    justify-content: center;
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .imgWrapper {
+    margin: 0;
+    width: 100%;
+  }
+}
+.imgWrapper .imgBox {
+  display: grid;
+  grid-template-areas: "bg bg sm1 sm2" "bg bg md md";
+  column-gap: 5px;
+  row-gap: 5px;
+}
+.imgWrapper .imgBox .mobCollage1 {
+  grid-area: bg;
+}
+.imgWrapper .imgBox .mobCollageLink1 {
+  cursor: pointer;
+}
+.imgWrapper .imgBox .mobCollage2 {
+  grid-area: sm1;
+}
+.imgWrapper .imgBox .mobCollage3 {
+  grid-area: sm2;
+}
+.imgWrapper .imgBox .mobCollage4 {
+  grid-area: md;
+}
+.imgWrapper .imgBox .mobCollageLink2 {
+  grid-area: sm1;
+  cursor: pointer;
+}
+.imgWrapper .imgBox .mobCollageLink3 {
+  grid-area: sm2;
+  cursor: pointer;
+}
+.imgWrapper .imgBox .mobCollageLink4 {
+  grid-area: md;
+  cursor: pointer;
+}
+
+#singleImg {
+  max-width: 400px;
+  max-height: 400px;
+  overflow: hidden;
+}
+#singleImg img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=MobileCollage.module.scss.css.map */

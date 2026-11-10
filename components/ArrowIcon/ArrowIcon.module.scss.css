@@ -1,0 +1,12 @@
+.icon {
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+.icon svg {
+  vertical-align: middle;
+}
+.icon:hover {
+  transform: translateX(10px);
+}
+
+/*# sourceMappingURL=ArrowIcon.module.scss.css.map */

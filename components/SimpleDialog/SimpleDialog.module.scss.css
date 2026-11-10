@@ -1,0 +1,20 @@
+.wrapper {
+  width: 100%;
+}
+
+.title {
+  display: grid;
+}
+.title > *:first-child {
+  justify-self: end;
+}
+
+.regionElement {
+  width: 100%;
+  cursor: pointer;
+}
+.regionElement:hover {
+  background-color: #f6f8f9;
+}
+
+/*# sourceMappingURL=SimpleDialog.module.scss.css.map */

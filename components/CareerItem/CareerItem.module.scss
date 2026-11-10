@@ -1,0 +1,125 @@
+.wrapper {
+  margin-bottom: 160px;
+  position: relative;
+  transition: 0.5s;
+  @media (max-width: 992px) {
+    display: none;
+  }
+  .box {
+    display: flex;
+    row-gap: 100px;
+    margin-top: 89px;
+    overflow: hidden;
+    .grid {
+      &:nth-child(2n + 1) {
+        flex-direction: row-reverse;
+      }
+      @media (max-width: 1265px) {
+        column-gap: 38px !important;
+        justify-content: center;
+      }
+    }
+    .desc {
+      max-width: 778px;
+      width: 100%;
+      @media (max-width: 1265px) {
+        max-width: 55%;
+      }
+      .card {
+        padding: 64px 17px 32px 48px;
+        background: #fff;
+        border-radius: 8px;
+        width: 100%;
+        .title {
+          font-size: 30px;
+          line-height: 39px;
+          color: #585c7b;
+          font-weight: 550;
+          max-width: 400px;
+          @media (max-width: 1265px) {
+            font-size: 24px;
+            line-height: 28px;
+          }
+        }
+        .review {
+          font-size: 16px;
+          line-height: 25px;
+          color: #585c7b;
+          font-weight: 400;
+          margin: 24px 0;
+          max-width: 415px;
+        }
+        .description {
+          font-size: 18px;
+          line-height: 28px;
+          color: #585c7b;
+          font-weight: 400;
+          @media (max-width: 1265px) {
+            line-height: 24px;
+          }
+        }
+      }
+    }
+    .imgGrid {
+      max-width: 400px;
+      width: 100%;
+      padding-left: 0 !important;
+      @media (max-width: 1265px) {
+        max-width: 49%;
+      }
+      // margin-right: 16px;
+      .img {
+        width: 401px;
+        height: 504px;
+        object-fit: cover;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px !important;
+        }
+        @media (max-width: 767px) {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.arrowBtns {
+  position: absolute;
+  z-index: 99;
+  bottom: -76px;
+  right: 0;
+  display: flex;
+  column-gap: 16px;
+  .prevBtn {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.62);
+    box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
+      0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    border-radius: 40px;
+    justify-content: center;
+    svg {
+      width: 11px;
+      height: 20px;
+      color: #3e4265;
+      display: flex;
+    }
+  }
+  .nextBtn {
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.62);
+    box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06),
+      0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+    border-radius: 40px;
+    justify-content: center;
+    svg {
+      width: 11px;
+      height: 20px;
+      color: #3e4265;
+      display: flex;
+    }
+  }
+}

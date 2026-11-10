@@ -1,0 +1,190 @@
+.drawerPaper {
+  width: 100% !important;
+  max-width: 450px !important;
+  background-color: rgba(251, 251, 251, 0.85) !important;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  overflow: visible !important;
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1) !important;
+  font-family: "Open Sans", sans-serif;
+}
+
+.externalClose {
+  position: absolute;
+  left: -65px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  cursor: pointer;
+  background: #ffffff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+.externalClose:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+.externalClose .closeIconButton {
+  color: #000;
+}
+.externalClose .closeIconButton svg {
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.header .title {
+  font-weight: 800;
+  font-size: 26px;
+  color: #000;
+}
+.header .clearBtn {
+  color: #ff5e5e;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.scrollArea {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding-bottom: 20px;
+}
+.scrollArea::-webkit-scrollbar {
+  width: 0;
+}
+
+/* MAHSULOT KARTASI */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 18px;
+  margin-bottom: 16px;
+  position: relative;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.04);
+}
+.card .cardDelete {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 10;
+  color: #999;
+}
+.card .cardDelete:hover {
+  color: #ff0000;
+}
+
+.cardMain {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.imageWrapper {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  background: #f9f9f9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imageWrapper img {
+  object-fit: contain;
+}
+
+.info {
+  flex: 1;
+  padding-right: 25px;
+}
+.info .itemTitle {
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+.info .itemDescription {
+  font-size: 12px;
+  color: #777;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+/* PASTI: NARX VA COUNTER */
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: none !important;
+  padding-top: 5px;
+}
+.cardFooter .itemPrice {
+  font-weight: 800;
+  font-size: 19px;
+  color: #000;
+}
+
+.footerActions {
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.footerActions .totalRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footerActions .totalRow .totalLabel {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.footerActions .totalRow .totalValue {
+  font-size: 22px;
+  font-weight: 900;
+  color: #007d43;
+}
+
+/* MOBIL MOSLASHUV */
+@media screen and (max-width: 600px) {
+  .externalClose {
+    left: 10px;
+    top: 10px;
+    transform: none;
+    width: 42px;
+    height: 42px;
+  }
+  .drawerPaper {
+    max-width: 92% !important;
+  }
+  .info .itemTitle {
+    font-size: 16px;
+  }
+  .container {
+    padding: 16px;
+  }
+}
+
+/*# sourceMappingURL=Basket.module.scss.css.map */

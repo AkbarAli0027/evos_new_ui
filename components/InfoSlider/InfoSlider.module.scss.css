@@ -1,0 +1,33 @@
+.text {
+  color: #131022 !important;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+@media (max-width: 556px) {
+  .text {
+    font-size: 18px !important;
+  }
+}
+
+.description {
+  text-align: center;
+  color: #585c7b;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
+@media (max-width: 556px) {
+  .description {
+    font-size: 16px;
+  }
+}
+.description a {
+  color: tomato;
+}
+.description a:hover {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=InfoSlider.module.scss.css.map */

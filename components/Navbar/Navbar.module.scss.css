@@ -1,0 +1,135 @@
+.root {
+  background-color: #fff;
+  position: relative;
+  z-index: 100;
+}
+
+.footerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footerBox .footerList {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Umumiy Dropdown stili (About va Kids uchun) */
+.wrapper {
+  position: absolute;
+  cursor: default;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) rotate(6deg);
+  padding-top: 15px;
+  display: none;
+  width: max-content;
+  z-index: 999999;
+}
+
+.langList {
+  cursor: default;
+  width: 100%;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Kids Tugmasi */
+.kidsWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a8cdc;
+  border-radius: 16px;
+  transform: rotate(-6deg);
+  width: 85px;
+  height: 35px;
+  margin-left: 10px;
+  /* overflow: hidden; <--- BU BO'LMASLIGI KERAK */
+}
+.kidsWrapper .kids {
+  color: #ffeb32;
+  font-family: "Nunito", sans-serif !important;
+  font-size: 24px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.kidsWrapper:hover {
+  z-index: 9999999;
+}
+.kidsWrapper:hover .wrapper {
+  display: block;
+}
+
+/* Biz haqimizda Dropdown uchun */
+.lang {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.lang .wrapper {
+  transform: translateX(-20%);
+  left: 0;
+}
+.lang:hover .wrapper {
+  display: block;
+}
+
+.anchorTag {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.anchorTag:hover {
+  color: #00b987;
+}
+
+/* Kids ichidagi rangli linklar */
+.content {
+  border-radius: 20px;
+  padding: 6px 15px;
+  font-weight: 700;
+  font-size: 13px;
+  text-decoration: none;
+  display: block;
+  white-space: nowrap;
+}
+.content__green {
+  color: #ffeb32;
+  background: #00b987;
+}
+.content__red {
+  color: #ffeb32;
+  background-color: #fa6464;
+}
+.content__yellow {
+  color: #fa6464;
+  background: #ffeb32;
+}
+
+.activeLink {
+  color: #00b987 !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .root {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=Navbar.module.scss.css.map */

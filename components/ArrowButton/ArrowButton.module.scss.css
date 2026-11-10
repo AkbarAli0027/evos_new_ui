@@ -1,0 +1,33 @@
+.arrowBtns {
+  column-gap: 16px;
+}
+.arrowBtns .prevBtn {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  border-radius: 40px;
+  justify-content: center;
+}
+.arrowBtns .prevBtn svg {
+  width: 11px;
+  height: 20px;
+  color: #3e4265;
+  display: flex;
+}
+.arrowBtns .nextBtn {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.62);
+  box-shadow: 0px 4.4px 12px -1px rgba(19, 16, 34, 0.06), 0px 2px 6.4px -1px rgba(19, 16, 34, 0.03);
+  border-radius: 40px;
+  justify-content: center;
+}
+.arrowBtns .nextBtn svg {
+  width: 11px;
+  height: 20px;
+  color: #3e4265;
+  display: flex;
+}
+
+/*# sourceMappingURL=ArrowButton.module.scss.css.map */

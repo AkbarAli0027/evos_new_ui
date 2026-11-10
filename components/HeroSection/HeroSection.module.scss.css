@@ -1,0 +1,222 @@
+.root {
+  position: relative;
+  width: 100%;
+  height: 570px;
+  overflow: hidden;
+  background-color: #009846;
+  color: #fff;
+}
+.root .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 960px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+.root .background {
+  position: absolute;
+  top: 0;
+  background: url(/images/topBg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 505px;
+  z-index: 0;
+}
+@media (max-width: 960px) {
+  .root .background {
+    height: 400px;
+  }
+}
+.root .topTitle {
+  position: relative;
+  margin: 16px 0;
+  text-align: center;
+  z-index: 1;
+}
+.root .topSubtitle {
+  position: relative;
+  text-align: center;
+  color: #000;
+  z-index: 1;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+.root .handAnime {
+  position: absolute;
+  top: 300px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  width: 49px;
+  height: 58px;
+  background-repeat: no-repeat;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><path style="fill: black; fill-rule: evenodd;" d="M985.31,471.382L986,456.88a4.949,4.949,0,0,0-4.951-4.959,4.821,4.821,0,0,0-2.395.633,29.119,29.119,0,0,1-12.21-7.97,4.87,4.87,0,0,0-2.351.6l0-6.512a4.944,4.944,0,1,0-9.888.009l-0.02,25.018-8.528-6.248a5.761,5.761,0,0,0-7.527.545,3.919,3.919,0,0,0,0,5.512l17.208,17.311A14.042,14.042,0,0,0,965.381,485l5.745,0a14.07,14.07,0,0,0,10.036-4.189A14.316,14.316,0,0,0,985.31,471.382ZM971.128,482.4l-5.745,0a11.489,11.489,0,0,1-8.216-3.418l-17.208-17.311a1.306,1.306,0,0,1,0-1.838,3.182,3.182,0,0,1,4.166-.288l10.592,7.758a1.288,1.288,0,0,0,1.347.108,1.3,1.3,0,0,0,.7-1.158l0.023-27.572a2.374,2.374,0,0,1,2.374-2.371,2.358,2.358,0,0,1,2.349,2.367L961.5,457.062a1.292,1.292,0,1,0,2.583-.006l0.006-7.508a2.362,2.362,0,1,1,4.723,0l-0.006,7.512a1.291,1.291,0,1,0,2.582-.006l0-3.833a2.362,2.362,0,1,1,4.723,0l0,3.851s0,0,0,0v0.011l0,0s0,0,0,0a1.292,1.292,0,0,0,2.583-.038v-0.158a2.364,2.364,0,0,1,.69-1.675,2.362,2.362,0,0,1,4.033,1.608l-0.689,14.441a11.723,11.723,0,0,1-3.395,7.707A11.506,11.506,0,0,1,971.128,482.4Zm-1.122-39.584a11.754,11.754,0,0,0-2.625-12.4,11.587,11.587,0,0,0-16.438.013,11.781,11.781,0,0,0-2.647,12.405,1.294,1.294,0,1,0,2.418-.921,9.159,9.159,0,0,1,2.054-9.648,9.012,9.012,0,0,1,12.785-.01,9.144,9.144,0,0,1,2.038,9.644A1.291,1.291,0,1,0,970.006,442.811Z" transform="translate(-937 -427)"/></svg>');
+  -webkit-animation: scale 2s ease-in-out infinite;
+  -moz-animation: scale 2s ease-in-out infinite;
+  -o-animation: scale 2s ease-in-out infinite;
+  animation: scale 2s ease-in-out infinite;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+@media (max-width: 960px) {
+  .root .handAnime {
+    top: 179px;
+  }
+}
+.root .handIcon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 450px;
+  text-align: center;
+  transition: opacity 0.2s ease-in-out;
+  opacity: 1;
+}
+@media (max-width: 960px) {
+  .root .handIcon {
+    top: 266px;
+    width: 29px;
+  }
+}
+.root .left,
+.root .right {
+  width: 301px;
+  position: absolute;
+  z-index: 99;
+  top: 160px;
+  transition: opacity 0.2s ease-in-out;
+}
+.root .left .bom,
+.root .right .bom {
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  width: 261px;
+  z-index: 99;
+}
+.root .left .bom .bomTitle,
+.root .right .bom .bomTitle {
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 960px) {
+  .root .left .bom .bomTitle span,
+  .root .right .bom .bomTitle span {
+    display: none;
+  }
+}
+.root .left {
+  text-align: right;
+  left: 0;
+}
+@media (max-width: 960px) {
+  .root .left {
+    top: 60px;
+    left: 18px;
+  }
+}
+.root .left .bom {
+  right: 0;
+}
+.root .left .bom:first-child {
+  top: 2px;
+  z-index: 99;
+}
+@media (max-width: 960px) {
+  .root .left .bom:first-child {
+    top: 0;
+  }
+}
+.root .left .bom:nth-child(2) {
+  top: 116px;
+  z-index: 66;
+}
+@media (max-width: 960px) {
+  .root .left .bom:nth-child(2) {
+    top: 53px;
+  }
+}
+.root .left .bom:last-child {
+  top: 229px;
+  z-index: 33;
+}
+@media (max-width: 960px) {
+  .root .left .bom:last-child {
+    top: 113px;
+  }
+}
+.root .right {
+  text-align: left;
+  right: 0;
+  top: 100px;
+}
+@media (max-width: 960px) {
+  .root .right {
+    right: 20px;
+    top: 60px;
+  }
+}
+.root .right .bom {
+  left: 0;
+}
+@media (max-width: 960px) {
+  .root .right .bom {
+    top: 30px;
+  }
+}
+.root .right .bom:nth-child(2) {
+  top: 117px;
+  z-index: 66;
+}
+@media (max-width: 960px) {
+  .root .right .bom:nth-child(2) {
+    top: 84px;
+  }
+}
+.root .right .bom:last-child {
+  top: 230px;
+  z-index: 33;
+}
+@media (max-width: 960px) {
+  .root .right .bom:last-child {
+    top: 144px;
+  }
+}
+
+@media (max-width: 960px) {
+  .root {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
+}
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=HeroSection.module.scss.css.map */

@@ -1,0 +1,175 @@
+@charset "UTF-8";
+/* style.module.scss ga QO'SHING — map to'liq balandlik */
+.map {
+  height: 100% !important;
+  min-height: unset !important;
+}
+.map > div,
+.map > div > div,
+.map > div > div > ymaps {
+  height: 100% !important;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-right: 4px;
+}
+
+.map_box {
+  display: flex;
+  position: relative;
+}
+.map_box .map {
+  min-width: 500px !important;
+  height: 527px !important;
+}
+@media (max-width: 992px) {
+  .map_box .map {
+    display: none;
+  }
+}
+.map_box .mobile_map {
+  display: none;
+}
+@media (max-width: 992px) {
+  .map_box .mobile_map {
+    display: block;
+    min-width: 290px !important;
+    height: 250px !important;
+  }
+}
+@media (max-width: 800px) {
+  .map_box {
+    flex-direction: column;
+    row-gap: 12px;
+  }
+}
+.map_box .form_section {
+  padding: 54px 30px;
+  width: 100%;
+  min-width: 390px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .map_box .form_section {
+    min-width: 100%;
+  }
+}
+.map_box input {
+  background: #F8F8F8;
+  border: 1px solid #BFBFBF;
+  border-radius: 10px;
+}
+
+.button {
+  background-color: #00704A;
+  padding: 12px 16px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 20px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.title {
+  margin-bottom: 36px !important;
+}
+@media (max-width: 800px) {
+  .title {
+    font-size: 25px !important;
+    line-height: 10px !important;
+    margin-bottom: 25px;
+  }
+}
+@media (max-height: 800px) {
+  .title {
+    font-size: 25px !important;
+    line-height: 10px !important;
+    margin-bottom: 25px;
+  }
+}
+
+.personalInput {
+  margin-right: 16px;
+  margin-bottom: 0;
+  width: 100%;
+  height: 60px;
+  outline: none;
+  border: none;
+  padding: 12px 0 12px 12px;
+  border-radius: 4px;
+  font-weight: 500;
+  background: #f6f8f9;
+  font-size: 17px;
+  line-height: 22px;
+  border: 1px solid #f6f8f9;
+}
+.personalInput:focus {
+  border: 1px solid #309b42;
+}
+@media (max-height: 800px) {
+  .personalInput {
+    height: 45px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .inputWrapper {
+    flex-direction: column;
+    margin-right: 0;
+  }
+  .personalInput {
+    margin-right: 0;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border: none;
+    padding: 12px 0 12px 12px;
+    font-weight: 500;
+    background: #f6f8f9;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid #f6f8f9;
+  }
+  .personalInput:focus {
+    border: 1px solid #309b42;
+  }
+}
+.close {
+  position: absolute;
+  right: 7px;
+  top: 45px;
+  cursor: pointer;
+  z-index: 10;
+  background: #fff;
+  padding: 5px;
+  border-radius: 36px;
+  display: flex;
+}
+
+.adress_form {
+  width: 100%;
+  display: grid;
+  margin-top: 16px;
+  gap: 10px 16px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  flex-wrap: wrap;
+}
+.adress_form > *:not(:last-child) {
+  margin-right: 16px;
+}
+@media (max-width: 870px) {
+  .adress_form {
+    margin-top: 4px;
+    gap: 7px 13px;
+  }
+}
+
+/*# sourceMappingURL=style.module.scss.css.map */

@@ -1,0 +1,21 @@
+.button {
+  width: 100%;
+  background-color: #f6f8f9;
+  color: #000;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.41px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  padding: 17px 0;
+}
+@media (max-width: 900px) {
+  .button {
+    margin-bottom: 16px;
+  }
+}
+
+/*# sourceMappingURL=FullButtonGrey.module.scss.css.map */
